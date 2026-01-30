@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "career-workflow/An AI-Powered Resume Workflow.md",
+                "file": "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "career-workflow/An AI-Powered Resume Workflow.md",
+                "file": "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "career-workflow/An AI-Powered Resume Workflow.md",
+                "file": "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -156,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "career-workflow/An AI-Powered Resume Workflow.md",
+                "file": "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -187,6 +187,10 @@
   "lastOpenFiles": [
     "README.md",
     "career-workflow/An AI-Powered Resume Workflow.md",
+    "career-workflow/resume-workflow/resources/example",
+    "career-workflow/resume-workflow/resources",
+    "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
+    "career-workflow/resume-workflow",
     "productivity/README.md",
     "productivity",
     "decision-frameworks/README.md",

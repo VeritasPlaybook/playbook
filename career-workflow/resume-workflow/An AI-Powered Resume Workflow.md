@@ -1,19 +1,18 @@
-> **Disclaimer:** This guide describes a practical workflow using Perplexity Pro for research and Claude Sonnet 4.5 for writing. I don’t work for either company and don’t receive any benefit if you use these tools. This is simply the setup that has worked best in practice.[file:109]
+> **Disclaimer:** This guide describes a practical workflow using Perplexity Pro for research and Claude Sonnet 4.5 for writing. I don’t work for either company and don’t receive any benefit if you use these tools. This is simply the setup that has worked best in practice.
+
+For Table of Contents, click outline button on the right ------------------------^
 
 ---
 # 1. Who This Guide Is For
 
-This guide is for people who want to switch roles or reposition themselves for stronger opportunities, and who are willing to do some honest self‑audit and thinking about their work.
+This guide is for people switching roles or repositioning themselves for stronger opportunities, who are willing to do honest self-reflection about their work.
 
-You don’t need to be “good with AI” to use this. You only need:
+You don't need to be "good with AI." You only need:
 - Curiosity
-- A willingness to write down what you’ve actually done
-- The ability to copy‑paste prompts and answer questions clearly
+- A willingness to document what you've actually done
+- The ability to follow prompts and answer questions clearly
 
-The goal is simple: help you build a resume that is:
-- Deeply tailored to a specific role
-- Optimized for ATS (Applicant Tracking Systems)
-- Still human, specific, and authentic[file:109]
+**The goal:** Build a resume that is deeply tailored to a specific role, optimized for ATS, and still authentic to you.
 
 ---
 # 2. High-Level Workflow
@@ -27,6 +26,20 @@ You’ll move through five main steps:
 5. Test and **refine** using ATS checks and focused iterations  
 
 Research into best practices shows this “research first → write later → then validate” pattern is more effective than just pasting a job description into an AI and asking for a resume.
+## 2.1 Quick Start (If You're in a Hurry)
+
+**Absolute minimum version:**
+
+1. **Brain dump** your experience into a doc (30 min)
+2. **Research** the company with Perplexity Deep Research (5 min)
+3. **Paste both** into Claude with the prompt from Section 6.2 (5 min)
+4. **Answer** Claude's questions (10 min)
+5. **Review** first draft and iterate (20 min)
+
+**Total time: ~70 minutes**
+
+The full workflow adds depth and produces better results, but this gets you 80% of the way there.
+
 
 ---
 # 3. Step 1 – Build Your Master Profile Document
@@ -86,7 +99,7 @@ Same story, but now a hiring manager can see scope, ownership, and impact.
 
 ## 3.4 Simple Self-Guided Template
 
-For each role, answer these questions in your document:
+For each role, answer:
 
 1. What was the context when you joined?  
     (Company stage, team size, key products, target customers.)
@@ -223,8 +236,6 @@ Save the output as something like:
 `[Company]_[Role]_Dossier.md`
 (if you don't get anything; simply prompt "give to me in downloadable markdown" - worse case copy and paste into notion or any other notepad/doc tool you like)
 
-> **Pro tip:** Highlight or annotate this file with your own reactions (e.g., “I’ve done something very similar to this,” “I have a gap here but transferable skills”). Those notes will be useful in later steps.
-
 > **Did you know:** Deep Research typically pulls from 20-30+ sources and synthesizes them into a coherent report, which saves you hours of manual research.
 
 ---
@@ -247,25 +258,19 @@ The design can still look clean, but structure and parse‑ability come first.
 
 ### 5.1.1 File Format: DOCX vs PDF
 
-**The short version:** Use .docx unless the job posting specifically asks for PDF
+**The takeaway: When in doubt, use .docx unless the job posting specifically asks for PDF.**
 
-**The nuance:**
+**Why:**
+Modern ATS platforms (Greenhouse, Lever, Workday) handle clean PDFs fine, but .docx is safer because:
 
-Modern ATS platforms like Greenhouse, Lever, and Workday can read clean, text-based PDFs without issues. However, DOCX is still the safer default because:
-
-1. **Universal compatibility:** DOCX works reliably across all ATS systems, including older ones like legacy versions of Taleo (used by companies like Starbucks, GM, Marriott) that struggle with PDFs.
-
-2. **PDF problems depend on how they're created:**
-   - Text-based PDFs from Word or Google Docs usually work well  
-   - PDFs exported from Apple Pages, design tools (Canva, Figma), or scanned documents often introduce parsing errors  
-   - Locked or password-protected PDFs may be skipped entirely by ATS  
-
-1. **When in doubt, DOCX wins:** If the job posting doesn't specify a format, recruiters and ATS systems both expect and handle DOCX more reliably.
+1. **Universal compatibility** - Works across all systems, including legacy ATS like older Taleo
+2. **PDF problems** - PDFs from design tools (Canva, Pages) or scanned docs often fail parsing
+3. **Default expectation** - When in doubt, recruiters expect .docx
 
 **Practical approach:**
-- Keep your resume in both formats  
-- Submit .docx to online application portals (especially if they mention "Word document")  
-- Use clean PDF (exported from Word/Google Docs) only if the posting specifically requests it or you're emailing directly to a recruiter  
+- Keep both formats
+- Submit .docx to online portals (default) - you can export from google docs if your using it
+- Use PDF only if explicitly requested or emailing directly to a recruiter
 
 > **Did you know:** Some ATS systems literally ignore content in headers, footers, and text boxes. Beautiful designs can become "blank" resumes to the software.
 
@@ -307,7 +312,7 @@ Here is my resume:
 
 > **Pro tip:** Copy your resume text and paste it into a plain text editor (like Notepad). If the structure looks messy or jumbled, that's what ATS will see too.
 
-# 5.4 If You Need a New Template
+# 5.3 If You Need a New Template
 
 You don’t need Perplexity to design a resume visually, but you can use it to get a skeleton structure specific to your role and geography.
 
@@ -533,37 +538,21 @@ You can track which one seems to generate more callbacks over time.
 
 # 8. Tool Setup and Alternatives
 
-# 8.1 Recommended Stack
+## Recommended Stack
 
-- Perplexity Pro
-	- For: Company, role, and market research; question‑driven analysis; quick validation
+**This guide uses:**
+- **Perplexity Pro** - Company/role research, market analysis
+- **Claude Sonnet 4.5** - Resume structuring, drafting, Q&A loops
 
-- Claude Sonnet 4.5
-	- For: Structuring, planning, Q&A loops, and final resume drafting
+**Don't have these exact tools?** Use any strong research tool + any long-context writing model. The key is the *pattern*:
 
-This “research with one tool, write with another” pattern mirrors expert‑in‑the‑loop research workflows and lets each tool do what it’s best at.
-
-# 8.2 If You Don’t Have This Exact Setup
-
-You can adapt the same logic:
-
-- Any strong research‑oriented model → for Steps 2 and 3
-    
-- Any strong long‑context writing model → for Steps 4 and 5
-    
-
-The key is not the brand; it’s the pattern:
-
-1. Capture a rich profile of yourself
-    
-2. Deeply understand the company and role
-    
-3. Decide on a clear structure
-    
-4. Force the model to ask questions before writing
-    
+1. Capture rich profile of yourself
+2. Deeply understand company/role
+3. Decide on clear structure
+4. Force AI to ask questions before writing
 5. Validate and iterate
-    
+
+The workflow matters more than the specific tools.
 
 ---
 # 9. Why This Workflow Works
@@ -616,3 +605,19 @@ Once you’ve gone through all five steps and you have a resume you’re happy w
         
     - For example: “These roles seem to care more about X than Y; let’s rebalance my resume for future applications.”
 
+# 11. Frequently Asked Questions
+
+**Q: How long does this take?**
+A: First time: 2-3 hours. Subsequent resumes: 45-60 minutes (you reuse Master Profile and just update research).
+
+**Q: Can I do this without paid AI tools?**
+A: Yes, but I DO NOT RECOMMEND IT. Your job search is worth $20/30. Give up something for one month, do it proper.
+
+**Q: Do I need a new resume for every application?**
+A: For your top 5-10 dream roles: yes, customize fully. For others: use a "core" version with minor keyword tweaks.
+
+**Q: What if I have career gaps or am changing industries?**
+A: Address directly in your Master Profile. Tell Claude in Section 6.2 how you want to position it (transferable skills, intentional pivot, etc.).
+
+**Q: How do I know if my resume is working?**
+A: Track callback rate. If <10% for roles you're qualified for, revisit ATS optimization (Step 5) or ask for resume reviews.
