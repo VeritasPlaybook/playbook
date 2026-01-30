@@ -133,7 +133,7 @@ Tasks:
 ---
 # 4. Step 2 – Research the Company and Role 
 
-Now you’ll build a “Company & Role Dossier” that tells you what actually matters for this specific opportunity. I like to call this the "(Perplexity Deep Research Mode)"
+Now you’ll build a “Company & Role Dossier” that tells you what actually matters for this specific opportunity. I like to call this the "Perplexity Deep Research Mode"
 
 Research on effective applications shows that strong candidates go beyond the job description and understand the company’s mission, recent moves, and competitive context.
 
@@ -172,7 +172,7 @@ For some roles, you may also care about:
 - Use **Deep Research** (click the Deep Research button, not regular search)
 - This will take 3–5 minutes and produce a comprehensive report
 
-**The Prompt:**
+**Prompt**
 ```
 I am preparing a highly targeted resume for a specific role.
 
@@ -220,7 +220,8 @@ Create a structured markdown dossier with sections:
 ```
 
 Save the output as something like:  
-`[Company]_[Role]_Dossier.md`.
+`[Company]_[Role]_Dossier.md`
+(if you don't get anything; simply prompt "give to me in downloadable markdown" - worse case copy and paste into notion or any other notepad/doc tool you like)
 
 > **Pro tip:** Highlight or annotate this file with your own reactions (e.g., “I’ve done something very similar to this,” “I have a gap here but transferable skills”). Those notes will be useful in later steps.
 
@@ -430,7 +431,7 @@ Do NOT write the resume yet. I will review and confirm this plan first.
 If the plan looks off, correct it directly in natural language (e.g., “I want less emphasis on X, more on Y”). Then, when you’re happy:
 
 ## 6.4 Third Prompt – Write the First Draft
-
+**Prompt:**
 ```
 Now please write the full resume draft.
 
