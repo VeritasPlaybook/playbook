@@ -1,6 +1,13 @@
-> **Disclaimer:** This guide describes a practical workflow using Perplexity Pro for research and Claude Sonnet 4.5 for writing. I don’t work for either company and don’t receive any benefit if you use these tools. This is simply the setup that has worked best in practice.
+**Last Updated:** January 30, 2026  
+**Version:** 1.0  
+**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (Attribution required for reuse)  
+**Author:** [VeritasPlaybook](https://github.com/VeritasPlaybook)
 
-For Table of Contents, click outline button on the right ------------------------^
+> **Disclaimer:** This guide describes a practical workflow using Perplexity Pro for research and Claude Sonnet 4.5 for writing. I don’t work for either company and don’t receive any benefit if you use these tools. This is simply the setup that has worked best in practice.
+>
+> **Reuse Policy:** You're free to share, adapt, and build upon this guide for any purpose, even commercially. Just provide proper attribution and indicate if changes were made.
+
+For Table of Contents, click outline button on the right ----------------------------------------------------------------------------------------------^
 
 ---
 # 1. Who This Guide Is For
