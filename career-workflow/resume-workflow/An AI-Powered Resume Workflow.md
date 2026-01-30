@@ -655,7 +655,7 @@ License: CC BY 4.0
 Found this helpful or have suggestions? Connect with me:
 - 💼 [LinkedIn](https://github.com/Veritas-Research/investment-research)
 - 🐙 [GitHub](https://github.com/VeritasNotes)
-- 📊 [Investment Research]([https://github.com/VeritasResearch](https://github.com/Veritas-Research/investment-research))
+- 📊 [Investment Research](https://github.com/Veritas-Research/investment-research))
 
 ---
 
