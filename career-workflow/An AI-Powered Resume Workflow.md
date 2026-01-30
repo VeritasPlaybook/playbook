@@ -131,9 +131,9 @@ Tasks:
 
 
 ---
-# 4. Step 2 – Research the Company and Role (Perplexity Deep Research Mode)
+# 4. Step 2 – Research the Company and Role 
 
-Now you’ll build a “Company & Role Dossier” that tells you what actually matters for this specific opportunity.
+Now you’ll build a “Company & Role Dossier” that tells you what actually matters for this specific opportunity. I like to call this the "(Perplexity Deep Research Mode)"
 
 Research on effective applications shows that strong candidates go beyond the job description and understand the company’s mission, recent moves, and competitive context.
 
