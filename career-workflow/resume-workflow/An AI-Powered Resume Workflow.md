@@ -628,3 +628,35 @@ A: Address directly in your Master Profile. Tell Claude in Section 6.2 how you w
 
 **Q: How do I know if my resume is working?**
 A: Track callback rate. If <10% for roles you're qualified for, revisit ATS optimization (Step 5) or ask for resume reviews.
+
+# License & Attribution
+
+## License
+
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+**You are free to:**
+- **Share** — Copy and redistribute the material in any medium or format
+- **Adapt** — Remix, transform, and build upon the material for any purpose, even commercially
+
+**Under the following terms:**
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+## How to Attribute
+
+If you use or adapt this guide, please include:
+
+Based on "An AI-Powered Resume Workflow" by VeritasPlaybook
+Original: https://github.com/VeritasPlaybook/playbook/blob/main/career-workflow/resume-workflow/An%20AI-Powered%20Resume%20Workflow.md
+License: CC BY 4.0
+
+# Questions or Feedback?
+
+Found this helpful or have suggestions? Connect with me:
+- 💼 [LinkedIn](your-linkedin-url)
+- 🐙 [GitHub](https://github.com/VeritasNotes)
+- 📊 [Investment Research](https://github.com/VeritasResearch)
+
+---
+
+*If you found this valuable, star ⭐ the repo to help others find it.*
