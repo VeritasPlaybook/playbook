@@ -1,11 +1,10 @@
-**Last Updated:** January 30, 2026  
-**Version:** 1.0  
-**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) (Attribution required for reuse)  
-**Author:** [VeritasPlaybook](https://github.com/VeritasPlaybook)
-
-> **Disclaimer:** This guide describes a practical workflow using Perplexity Pro for research and Claude Sonnet 4.5 for writing. I don’t work for either company and don’t receive any benefit if you use these tools. This is simply the setup that has worked best in practice.
+> **Disclaimer:** This guide describes a practical workflow using Perplexity Pro, which includes both Deep Research capabilities and access to Claude Sonnet 4.5 (along with other leading AI models). I don't work for Perplexity and don't receive any benefit if you use these tools. This is simply the setup that has worked best in practice.
+> 
+> **Important:** You only need ONE subscription (Perplexity Pro) to follow this entire workflow. You do NOT need a separate Claude subscription.
 >
 > **Reuse Policy:** You're free to share, adapt, and build upon this guide for any purpose, even commercially. Just provide proper attribution and indicate if changes were made.
+
+---
 
 For Table of Contents, click outline button on the right ----------------------------------------------------------------------------------------------^
 
@@ -125,7 +124,7 @@ You can keep this quite long. A 5–10 page Master Profile is normal and often u
 
 If you find it easier to write everything down first without worrying about structure, start with a brain dump. Just open a doc and write out what you did at each job in your own words—messy bullets, run-on sentences, whatever comes to mind. Don't worry about making it sound good yet.
 
-Once you have that raw material, you can copy and paste it into Claude Sonnet 4.5 to help you structure and tighten it into proper STAR-format bullets.
+Once you have that raw material, you can copy and paste it into Claude Sonnet 4.5 (available in Perplexity Pro - use search, change model to Sonnet 4.5, enable thinking) to help you structure and tighten it into proper STAR-format bullets.
 
 **Recommended Settings:** 
 - Model: Claude Sonnet 4.5
@@ -349,11 +348,14 @@ You’ll use this structure later when you ask Claude to write the actual conten
 > **Pro tip:** Save the agreed‑on structure as a short “Resume Template Spec” file and keep it next to your Master Profile and Company Dossier. That way you always know what shape you’re writing into.
 
 ---
-# 6. Step 4 – Draft the Resume with Claude Sonnet 4.5
+# 6. Step 4 – Draft the Resume with Claude Sonnet 4.5 (via Perplexity Pro)
 
 This is where you combine everything: who you are, what the company needs, and how you want to present it.
 
-A key principle here: don’t let Claude write anything until it has:
+**Note:** If you're using Perplexity Pro, you can access Claude Sonnet 4.5 directly from the model selector. You don't need a separate Claude subscription.
+
+A key principle here: don't let Claude write anything until it has:
+
 
 - Read your Master Profile
     
@@ -546,20 +548,33 @@ You can track which one seems to generate more callbacks over time.
 # 8. Tool Setup and Alternatives
 
 ## Recommended Stack
-
 **This guide uses:**
-- **Perplexity Pro** - Company/role research, market analysis
-- **Claude Sonnet 4.5** - Resume structuring, drafting, Q&A loops
 
-**Don't have these exact tools?** Use any strong research tool + any long-context writing model. The key is the *pattern*:
+**Perplexity Pro** ($20/month) - This is the ONLY subscription you need
 
-1. Capture rich profile of yourself
-2. Deeply understand company/role
-3. Decide on clear structure
-4. Force AI to ask questions before writing
-5. Validate and iterate
+**What Perplexity Pro gives you:**
+
+1. **Deep Research** - Comprehensive company/role research that synthesizes 20-30+ sources automatically
+2. **Access to Claude Sonnet 4.5** - For resume structuring, drafting, and Q&A loops
+3. **Access to other frontier models** - GPT-4, Gemini, and others for comparison or specialized tasks
+
+**You do NOT need:**
+- A separate Claude subscription
+- Multiple AI tool subscriptions
+- Any other paid tools to complete this workflow
+
+**Important:** Throughout this guide, when you see "use Claude Sonnet 4.5," you access it directly within Perplexity Pro by selecting it from the model dropdown. You're not switching to a different tool.
+
+**Don't have Perplexity Pro?** You can use any combination of research tool + long-context writing model, but you'll need to adapt the workflow. The key pattern remains:
+
+*   1. Capture rich profile of yourself
+*   2. Deeply understand company/role
+*   3. Decide on clear structure
+*   4. Force AI to ask questions before writing
+*   5. Validate and iterate
 
 The workflow matters more than the specific tools.
+
 
 ---
 # 9. Why This Workflow Works
@@ -617,8 +632,14 @@ Once you’ve gone through all five steps and you have a resume you’re happy w
 **Q: How long does this take?**
 A: First time: 2-3 hours. Subsequent resumes: 45-60 minutes (you reuse Master Profile and just update research).
 
-**Q: Can I do this without paid AI tools?**
-A: Yes, but I DO NOT RECOMMEND IT. Your job search is worth $20/30. Give up something for one month, do it proper.
+**Q: Can I do this without paid AI tools?** 
+A: Yes, but I DO NOT RECOMMEND IT. Your job search is worth $20/month for Perplexity Pro. This single subscription gives you everything you need: Deep Research + Claude Sonnet 4.5 + other models. Give up something else for one month and do it properly.
+
+**Q: Do I need both Perplexity Pro AND a separate Claude subscription?** 
+A: No. Perplexity Pro includes access to Claude Sonnet 4.5 and other leading models. You only need ONE subscription ($20/month for Perplexity Pro) to complete this entire workflow.
+
+**Q: Can I use the free version of Perplexity?** 
+A: The free version doesn't include Deep Research or full access to Claude Sonnet 4.5. For this workflow to work as designed, you need Perplexity Pro. That said, if budget is truly a constraint, you can use the free version with limitations and supplement with free tiers of other AI tools, but the experience will be significantly degraded.
 
 **Q: Do I need a new resume for every application?**
 A: For your top 5-10 dream roles: yes, customize fully. For others: use a "core" version with minor keyword tweaks.
