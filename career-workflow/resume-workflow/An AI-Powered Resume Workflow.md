@@ -567,11 +567,11 @@ You can track which one seems to generate more callbacks over time.
 
 **Don't have Perplexity Pro?** You can use any combination of research tool + long-context writing model, but you'll need to adapt the workflow. The key pattern remains:
 
-*   1. Capture rich profile of yourself
-*   2. Deeply understand company/role
-*   3. Decide on clear structure
-*   4. Force AI to ask questions before writing
-*   5. Validate and iterate
+1. Capture rich profile of yourself
+2. Deeply understand company/role
+3. Decide on clear structure
+4. Force AI to ask questions before writing
+5. Validate and iterate
 
 The workflow matters more than the specific tools.
 
