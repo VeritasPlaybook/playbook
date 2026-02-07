@@ -1,4 +1,4 @@
-# Veritas Playbook
+# Veritas Playbook Repos
 
 **Practical workflows and systems for knowledge workers**
 
@@ -6,17 +6,19 @@ This is my playbook—a collection of guides, workflows, examples, and templates
 
 ## 📚 What's Inside
 
-### [Career](./career/)
+### AI-Powered Workflows
+- Prompt Engineering Guiders *(coming soon)*
+
+### Applications of AI for Compliance/Payments/Anti-fraud from a PM perspective
+
+### [Career-workflow](https://github.com/VeritasPlaybook/playbook/tree/main/career-workflow)
 Starting with resume writing. Will expand naturally based on what people ask about.
+
+### General Research
 
 ### [Productivity](./productivity/)
 Currently thinking about workflow optimization and time management systems.
 
-### [AI Systems](./ai-systems/)
-Currently thinking about practical AI workflows and power user techniques.
-
-### [Decision Frameworks](./decision-frameworks/)
-Currently thinking about mental models and systematic decision-making.
 
 ## 💡 Approach
 
