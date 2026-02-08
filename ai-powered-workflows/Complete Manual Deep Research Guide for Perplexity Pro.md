@@ -1,3 +1,13 @@
+> **Disclaimer:** This guide describes a practical workflow using Perplexity Pro, which includes both Deep Research capabilities and access to Claude Sonnet 4.5 (along with other leading AI models). I don't work for Perplexity and don't receive any benefit if you use these tools. This is simply the setup that has worked best in practice.
+> 
+> **Important:** You only need ONE subscription (Perplexity Pro) to follow this entire workflow. You do NOT need a separate Claude subscription.
+>
+> **Reuse Policy:** You're free to share, adapt, and build upon this guide for any purpose, even commercially. Just provide proper attribution and indicate if changes were made.
+
+---
+
+For Table of Contents, click outline button on the right ----------------------------------------------------------------------------------------------^
+
 # Intro
 
 Perplexity did something recently that is just… perplexing to me; and regardless of where you sit on the debate; losing close to unlimited deep research has been a huge blow for a lot of us. It’s been a huge blow to me; so much so that I have to go back and rewrite a couple of guides that I recently put together, which relied on this flow.
