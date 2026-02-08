@@ -1652,8 +1652,8 @@ License: CC BY 4.0
 # Questions or Feedback?
 
 Found this helpful or have suggestions? Connect with me:
-- 💼 [LinkedIn](https://github.com/Veritas-Research/investment-research)
-- 🐙 [GitHub](https://github.com/VeritasNotes)
+- 💼 [LinkedIn]([https://github.com/Veritas-Research/investment-research](https://www.linkedin.com/in/malocilja/?view=public))
+- 🐙 [Veritas Playbook - GitHub]([https://github.com/VeritasNotes](https://github.com/VeritasPlaybook/playbook))
 - 📊 [Investment Research](https://github.com/Veritas-Research/investment-research)
 
 ---
