@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
+                "file": "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "An AI-Powered Resume Workflow"
+              "title": "Complete Manual Deep Research Guide for Perplexity Pro"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300.5
   },
   "right": {
     "id": "7c786c0263cf736b",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
+                "file": "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for An AI-Powered Resume Workflow"
+              "title": "Backlinks for Complete Manual Deep Research Guide for Perplexity Pro"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
+                "file": "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from An AI-Powered Resume Workflow"
+              "title": "Outgoing links from Complete Manual Deep Research Guide for Perplexity Pro"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
+                "file": "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of An AI-Powered Resume Workflow"
+              "title": "Outline of Complete Manual Deep Research Guide for Perplexity Pro"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "7929e4574fa7ec16",
   "lastOpenFiles": [
-    "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
     "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
+    "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
     "ai-powered-workflows/README.md",
     "README.md",
     "your-linkedin-url.md",
