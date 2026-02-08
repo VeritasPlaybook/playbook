@@ -1653,7 +1653,7 @@ License: CC BY 4.0
 
 Found this helpful or have suggestions? Connect with me:
 - 💼 [LinkedIn](https://www.linkedin.com/in/malocilja/?view=public)
-- 🐙 [Veritas Playbook - GitHub](https://github.com/VeritasNotes](https://github.com/VeritasPlaybook/playbook)
+- 🐙 [Veritas Playbook - GitHub](https://github.com/VeritasPlaybook/playbook)
 - 📊 [Investment Research](https://github.com/Veritas-Research/investment-research)
 
 ---
