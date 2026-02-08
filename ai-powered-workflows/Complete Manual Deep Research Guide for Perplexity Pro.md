@@ -1399,7 +1399,7 @@ I know this was a lot, and maybe overwhelming. But if you want to take anything 
 
 
 # Addendum
-If you made it this far - then here is so more (experimental) material.
+If you made it this far - then here is some more (experimental) material.
 ## Speed Optimizations (Advanced)
 
 Perplexity is finicky with making exportable and downloadable markdown, so proceed with caution. I've been experimenting with ways to streamline and compress this workflow. This addendum covers some things I found that work and might speed up the process, but they come with downsides and overhead (file management, cross-copying between tools, less hands-on engagement with sources). If I find ways to make this better, I will update this section.
