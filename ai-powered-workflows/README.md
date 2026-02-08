@@ -1,4 +1,4 @@
-# AI Systems
+# AI-Powered Workflows
 
 Practical ways to work with AI tools.
 
