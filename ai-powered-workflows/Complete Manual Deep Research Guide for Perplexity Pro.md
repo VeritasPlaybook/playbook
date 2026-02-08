@@ -2,7 +2,7 @@
 
 ---
 
-For Table of Contents, click outline button on the right ----------------------------------------------------------------------------------------------^
+For Table of Contents, click **Outline** button on the right ----------------------------------------------------------------------------------------------^
 
 # Intro
 
