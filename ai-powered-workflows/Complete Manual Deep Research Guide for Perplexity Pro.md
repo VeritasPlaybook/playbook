@@ -1,8 +1,4 @@
-> **Disclaimer:** This guide describes a practical workflow using Perplexity Pro, which includes both Deep Research capabilities and access to Claude Sonnet 4.5 (along with other leading AI models). I don't work for Perplexity and don't receive any benefit if you use these tools. This is simply the setup that has worked best in practice.
-> 
-> **Important:** You only need ONE subscription (Perplexity Pro) to follow this entire workflow. You do NOT need a separate Claude subscription.
->
-> **Reuse Policy:** You're free to share, adapt, and build upon this guide for any purpose, even commercially. Just provide proper attribution and indicate if changes were made.
+>  **Reuse Policy:** You're free to share, adapt, and build upon this guide for any purpose, even commercially. Just provide proper attribution and indicate if changes were made.
 
 ---
 
@@ -1628,3 +1624,38 @@ I've uploaded markdown files containing all my Phase 2 research findings (one fi
 - You value file-based organization over hands-on engagement    
 
 **My recommendation:** Start with main workflow. After 2-3 projects, try Option A or B. Only experiment with multi-file if you're committed to making this a regular practice and have confirmed Perplexity export works for you.
+
+
+
+---
+# License & Attribution
+
+## License
+
+This work is licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+
+**You are free to:**
+- **Share** — Copy and redistribute the material in any medium or format
+- **Adapt** — Remix, transform, and build upon the material for any purpose, even commercially
+
+**Under the following terms:**
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+## How to Attribute
+
+If you use or adapt this guide, please include:
+
+Based on "An AI-Powered Resume Workflow" by VeritasPlaybook
+Original: [https://github.com/VeritasPlaybook/playbook/blob/main/career-workflow/resume-workflow/An%20AI-Powered%20Resume%20Workflow.md](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Complete%20Manual%20Deep%20Research%20Guide%20for%20Perplexity%20Pro.md)
+License: CC BY 4.0
+
+# Questions or Feedback?
+
+Found this helpful or have suggestions? Connect with me:
+- 💼 [LinkedIn](https://github.com/Veritas-Research/investment-research)
+- 🐙 [GitHub](https://github.com/VeritasNotes)
+- 📊 [Investment Research](https://github.com/Veritas-Research/investment-research)
+
+---
+
+*If you found this valuable, star ⭐ the repo to help others find it.*
