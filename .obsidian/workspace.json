@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
+                "file": "ai-powered-workflows/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Complete Manual Deep Research Guide for Perplexity Pro"
+              "title": "README"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
+                "file": "ai-powered-workflows/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Complete Manual Deep Research Guide for Perplexity Pro"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
+                "file": "ai-powered-workflows/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Complete Manual Deep Research Guide for Perplexity Pro"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
+                "file": "ai-powered-workflows/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Complete Manual Deep Research Guide for Perplexity Pro"
+              "title": "Outline of README"
             }
           }
         ]
@@ -185,8 +185,8 @@
   },
   "active": "7929e4574fa7ec16",
   "lastOpenFiles": [
-    "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
     "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
+    "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
     "README.md",
     "ai-powered-workflows/README.md",
     "your-linkedin-url.md",
