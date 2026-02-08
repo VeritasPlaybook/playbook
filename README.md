@@ -36,8 +36,8 @@ Each guide includes:
 
 ## 📬 Connect
 
-💼 https://www.linkedin.com/in/malocilja/
-📊 [Investment Research]([https://github.com/VeritasResearch](https://github.com/Veritas-Research/investment-research))  
+💼 [LinkedIn](https://www.linkedin.com/in/malocilja/)
+📊 [Investment Research](https://github.com/Veritas-Research/investment-research)  
 🐙 [GitHub](https://github.com/VeritasNotes)
 
 ---
