@@ -110,7 +110,7 @@ Throughout this guide, you'll see references to "RLM principles" or "recursive p
 - **Verification** = Checking your work as you go, not just at the end    
 - **Synthesis** = Combining everything back together in a way that makes sense    
 
-If you're curious about the research behind this, see the [RLM Appendix](XXXX) at the end.
+If you're curious about the research behind this, see the [RLM Appendix](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/A%20Practical%20RLM-Inspired%20Workflow%20for%20Deep%20Research%20with%20AI.md#appendix-a-rlm-research-background) at the end.
   
 ---
 ## How This Guide is Organized
@@ -2258,9 +2258,7 @@ The first time through takes 2-4 hours. With practice, you'll move through Phase
 - Build a template in your note system for faster setup    
 
 **To go deeper:**
-
-- See the [RLM Research Appendix](XXXX) for technical background    
-- Check the [Quick Reference Guide](XXXX) for streamlined instructions    
+- Check the [Quick Reference Guide - COMING SOON]() for streamlined instructions    
 
 ---
 # Appendices
