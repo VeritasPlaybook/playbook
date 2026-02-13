@@ -1,4 +1,4 @@
-#### **How Hybrid AI Systems Are Solving the Explainability Crisis in AML and Financial Compliance**
+# **How Hybrid AI Systems Are Solving the Explainability Crisis in AML and Financial Compliance**
 
 >  **License:** CC BY 4.0
 >  **Reuse Policy:** You're free to share, adapt, and build upon this guide for any purpose, even commercially. Just provide proper attribution and indicate if changes were made.
