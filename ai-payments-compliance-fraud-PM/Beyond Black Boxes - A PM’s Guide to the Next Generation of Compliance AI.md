@@ -396,10 +396,15 @@ _Investigation time:_ Dramatically reduced, the system already surfaced the key 
 ### Benefits of Hybrid Approach:
 
 ✅ **Explainable decisions** with specific reason codes
+
 ✅ **Analysts can tune rules** based on false positive patterns
+
 ✅ **Bias is verifiable** (rules are transparent, can be audited)
+
 ✅ **Faster investigations** (context is pre-surfaced)
+
 ✅ **Regulatory acceptance** (logic can be demonstrated)
+
 ✅ **Customer service** can explain holds/declines clearly
 
 ---
