@@ -916,23 +916,23 @@ Not all transactions deserve the same level of scrutiny. Adaptive compute alloca
     
     **Conceptual approach:**
 
-```
-primary_decision = primary_model.predict(transaction)
-    
-IF transaction.tier == “HIGH_RISK”:
+	```
+	primary_decision = primary_model.predict(transaction)
+	    
+	IF transaction.tier == “HIGH_RISK”:
+	
+	# Use a second model to verify the first model’s decision makes sense
+	
+	verification = verifier_model.check(transaction, primary_decision)
+	
+	IF verification.confidence < 0.7:
+	
+	# Models disagree - needs human review
+	
+	return decision=“HUMAN_REVIEW”, reason=“model_disagreement” ELSE: return primary_decision
+	```
 
-# Use a second model to verify the first model’s decision makes sense
-
-verification = verifier_model.check(transaction, primary_decision)
-
-IF verification.confidence < 0.7:
-
-# Models disagree - needs human review
-
-return decision=“HUMAN_REVIEW”, reason=“model_disagreement” ELSE: return primary_decision
-```
-
-**In other words:** Use a second opinion model. If they disagree, escalate to human.
+	**In other words:** Use a second opinion model. If they disagree, escalate to human.
     
 4. **Create Audit Trail Infrastructure:**
     
