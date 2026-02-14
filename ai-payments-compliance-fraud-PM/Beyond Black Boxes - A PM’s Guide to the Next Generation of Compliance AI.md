@@ -908,9 +908,9 @@ Not all transactions deserve the same level of scrutiny. Adaptive compute alloca
 	# Model is uncertain - definitely needs human review
 	
 	return decision=“HUMAN_REVIEW”, confidence=“LOW”, scores=scores ELSE: return decision=“based_on_mean”, confidence=“HIGH”, scores=scores
+	```
 	
 	**In other words:** Run the model multiple times. If all runs agree, high confidence. If they disagree (high variance), the model is uncertain,flag for human review.
-	```
     
 3. **Implement Verifier Model (for Tier 3):**
     
