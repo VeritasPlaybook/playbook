@@ -495,9 +495,7 @@ Create enterprise-wide structure for managing AI risk, with explainability as a 
 
 **Why This Matters:**
 
-> “Organizations integrating AI risk management with enterprise-level risk management will reduce AI-related disruptions and regulatory issues by 50%”
-> 
-> , Gartner
+> “Organizations integrating AI risk management with enterprise-level risk management will reduce AI-related disruptions and regulatory issues by 50%”, Gartner
 
 OSFI/FCAC guidance requires “robust data governance and model risk management frameworks to ensure every decision is both auditable and explainable.”
 
@@ -891,23 +889,23 @@ Not all transactions deserve the same level of scrutiny. Adaptive compute alloca
     
     **Conceptual approach:**
     
-```
-IF transaction.tier == “HIGH_RISK”: scores = [] for i in range(10):
-
-# Run model with slight variations (different random seeds, dropout patterns)
-
-score = model.predict(transaction, seed=i) scores.append(score)
-
-mean_score = average(scores) variance = standard_deviation(scores)
-
-IF variance > threshold:
-
-# Model is uncertain - definitely needs human review
-
-return decision=“HUMAN_REVIEW”, confidence=“LOW”, scores=scores ELSE: return decision=“based_on_mean”, confidence=“HIGH”, scores=scores
-
-**In other words:** Run the model multiple times. If all runs agree, high confidence. If they disagree (high variance), the model is uncertain,flag for human review.
-```
+	```
+	IF transaction.tier == “HIGH_RISK”: scores = [] for i in range(10):
+	
+	# Run model with slight variations (different random seeds, dropout patterns)
+	
+	score = model.predict(transaction, seed=i) scores.append(score)
+	
+	mean_score = average(scores) variance = standard_deviation(scores)
+	
+	IF variance > threshold:
+	
+	# Model is uncertain - definitely needs human review
+	
+	return decision=“HUMAN_REVIEW”, confidence=“LOW”, scores=scores ELSE: return decision=“based_on_mean”, confidence=“HIGH”, scores=scores
+	
+	**In other words:** Run the model multiple times. If all runs agree, high confidence. If they disagree (high variance), the model is uncertain,flag for human review.
+	```
     
 3. **Implement Verifier Model (for Tier 3):**
     
