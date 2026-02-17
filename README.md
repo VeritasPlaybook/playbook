@@ -14,6 +14,7 @@ This is my playbook—a collection of guides, workflows, examples, and templates
 	- [Complete Manual Deep Research Guide for Perplexity Pro](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Complete%20Manual%20Deep%20Research%20Guide%20for%20Perplexity%20Pro.md)
 
 ### Applications of AI for Compliance/Payments/Anti-fraud from a PM perspective
+- [Beyond Black Boxes - A PM’s Guide to the Next Generation of Compliance AI](https://github.com/VeritasPlaybook/playbook/blob/main/ai-payments-compliance-fraud-PM/Beyond%20Black%20Boxes%20-%20A%20PM%E2%80%99s%20Guide%20to%20the%20Next%20Generation%20of%20Compliance%20AI.md)
 
 ### [Career-workflow](https://github.com/VeritasPlaybook/playbook/tree/main/career-workflow)
 Starting with resume writing. Will expand naturally based on what people ask about.

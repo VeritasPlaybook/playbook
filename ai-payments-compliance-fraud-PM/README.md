@@ -12,7 +12,7 @@ Exploring how AI is transforming:
 
 ## Published Work
 
-*Coming soon – research and frameworks in development*
+- [Beyond Black Boxes - A PM’s Guide to the Next Generation of Compliance AI](https://github.com/VeritasPlaybook/playbook/blob/main/ai-payments-compliance-fraud-PM/Beyond%20Black%20Boxes%20-%20A%20PM%E2%80%99s%20Guide%20to%20the%20Next%20Generation%20of%20Compliance%20AI.md)
 
 ## Currently Researching
 
