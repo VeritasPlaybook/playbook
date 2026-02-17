@@ -199,14 +199,10 @@
                 "id": "f85a14cb38fa8051",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ai-powered-workflows/context_prompt_guide_revised.md",
-                    "mode": "source",
-                    "source": false
-                  },
+                  "type": "empty",
+                  "state": {},
                   "icon": "lucide-file",
-                  "title": "context_prompt_guide_revised"
+                  "title": "New tab"
                 }
               }
             ]
