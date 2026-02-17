@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ai-powered-workflows/The context prompt that will revolutionize your workflow.md",
+                "file": "ai-powered-workflows/README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The context prompt that will revolutionize your workflow"
+              "title": "README"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ai-powered-workflows/The context prompt that will revolutionize your workflow.md",
+                "file": "ai-powered-workflows/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for The context prompt that will revolutionize your workflow"
+              "title": "Backlinks for README"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ai-powered-workflows/The context prompt that will revolutionize your workflow.md",
+                "file": "ai-powered-workflows/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from The context prompt that will revolutionize your workflow"
+              "title": "Outgoing links from README"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ai-powered-workflows/The context prompt that will revolutionize your workflow.md",
+                "file": "ai-powered-workflows/README.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of The context prompt that will revolutionize your workflow"
+              "title": "Outline of README"
             }
           }
         ]
@@ -183,45 +183,10 @@
       "bases:Create new base": false
     }
   },
-  "floating": {
-    "id": "c0c0bec36165f498",
-    "type": "floating",
-    "children": [
-      {
-        "id": "3992619ee20c892f",
-        "type": "window",
-        "children": [
-          {
-            "id": "9ec4d92e5c65c561",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f85a14cb38fa8051",
-                "type": "leaf",
-                "state": {
-                  "type": "empty",
-                  "state": {},
-                  "icon": "lucide-file",
-                  "title": "New tab"
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 791,
-        "y": 12,
-        "width": 1024,
-        "height": 1040,
-        "maximize": false,
-        "zoom": 0
-      }
-    ]
-  },
   "active": "7929e4574fa7ec16",
   "lastOpenFiles": [
-    "ai-powered-workflows/context_prompt_guide_revised.md",
     "ai-powered-workflows/The context prompt that will revolutionize your workflow.md",
+    "ai-powered-workflows/context_prompt_guide_revised.md",
     "ai-powered-workflows/context_prompt_guide.md",
     "ai-powered-workflows/A Practical RLM-Inspired Workflow for Deep Research with AI 1.md",
     "ai-payments-compliance-fraud-PM/Beyond Black Boxes - A PM’s Guide to the Next Generation of Compliance AI.md",
