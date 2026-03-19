@@ -1,4 +1,4 @@
-# Decision Frameworks
+# Frameworks
 
 Mental models for better choices.
 
