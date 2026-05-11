@@ -400,7 +400,7 @@ Build a Cowork artifact (a persisted HTML page in Claude's sidebar) that calls y
 
 Click any task card to open a detail overlay where you can edit metadata inline: impact, effort, energy level, due date, time estimate, tags, people. All edits save immediately to the vault.
 
-**Starter template:** I've included a [ready-to-use dashboard HTML](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard%20-%20Shareable.html) that you can load as a Cowork artifact to get started immediately. It has all three views, drag-and-drop, editable detail panels, and vault write-back already wired up. Use it as-is or as a foundation to customize for your own workflow and design preferences.
+**Starter template:** I've included a [ready-to-use dashboard HTML](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain_Dashboard_Shareable.html) that you can load as a Cowork artifact to get started immediately. It has all three views, drag-and-drop, editable detail panels, and vault write-back already wired up. Use it as-is or as a foundation to customize for your own workflow and design preferences.
 
 **Building approach:** Work iteratively with Claude to build on top of the starter template or create your own from scratch. My first version looked rough and I didn't want to open it. Investing in a proper design system (color palette, typography, spacing) made it something I actually use daily. Either way, start functional and then refine.
 
