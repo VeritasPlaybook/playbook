@@ -444,7 +444,7 @@ Every component feeds the next. Nothing exists in isolation. The system is only 
 
 ---
 
-# Deep Dives (Coming Soon)
+# Deep Dives
 
 These companion guides go deeper into the design decisions, tradeoffs, and iteration stories behind each step:
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "frameworks/The-2026-Frontier-Model-Guide.md",
+                "file": "ai-powered-workflows/Building a Cyberbrain.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The-2026-Frontier-Model-Guide"
+              "title": "Building a Cyberbrain"
             }
           }
         ]
@@ -185,9 +185,10 @@
   },
   "active": "7929e4574fa7ec16",
   "lastOpenFiles": [
+    "frameworks/The-2026-Frontier-Model-Guide.md",
+    "ai-powered-workflows/cyberbrain-deepdives/Brain Dashboard - Shareable.html",
     "ai-powered-workflows/building-a-cyberbrain-guide.md",
     "ai-powered-workflows/Building a Cyberbrain.md",
-    "frameworks/The-2026-Frontier-Model-Guide.md",
     "ai-powered-workflows/cyberbrain-deepdives",
     "ai-powered-workflows/cyberbrain-",
     "ai-powered-workflows/New folder",
@@ -215,7 +216,6 @@
     "career-workflow/resume-workflow/resources",
     "career-workflow/resume-workflow",
     "productivity/README.md",
-    "productivity",
     "decision-frameworks/README.md",
     "career-workflow/README.md"
   ]
