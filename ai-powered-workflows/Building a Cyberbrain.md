@@ -404,7 +404,7 @@ Click any task card to open a detail overlay where you can edit metadata inline:
 
 **Building approach:** Work iteratively with Claude to build on top of the starter template or create your own from scratch. My first version looked rough and I didn't want to open it. Investing in a proper design system (color palette, typography, spacing) made it something I actually use daily. Either way, start functional and then refine.
 
-> **[Deep Dive: Dashboard Iteration Story (v1 to v3.5)](./cyberbrain-deepdives/Brain_Dashboard_Shareable.html)**
+> **[Deep Dive: Dashboard Iteration Story (v1 to v3.5)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard%20-%20Shareable.html)**
 
 ---
 
