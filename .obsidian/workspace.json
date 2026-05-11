@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "frameworks/The-2026-Frontier-Model-Guide.md",
+                "file": "ai-powered-workflows/building-a-cyberbrain-guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The-2026-Frontier-Model-Guide"
+              "title": "building-a-cyberbrain-guide"
             }
           }
         ]
@@ -185,9 +185,13 @@
   },
   "active": "7929e4574fa7ec16",
   "lastOpenFiles": [
+    "frameworks/The-2026-Frontier-Model-Guide.md",
+    "ai-powered-workflows/cyberbrain-deepdives",
+    "ai-powered-workflows/cyberbrain-",
+    "ai-powered-workflows/New folder",
+    "ai-powered-workflows/building-a-cyberbrain-guide.md",
     "frameworks/README.md",
     "ai-powered-workflows/A Practical RLM-Inspired Workflow for Deep Research with AI.md",
-    "frameworks/The-2026-Frontier-Model-Guide.md",
     "frameworks",
     "README.md",
     "ai-payments-compliance-fraud-PM/README.md",
@@ -212,9 +216,6 @@
     "productivity/README.md",
     "productivity",
     "decision-frameworks/README.md",
-    "decision-frameworks",
-    "career-workflow/README.md",
-    "career-workflow",
-    "ai-powered-workflows"
+    "career-workflow/README.md"
   ]
 }
