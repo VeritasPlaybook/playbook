@@ -183,8 +183,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "7929e4574fa7ec16",
+  "active": "956d6224a8a14a76",
   "lastOpenFiles": [
+    "ai-powered-workflows/cyberbrain-deepdives/vault-structure.md",
+    "ai-powered-workflows/cyberbrain-deepdives/taxonomy-schema.md",
+    "ai-powered-workflows/cyberbrain-deepdives/scheduled-tasks.md",
+    "ai-powered-workflows/cyberbrain-deepdives/mcp-setup.md",
+    "ai-powered-workflows/cyberbrain-deepdives/dispatch-pipeline.md",
+    "ai-powered-workflows/cyberbrain-deepdives/dashboard-iteration.md",
+    "ai-powered-workflows/cyberbrain-deepdives/claude-md.md",
     "ai-powered-workflows/cyberbrain-deepdives/Brain_Dashboard_Shareable.html",
     "frameworks/The-2026-Frontier-Model-Guide.md",
     "ai-powered-workflows/cyberbrain-deepdives/Brain Dashboard - Shareable.html",
@@ -212,12 +219,7 @@
     "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
     "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
     "your-linkedin-url.md",
-    "career-workflow/An AI-Powered Resume Workflow.md",
     "career-workflow/resume-workflow/resources/example",
-    "career-workflow/resume-workflow/resources",
-    "career-workflow/resume-workflow",
-    "productivity/README.md",
-    "decision-frameworks/README.md",
-    "career-workflow/README.md"
+    "career-workflow/resume-workflow/resources"
   ]
 }
