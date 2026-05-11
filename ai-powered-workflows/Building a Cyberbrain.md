@@ -386,23 +386,24 @@ After a week of running, your vault accumulates daily briefs, daily notes with m
 
 **Why this matters:** A knowledge base you can't see is a knowledge base you won't use. The dashboard turns your vault's task data into a visual, interactive interface. It's not a static export; it's a live application that reads from and writes back to your vault every time you open it.
 
+**What it gives you:**
+
+- **Today's Focus** - Tasks with a focus date of today or due soon, sorted by priority score, with quick actions to mark done or defer.
+- **Kanban Board** - Drag-and-drop columns for each status in your pipeline (backlog, planned, in-progress, blocked, done). Dragging a task between columns writes the status change back to the vault.
+- **Priority Matrix** - An Eisenhower quadrant grid (urgent+important, important but not urgent, urgent but not important, neither). Drag-and-drop between quadrants updates the urgency/importance flags and recalculates the priority score. All changes write back to the vault.
+- **Editable detail panel** - Click any task card to open a detail overlay where you can edit metadata inline: impact, effort, energy level, due date, time estimate, tags, people. All edits save immediately to the vault.
+
 **What to do:**
 
-Build a Cowork artifact (a persisted HTML page in Claude's sidebar) that calls your MCP tools on load to pull live task data. The dashboard should include:
+I've included a [ready-to-use dashboard HTML](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain_Dashboard_Shareable.html) that has all of the above already wired up. Here's how to get it running:
 
-**Three views:**
+1. Download the [ready-to-use dashboard HTML](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain_Dashboard_Shareable.html) file to your computer.
+2. Open a Cowork conversation (the same project connected to your vault from Step 2).
+3. Drag and drop the HTML file into the chat, and tell Claude: "Use this HTML to build me a task dashboard as a Cowork artifact."
+4. Claude will create a pinned artifact from the HTML. Once it's built, you can pin it to your Cowork sidebar so it's always one click away.
+5. Open the dashboard. It will pull live task data from your vault on every load. If you've created tasks in Steps 3-7, you'll see them populated across the three views.
 
-1. **Today's Focus** - Tasks with a focus date of today or due soon, sorted by priority score, with quick actions to mark done or defer.
-2. **Kanban Board** - Drag-and-drop columns for each status in your pipeline (backlog, planned, in-progress, blocked, done). Dragging a task between columns writes the status change back to the vault.
-3. **Priority Matrix** - An Eisenhower quadrant grid (urgent+important, important but not urgent, urgent but not important, neither). Drag-and-drop between quadrants updates the urgency/importance flags and recalculates the priority score. All changes write back to the vault.
-
-**Editable detail panel:**
-
-Click any task card to open a detail overlay where you can edit metadata inline: impact, effort, energy level, due date, time estimate, tags, people. All edits save immediately to the vault.
-
-**Starter template:** I've included a [ready-to-use dashboard HTML](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain_Dashboard_Shareable.html) that you can load as a Cowork artifact to get started immediately. It has all three views, drag-and-drop, editable detail panels, and vault write-back already wired up. Use it as-is or as a foundation to customize for your own workflow and design preferences.
-
-**Building approach:** Work iteratively with Claude to build on top of the starter template or create your own from scratch. My first version looked rough and I didn't want to open it. Investing in a proper design system (color palette, typography, spacing) made it something I actually use daily. Either way, start functional and then refine.
+From here, iterate. You can work in the same thread or start a new one to modify the design, add features, or change the layout to fit your workflow. Tell Claude what you want changed and it will update the artifact. My first version looked rough and I didn't want to open it. Investing in a proper design system (color palette, typography, spacing) made it something I actually use daily.
 
 > **[Deep Dive: Dashboard Iteration Story (v1 to v3.5)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard%20-%20Shareable.html)**
 
