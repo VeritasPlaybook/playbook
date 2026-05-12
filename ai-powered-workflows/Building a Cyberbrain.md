@@ -183,7 +183,7 @@ your-vault/
 
 5. Set up Obsidian Sync so your vault stays in sync across devices. Go to Obsidian Settings > Core Plugins > enable Sync > create a remote vault > connect. This is required so that files written by your AI on desktop are readable on mobile, and captures from your phone are available to your AI. ($4-8/month, E2E encrypted.)
 
-> **[Deep Dive: Vault Structure and Why Each Folder Exists](./deep-dives/vault-structure.md)**
+> **[Deep Dive: Vault Structure and Why Each Folder Exists](./cyberbrain-deepdives/vault-structure.md)**
 
 ---
 
@@ -238,7 +238,7 @@ status: [active | archived | superseded]
 
 3. Create `_system/changelog.md` as an empty file. You'll log taxonomy changes here over time so you can track how your classification system evolves.
 
-> **[Deep Dive: Taxonomy and Schema Design](./deep-dives/taxonomy-schema.md)**
+> **[Deep Dive: Taxonomy and Schema Design](./cyberbrain-deepdives/taxonomy-schema.md)**
 
 ---
 
@@ -262,7 +262,7 @@ status: [active | archived | superseded]
 
 3. Keep CLAUDE.md as a living document. You'll refine it as you use the system and discover what rules you need.
 
-> **[Deep Dive: Writing an Effective CLAUDE.md](./deep-dives/claude-md.md)**
+> **[Deep Dive: Writing an Effective CLAUDE.md](./cyberbrain-deepdives/claude-md.md)**
 
 ---
 
@@ -304,7 +304,7 @@ npm install -g obsidian-mcp-server
 
 **Important:** Obsidian must be open on your desktop for the MCP connection to work. If Obsidian is closed, all MCP calls fail. This is a known constraint.
 
-> **[Deep Dive: MCP Setup, Tools, and Troubleshooting](./deep-dives/mcp-setup.md)**
+> **[Deep Dive: MCP Setup, Tools, and Troubleshooting](./cyberbrain-deepdives/mcp-setup.md)**
 
 ---
 
@@ -335,7 +335,7 @@ Raw capture (voice/photo/screenshot/text)
 
 The quality of your future retrieval depends entirely on how well the ingestion side structures things. The taxonomy, schema, and classification process from Steps 2-3 are what make this work.
 
-> **[Deep Dive: The Dispatch Pipeline and RAG (Retrieval-Augmented Generation) Ingestion](./deep-dives/dispatch-pipeline.md)**
+> **[Deep Dive: The Dispatch Pipeline and RAG (Retrieval-Augmented Generation) Ingestion](./cyberbrain-deepdives/dispatch-pipeline.md)**
 
 ---
 
@@ -378,7 +378,7 @@ This task runs a full vault audit:
 
 After a week of running, your vault accumulates daily briefs, daily notes with morning plans and evening reviews, and weekly audit reports. You'll have a scannable summary waiting for you every morning and a clean close-out every night.
 
-> **[Deep Dive: Scheduled Task Design and Prompt Engineering](./deep-dives/scheduled-tasks.md)**
+> **[Deep Dive: Scheduled Task Design and Prompt Engineering](./cyberbrain-deepdives/scheduled-tasks.md)**
 
 ---
 
@@ -405,7 +405,7 @@ I've included a [ready-to-use dashboard HTML](https://github.com/VeritasPlaybook
 
 From here, iterate. You can work in the same thread or start a new one to modify the design, add features, or change the layout to fit your workflow. Tell Claude what you want changed and it will update the artifact. My first version looked rough and I didn't want to open it. Investing in a proper design system (color palette, typography, spacing) made it something I actually use daily.
 
-> **[Deep Dive: Dashboard Iteration Story (v1 to v3.5)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard%20-%20Shareable.html)**
+> **[Deep Dive: Dashboard Iteration Story (v1 to v3.5)](./cyberbrain-deepdives/dashboard-iteration.md)**
 
 ---
 
@@ -451,10 +451,10 @@ These companion guides go deeper into the design decisions, tradeoffs, and itera
 
 | Guide | What It Covers |
 |-------|---------------|
-| [Vault Structure](./deep-dives/vault-structure.md) | Why each folder exists, how the hierarchy supports retrieval, and how to customize it for your use case |
-| [Taxonomy and Schema Design](./deep-dives/taxonomy-schema.md) | How to build a classification system that scales, the full task schema with scoring formulas, and common taxonomy mistakes |
-| [Writing an Effective CLAUDE.md](./deep-dives/claude-md.md) | The full agent constitution breakdown: operating rules, mode definitions, session protocols, and how to evolve it over time |
-| [MCP Setup and Troubleshooting](./deep-dives/mcp-setup.md) | Complete MCP tool reference, SSL configuration, connection debugging, and what we tried and dropped |
-| [The Dispatch Pipeline and RAG Ingestion](./deep-dives/dispatch-pipeline.md) | How raw captures become structured knowledge entries, the ETL flow in detail, and how ingestion quality drives retrieval quality |
-| [Scheduled Task Design](./deep-dives/scheduled-tasks.md) | Full prompt engineering for each scheduled task, the scoring formulas, and how to tune the automation to your workflow |
-| [Dashboard Iteration Story](./deep-dives/dashboard-iteration.md) | From rough v1 to polished v3.5: the design feedback loop, the technical architecture, drag-drop write-back, and the structuredContent fix |
+| [Vault Structure](./cyberbrain-deepdives/vault-structure.md) | Why each folder exists, how the hierarchy supports retrieval, and how to customize it for your use case |
+| [Taxonomy and Schema Design](./cyberbrain-deepdives/taxonomy-schema.md) | How to build a classification system that scales, the full task schema with scoring formulas, and common taxonomy mistakes |
+| [Writing an Effective CLAUDE.md](./cyberbrain-deepdives/claude-md.md) | The full agent constitution breakdown: operating rules, mode definitions, session protocols, and how to evolve it over time |
+| [MCP Setup and Troubleshooting](./cyberbrain-deepdives/mcp-setup.md) | Complete MCP tool reference, SSL configuration, connection debugging, and what we tried and dropped |
+| [The Dispatch Pipeline and RAG Ingestion](./cyberbrain-deepdives/dispatch-pipeline.md) | How raw captures become structured knowledge entries, the ETL flow in detail, and how ingestion quality drives retrieval quality |
+| [Scheduled Task Design](./cyberbrain-deepdives/scheduled-tasks.md) | Full prompt engineering for each scheduled task, the scoring formulas, and how to tune the automation to your workflow |
+| [Dashboard Iteration Story](./cyberbrain-deepdives/dashboard-iteration.md) | From rough v1 to polished v3.5: the design feedback loop, the technical architecture, drag-drop write-back, and the structuredContent fix |
