@@ -5,7 +5,7 @@
 
 # Deep Dive: Dashboard Iteration Story
 
-*Companion to [Building a Cyberbrain: Step 8 - Build Your Dashboard](../building-a-cyberbrain-guide.md#step-8-build-your-dashboard)*
+*Companion to [Building a Cyberbrain: Step 8 - Build Your Dashboard](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md#step-8-build-your-dashboard)*
 
 ---
 
@@ -304,4 +304,4 @@ That ratio, about 1 in 3 turns making real forward progress, feels about right f
 
 ---
 
-*This is the final deep dive in the dashboard series. Return to the [main guide](../building-a-cyberbrain-guide.md) for the full system overview.*
+*This is the final deep dive in the dashboard series. Return to the [main guide](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md) for the full system overview.*

@@ -5,7 +5,7 @@
 
 # Deep Dive: Taxonomy and Schema Design
 
-*Companion to [Building a Cyberbrain: Step 3 - Create Your Taxonomy and Schema](../building-a-cyberbrain-guide.md#step-3-create-your-taxonomy-and-schema)*
+*Companion to [Building a Cyberbrain: Step 3 - Create Your Taxonomy and Schema](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md#step-3-create-your-taxonomy-and-schema)*
 
 ---
 

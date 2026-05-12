@@ -5,7 +5,7 @@
 
 # Deep Dive: MCP Setup, Tools, and Troubleshooting
 
-*Companion to [Building a Cyberbrain: Step 5 - Connect MCP to Obsidian](../building-a-cyberbrain-guide.md#step-5-connect-mcp-to-obsidian)*
+*Companion to [Building a Cyberbrain: Step 5 - Connect MCP to Obsidian](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md#step-5-connect-mcp-to-obsidian)*
 
 ---
 

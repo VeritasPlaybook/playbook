@@ -5,7 +5,7 @@
 
 # Deep Dive: The Dispatch Pipeline and RAG Ingestion
 
-*Companion to [Building a Cyberbrain: Step 6 - Set Up Dispatch](../building-a-cyberbrain-guide.md#step-6-set-up-dispatch-mobile-capture)*
+*Companion to [Building a Cyberbrain: Step 6 - Set Up Dispatch](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md#step-6-set-up-dispatch-mobile-capture)*
 
 ---
 

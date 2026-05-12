@@ -5,7 +5,7 @@
 
 # Deep Dive: Scheduled Task Design and Prompt Engineering
 
-*Companion to [Building a Cyberbrain: Step 7 - Build Your Scheduled Tasks](../building-a-cyberbrain-guide.md#step-7-build-your-scheduled-tasks)*
+*Companion to [Building a Cyberbrain: Step 7 - Build Your Scheduled Tasks](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md#step-7-build-your-scheduled-tasks)*
 
 ---
 

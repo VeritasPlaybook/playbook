@@ -5,7 +5,7 @@
 
 # Deep Dive: Writing an Effective CLAUDE.md
 
-*Companion to [Building a Cyberbrain: Step 4 - Write Your CLAUDE.md](../building-a-cyberbrain-guide.md#step-4-write-your-claudemd)*
+*Companion to [Building a Cyberbrain: Step 4 - Write Your CLAUDE.md](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md#step-4-write-your-claudemd)*
 
 ---
 

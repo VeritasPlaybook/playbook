@@ -5,7 +5,7 @@
 
 # Deep Dive: Vault Structure and Why Each Folder Exists
 
-*Companion to [Building a Cyberbrain: Step 1 - Set Up Your Vault](../building-a-cyberbrain-guide.md#step-1-set-up-your-vault)*
+*Companion to [Building a Cyberbrain: Step 1 - Set Up Your Vault](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md#step-1-set-up-your-vault)*
 
 ---
 
