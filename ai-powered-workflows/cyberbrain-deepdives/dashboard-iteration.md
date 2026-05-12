@@ -3,171 +3,261 @@
 
 ---
 
-# Deep Dive: Dashboard Iteration Story (v1 to v3.5)
+# Deep Dive: Dashboard Iteration Story
 
 *Companion to [Building a Cyberbrain: Step 8 - Build Your Dashboard](../building-a-cyberbrain-guide.md#step-8-build-your-dashboard)*
 
 ---
 
-# What the Dashboard Is
+# Why This Guide Exists
 
-The dashboard is a Cowork artifact, which means it is a persisted HTML (HyperText Markup Language, the standard format for web pages) page that lives in Claude's sidebar. It is not a static export or a screenshot. It is a live application that calls MCP (Model Context Protocol) tools on every load to pull fresh task data from your Obsidian vault, renders three interactive views, and writes changes back to the vault in real time when you edit anything.
+The other deep dives in this series tell you *what* the system became. This one tells you *how the dashboard got there*. The actual ping-pong between me (the human) and Claude over a couple dozen turns.
 
-You open it, you see your current tasks across three views, you drag things around or edit metadata inline, and every change persists in the vault. Close it, come back tomorrow, and it pulls fresh data again.
+The reason that matters: Claude looks magical in a demo, but a real tool is built in the messy middle. Knowing how to drive through the messy middle is the skill. You will hit the same kinds of issues I hit. The patterns below are what I would do differently and what I would do exactly the same.
 
----
-
-# v1: The Rough Start
-
-The first version of the dashboard was functional but ugly. It had:
-
-- A list of tasks pulled from `08-todo/`
-- Simple colored badges for status
-- Click to expand task details
-
-It worked. You could see your tasks and their statuses. But it looked like a developer prototype - generic colors, poor spacing, no consistent design system. The kind of tool you build to prove the concept works, not the kind of tool you actually want to open every day.
-
-And that's the problem. A task dashboard you don't want to open is a task dashboard you won't open. It becomes shelfware within a week.
+Below is the actual sequence of prompts I gave, what Claude got right on the first try, where it got stuck, and the patterns I would repeat next time.
 
 ---
 
-# The Design Quality Feedback
+# The Setup
 
-After seeing v1, I told the AI (Artificial Intelligence) "it kinda looks like shit." Not the functionality, that was fine. The visual design. It felt rough, unfinished, like a homework assignment.
+I started by writing a real design brief in markdown (a `.md` file with goals, audience, the four views I wanted, sample task data, scoring philosophy, the aesthetic I was after). I described the aesthetic as Things 3 crossed with Sunsama, in dark mode. I attached the brief and said: "see the brief, design something."
 
-This led to an important realization: iterating on a rough UI (User Interface) in place is a trap. You tweak colors, adjust spacing, nudge fonts, and after 10 rounds of micro-adjustments it still looks like a polished version of something that was never designed. You can't iterate your way from "no design system" to "looks good." You need to start with design intent.
-
-This feedback became a core operating rule: for any future UI work, either get a design spec first, use a design-first workflow, or reference a specific design system. Don't ship rough and iterate. Design first, build second.
+**Lesson 0:** A written brief is the single highest-leverage move. The brief took 20 minutes to write. It saved hours of back-and-forth and probably bought 70% of the final design quality. If you are tempted to skip it, do not.
 
 ---
 
-# The Pivot: Design-First Process
+# Turn 1: First Shot
 
-Instead of continuing to tweak v1, we started fresh. I provided design direction - referencing specific apps and aesthetics I liked - and the AI built v3 from a clean design specification.
+Claude did not ask any clarifying questions. The brief had enough. It built four views (Today, Kanban, Matrix, Settings) plus a token sheet, in React with split files for components, icons, data, and each view.
 
-The result was dramatically better. Not because the functionality changed (it was basically the same three views), but because every visual decision was intentional: the color palette, the typography, the spacing, the card layout, the interaction patterns. It looked like a tool, not a prototype.
+**What worked:** Modular file structure (`view-today.jsx`, `view-kanban.jsx`, components, icons, styles, data) meant later edits could be surgical, not whole-file rewrites.
 
-**The lesson:** Design matters for tools you use daily. If you're building a dashboard you plan to open every morning, invest in making it something you want to look at. The functional delta between v1 and v3.5 was small. The experiential delta was massive.
-
----
-
-# v3.5: The Current Dashboard
-
-Deployed 2026-05-03, last updated 2026-05-06. Built as pure vanilla HTML, CSS (Cascading Style Sheets, which control visual styling like colors and layout), and JS (JavaScript, the programming language that makes web pages interactive), with no CDN (Content Delivery Network) dependencies. Uses an oklch color system and Inter Tight font.
-
-## The Three Views
-
-### 1. Today's Focus
-
-Tasks with `focus_date` = today or due soon, sorted by `priority_score`. Each task card shows the title, project, score, and quick-action buttons for Done and Defer.
-
-**Done** marks the task as completed (updates `status` to `done` and sets `completed_at` in the vault). **Defer** pushes the `focus_date` to tomorrow. Both actions write back to the vault immediately via MCP.
-
-This is the view you open first thing in the morning. It answers: "What should I work on today?"
-
-### 2. Kanban Board
-
-Five drag-and-drop columns: backlog, planned, in-progress, blocked, done.
-
-Dragging a task card from one column to another updates the `status` field in the vault. Move a card from "planned" to "in-progress" and the vault file is updated in real time. No save button, no confirmation dialog. Drag, drop, done.
-
-This view answers: "What's the status of everything?"
-
-### 3. Priority Matrix
-
-An Eisenhower quadrant grid:
-- **Q1 (Do First):** Urgent + Important
-- **Q2 (Schedule):** Important, not urgent
-- **Q3 (Delegate):** Urgent, not important
-- **Q4 (Eliminate):** Neither urgent nor important
-
-Tasks appear as cards in their quadrant. You can drag a task from Q4 to Q1 and the dashboard updates the `urgent` and `important` booleans in the vault, recalculates the `priority_score`, and re-renders the card in its new position.
-
-A project filter lets you focus the matrix on one project at a time.
-
-This view answers: "Am I working on the right things?"
+**What I had to fix:** The first version used initials (`JT`, `KW`, `MR`) for people. I had to say "names are hard to know" and ask for full names with colored tags. Small thing, but it shows that even a thorough brief leaves gaps the AI fills with reasonable-but-wrong defaults.
 
 ---
 
-## The Scoring System (0-100 Scale)
+# The White Space Saga (A Cautionary Tale)
 
-The dashboard uses a richer scoring formula than the vault's base priority_score (which ranges 2-20). The dashboard score scales to 0-100:
+This was the longest single thread. The Today's Focus view had a huge dead zone above the cards and everything was squished bottom-left.
+
+What Claude got wrong, in order:
+
+1. **First guess:** stray `height: "955px"` inline style on a wrapper. Removed it. Did not fix it.
+2. **Second guess:** the `.view` element collapsing inside a flex column parent. Added `flex: 1 1 auto; min-height: 0`. Did not fix it.
+3. **Third guess:** the whole grid was not sizing correctly. Restructured `.app` grid to `auto auto 1fr`, gave the inner column `height: 100%; min-height: 0; overflow: hidden`. **This was the actual fix.**
+
+That is three full iterations on the same bug. I (the human) had to keep telling Claude "no, this still looks wrong" with screenshots before it would re-examine the assumption instead of patching downstream.
+
+**Lessons from this thread:**
+
+- **Screenshots beat descriptions.** Once I sent a marked-up screenshot showing exactly where the dead space was, Claude found it faster than my verbal description ever achieved.
+- **AI (Artificial Intelligence) confidence is a trap.** Claude said "fixed!" three times in a row, each time wrong. Treat every "fixed" as a hypothesis until you have seen it with your own eyes.
+- **CSS (Cascading Style Sheets) layout bugs propagate.** The real bug was at the `.app` grid level. Patches at the leaf elements just shuffled the problem around. When fixes do not stick, climb the DOM (Document Object Model) tree.
+
+If I were doing this again I would say "before you fix it, eval the computed heights of `.app`, `.main`, `.view`, and tell me what you see." That probe-first habit saves rounds.
+
+---
+
+# The Quick Wins (Where Claude Shined)
+
+In contrast, some asks went from prompt to working in one shot:
+
+| Ask | Result |
+|---|---|
+| "Make the detail panel half the page width" | One-shot. `clamp(440px, 50vw, 720px)` as a fixed overlay. |
+| "Let me close it by clicking outside, or the same task, or Esc" | One-shot. Three event listeners, all working. |
+| "Make impact/effort/energy clickable" | One-shot. Click dots to set values, click same value to clear. |
+| "Auto-recompute score live" | One-shot. Formula function, called on every edit, updates everywhere. |
+| "Tags should be editable. Click + to add, × to remove." | One-shot. Inline input, Enter to save, Esc to cancel. |
+| "Add new people, not just pick from existing" | One-shot. Picker with "+ new person" that prompts for a name. |
+| "Drag cards between matrix quadrants" | One-shot. Dragover/drop handlers, score recomputes after move. |
+| "Strip my personal info and make a shareable version" | One-shot. Renamed projects, people, scrubbed task content while keeping structure. |
+
+The pattern in these: they are **structural changes** with clear semantics. CSS layout debugging is the opposite. Small surface area, lots of invisible interactions. AI is better at the former than the latter.
+
+---
+
+# The Score Formula Conversation
+
+I asked "what's the max score and how does it add up to it" because the existing 1 to 20 number was opaque.
+
+Claude **proposed an explicit formula before writing any code**:
 
 ```
-score = impact * 7                                    (0-35)
-      + urgency bonus (today=30, soon=20, normal=10)  (10-30)
-      + quadrant boost (Q1=20, Q2=15, Q3=10, Q4=0)   (0-20)
-      + fit bonus ((impact - effort + 4) * 1.5,       (0-15)
-                    clamped 0-15)
+impact (1-5) * 7   -> 0-35   (how much it moves the needle)
+urgency            -> 0-30   (Today=30, Soon=20, Normal=10)
+quadrant boost     -> 0-20   (Important&Urgent=20, Important=15, Urgent=10, Neither=0)
+fit bonus          -> 0-15   ((impact - effort + 4) * 1.5, capped)
+                   = 0-100
 ```
 
-**Why a different scale?** The vault's 2-20 range is designed for the morning briefing's daily_score calculation, which adds deadline_pressure and focus_boost. The dashboard's 0-100 range gives more visual granularity - a score ring on each task card fills proportionally, so you can see at a glance which tasks score highest.
+I said "use that" and it shipped. Color tiers: 80+ top (gold glow), 60 to 79 high, 40 to 59 normal, under 40 low.
 
-**Auto-recalculation:** When you change impact, effort, energy, or quadrant on the dashboard, the score recalculates instantly and overwrites `priority_score` in the vault.
+**Lesson:** When the AI proposes a formula, schema, or system in writing **before** building it, *that is the moment to push back*. Words are cheap to change. Once it is in code, every edit is a CSS hunt. I should have done this on day one with the 1 to 20 score. I just accepted whatever came out and lived with confusion until the conversation forced clarity.
 
 ---
 
-## The Editable Detail Panel
+# The structuredContent Surprise
 
-Click any task card to open a fixed overlay panel (scaled 1.5x for readability). Close it via click-outside, Esc key, or X button.
+Partway through the build I hit a wall that was not in the brief and was not documented anywhere. When the dashboard called MCP (Model Context Protocol) tools via `window.cowork.callMcpTool()`, the responses came back wrapped in Cowork's `structuredContent` format. The actual data was nested inside `result` objects, sometimes multiple layers deep.
 
-The panel shows:
-
-- **Full title**
-- **Editable metadata grid:**
-  - Impact (1-5 clickable dots - click dot 3 to set impact to 3)
-  - Effort (1-5 clickable dots)
-  - Energy (low/medium/high clickable dots)
-  - Due date (click to edit inline)
-  - Time estimate (click to edit inline)
-  - Tags (add new tags, remove existing ones)
-  - People (add/remove with a picker that shows all people across all tasks)
-- **Blockers** (what's preventing progress)
-- **Related tasks** (linked task IDs)
-- **Markdown body** (the task's full description)
-- **Score ring** (visual representation of the 0-100 score)
-
-Every edit saves immediately to the Obsidian vault. Change the impact from 3 to 5, and the vault file is updated within a second. No save button needed.
-
----
-
-## Key Technical Details
-
-### Data Flow
-
-```
-Page load
-  --> Call obsidian_list_notes to discover all files in 08-todo/
-  --> For each file: call obsidian_get_note (format: full) to read frontmatter + body
-  --> Parse the YAML frontmatter and markdown body
-  --> Render all three views
-
-User edits a field
-  --> Update the local task object in memory
-  --> Recalculate the score
-  --> Call obsidian_replace_in_note to write the change to the vault
-  --> Re-render the affected views
-```
-
-### The structuredContent Fix
-
-One technical issue worth mentioning: when the dashboard calls MCP tools via `window.cowork.callMcpTool()`, the responses come back wrapped in Cowork's `structuredContent` format. The actual data is nested inside `result` objects, sometimes multiple layers deep.
-
-The dashboard's `extractData()` function handles this by progressively unwrapping:
+The first version of the dashboard rendered blank because the data parser was looking at the wrong layer of the response. Claude diagnosed it by logging the raw response shape, then wrote an `extractData()` function that progressively unwraps the response:
 
 ```javascript
 function extractData(response) {
   let data = response;
   if (data.structuredContent) data = data.structuredContent;
   if (data.result) data = data.result;
-  // ... further unwrapping as needed
+  // further unwrapping as needed
   return data;
 }
 ```
 
-This was not documented anywhere. We discovered it by probing the actual response shapes during the build. If you're building your own Cowork artifacts that call MCP tools, you'll likely run into the same wrapping and need similar unwrapping logic.
+If you build your own Cowork artifacts that call MCP tools, you will likely run into the same wrapping. The fix is straightforward once you see the shape. The hard part is realizing the wrapping is there in the first place. Lesson: when an AI-built tool renders blank and the network calls look fine, log the raw response shape before debugging anything else.
 
-### Key JavaScript Functions
+---
+
+# The Font-Size Regression
+
+One representative failure I want to be honest about:
+
+I asked for everything to be 50% bigger. Claude used `body { zoom: 1.5 }`. That worked visually but **broke the Kanban and Matrix layouts** because the viewport math did not account for zoom. Five Kanban columns got cut off; the Matrix bottom row was clipped.
+
+I sent screenshots. Claude dropped the zoom and shrunk individual font sizes back down. Now the layouts fit, but the text was small again. I had to say "you regressed" with another screenshot.
+
+The final fix was a hand-tuned set of `!important` font-size overrides per component class. Not elegant, but it works, and it does not break layout.
+
+**Lesson:** When the AI reaches for a "global hack" (like `zoom`, `transform: scale`, or `* { font-size: ... }`), that is the moment to ask "what is the explicit list of things you are changing, and what is the failure mode?" Those broad strokes are tempting because they are one line. They are dangerous for the same reason.
+
+---
+
+# Patterns That Worked Repeatedly
+
+After two dozen turns, these are the prompts that consistently got good results.
+
+### 1. Use screenshots, not just words
+
+"This looks wrong" plus screenshot beats three paragraphs of description. Especially for layout, color, and spacing.
+
+### 2. Name the regression
+
+"You regressed. The font is back to small. Look at screenshot 1 vs the current state." This forces the AI to compare states, not just respond to the immediate ask in isolation.
+
+### 3. Ask for the system before the code
+
+"What is the formula?" "What is the list of CSS variables?" "What is the data model?" Get it in prose first. Edit it. Then say "build that."
+
+### 4. Use version copies as a safety net
+
+I asked Claude to create a `v3` rather than overwrite `v2` mid-major-change. When `v3` broke in a confusing way, I still had `v2` as a known-good reference. **This is the cheapest insurance you can buy in iterative AI work.**
+
+### 5. Push back when the AI claims a fix without evidence
+
+"You said fixed three times. Re-read your last three fixes. What assumption are you not questioning?" This works. It forces the AI out of patch-mode.
+
+### 6. Ask for cross-cutting features in one prompt
+
+"Make impact, effort, energy, due date, and time estimate editable, and recompute the score live on every change." Better than five separate prompts. The AI can see the shape of the whole feature and design coherently. When the features are unrelated, separate them. When they share a code path, bundle them.
+
+---
+
+# Patterns That Failed
+
+### 1. Vague feedback
+
+"The view looks weird." This got me a guess-and-check cycle. "There is a 400px dead zone above the first card, between the tab bar and the content" got me a fix.
+
+### 2. Assuming a fix worked
+
+Claude says "fixed." I move on. Two prompts later I realize it never worked. Now I always re-screenshot after every layout-touching fix.
+
+### 3. Letting the AI add UI (User Interface) noise unprompted
+
+In the first pass Claude added cute touches I did not ask for. Score breakdowns, formula footers, decorative dots. Some I kept, some I cut. **Lesson:** Tell it what to remove, not just what to add. The detail panel went through three rounds of "remove the quadrant chip from the card header, the detail header, the related tasks list" because the chip showed up in multiple places.
+
+### 4. Letting the chat get too long without snipping or summarizing
+
+When you are 20 turns deep, the AI starts losing the thread on what version of what file is canonical. Periodically saying "we are now working on `v3`. `v2` is frozen, ignore it" helps. Claude can prune its own context but a human checkpoint is still useful.
+
+---
+
+# What I'd Do Differently Next Time
+
+1. **Write the formula and data model in markdown first.** Get the 0 to 100 score, the field names, the people roster, the project list nailed down in a doc *before* asking for any UI. Treat the UI build as the easy part.
+
+2. **Build a screenshot ritual.** After every layout or visual change, screenshot the relevant view immediately. Do not rely on the AI's "it should look like X now."
+
+3. **Ask for a debug-probe before a fix.** "Before you change anything, eval `getComputedStyle` on the elements involved and tell me what you see." This catches phantom bugs (like the inline `height: "955px"` that took three rounds to find) immediately.
+
+4. **Snapshot before risky changes.** "Copy the current HTML (HyperText Markup Language) file to a `-before-scoring-rework` copy, then make the change." If the change is bad, you have a clean rollback.
+
+5. **Be honest about scope creep.** I asked for editable scores, then editable people, then drag-and-drop quadrants, then a font-size bump, then a scoring formula change. Each was fine individually, but the cumulative effect was that the file's complexity grew faster than its organization. By turn 25 I had `!important` overrides stacked three deep. A periodic "refactor what we have before adding more" pass would have helped.
+
+---
+
+# The Output (What Actually Ships)
+
+Three files came out of this build:
+
+- [`Brain Dashboard.html`](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard.html): the original modular React/JSX (JavaScript XML) version
+- [`Brain Dashboard - Cowork v3.html`](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard%20-%20Cowork%20v3.html): the single-file vanilla HTML / JS (JavaScript) version, ready to drop into a Cowork artifact
+- [`Brain Dashboard - Shareable.html`](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard%20-%20Shareable.html): same as v3 but with all personal data scrubbed (generic project, people, and task names) so it can be shared publicly. This is the file linked from Step 8 of the main guide.
+
+Features that ended up in the final cut:
+
+- Three views (Today, Kanban, Matrix) plus a Settings panel and Token sheet
+- Click-to-open detail panel as a 50vw fixed overlay
+- Three close paths: X button, click outside, Esc, or click the same task
+- Editable impact (1 to 5), effort (1 to 5), energy (low/med/high), due date, time estimate, tags, people
+- "Add new person" inline (auto-generates initials and a color)
+- 0 to 100 score, recomputes live from impact + urgency + quadrant + fit
+- Drag-and-drop between quadrants in the Matrix view (score recomputes after move)
+- Drag-and-drop between columns in Kanban (status updates)
+- Quadrant labels: Important & Urgent / Important / Urgent / Neither (no more Q1/Q2/Q3/Q4 mystery codes)
+- Detail panel text bumped 1.5x via `font-size: 1.5em` on the overlay container, so all `em`-based children scale with it
+
+---
+
+# Known Limitations
+
+- **Desktop only.** Cowork artifacts run on the desktop app. There is no mobile dashboard view. On mobile, tasks are managed through Claude via voice or text commands in Dispatch. Different interface, same underlying vault data.
+- **Checkbox write-back.** If a task's markdown body contains checkbox items (`- [ ] subtask`), toggling them in the detail panel is UI-only. The toggle does not write back to the vault. This is a known limitation that has not been addressed yet.
+- **Requires Obsidian running.** Like everything in the MCP stack, the dashboard only works when Obsidian is open on your desktop. If Obsidian is closed, the dashboard loads but cannot pull any data.
+
+---
+
+# Reference: How It Works Under the Hood
+
+If you are planning to fork the dashboard or build a similar Cowork artifact, here are the technical details worth knowing.
+
+## Data flow
+
+```
+Page load
+  -> Call obsidian_list_notes to discover all files in 08-todo/
+  -> For each file: call obsidian_get_note (format: full) to read frontmatter + body
+  -> Parse the YAML (a human-readable data format) frontmatter and markdown body
+  -> Render all three views
+
+User edits a field
+  -> Update the local task object in memory
+  -> Recalculate the score
+  -> Call obsidian_replace_in_note to write the change to the vault
+  -> Re-render the affected views
+```
+
+## MCP tools used
+
+The dashboard only needs three MCP tools:
+
+- `obsidian_list_notes`: discovers all task files in `08-todo/`
+- `obsidian_get_note` (format: "full"): reads each task's frontmatter and body
+- `obsidian_replace_in_note`: writes edits back to the vault
+
+That is it. The simplicity is intentional. Fewer tool dependencies means fewer failure points.
+
+## Key JavaScript functions
 
 | Function | What It Does |
 |----------|-------------|
@@ -180,55 +270,38 @@ This was not documented anywhere. We discovered it by probing the actual respons
 | `editableEnergyDots(t)` | Renders a clickable low/medium/high energy selector. |
 | `collectAllPeople()` | Gathers unique names from all tasks to populate the people picker dropdown. |
 
-### MCP Tools Used by the Dashboard
+## How to get the starter template running
 
-The dashboard only needs three MCP tools:
+The `Brain Dashboard - Shareable.html` file is the starter template linked from Step 8 of the main guide. It is the same as v3 but with all personal data scrubbed, so you can use it as a starting point without seeing my actual stuff.
 
-- `obsidian_list_notes` - Discovers all task files in `08-todo/`
-- `obsidian_get_note` (format: "full") - Reads each task's frontmatter and body
-- `obsidian_replace_in_note` - Writes edits back to the vault
-
-That's it. The simplicity is intentional. Fewer tool dependencies means fewer failure points.
-
----
-
-## Known Limitations
-
-**Desktop only.** Cowork artifacts run on the desktop app. There's no mobile dashboard view. On mobile, tasks are managed through Claude via voice or text commands in Dispatch - a different interface but the same underlying vault data.
-
-**Checkbox write-back.** If a task's markdown body contains checkbox items (`- [ ] subtask`), toggling them in the detail panel is UI-only. The toggle doesn't write back to the vault. This is a known limitation that hasn't been addressed yet.
-
-**Requires Obsidian running.** Like everything in the MCP stack, the dashboard only works when Obsidian is open on your desktop. If Obsidian is closed, the dashboard loads but can't pull any data.
-
----
-
-# The Starter Template
-
-The `brain-dashboard-starter.html` file is included in the POC (Proof of Concept) publish folder and linked from Step 8 of the main guide. This is a ready-to-use dashboard that has all three views, the scoring system, the editable detail panel, and vault write-back already wired up.
-
-**How to get it running:**
-
-1. Download `brain-dashboard-starter.html` from the POC publish folder to your computer (save it somewhere you can find again, like your Downloads folder).
+1. Download [`Brain Dashboard - Shareable.html`](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard%20-%20Shareable.html) from the repo to your computer (save it somewhere you can find again, like your Downloads folder).
 2. Open the Claude Desktop app and switch to Cowork mode.
-3. Open the Cowork project that is already connected to your Obsidian vault (the one you set up in Step 2 of the main guide). If you don't have one yet, set that up first or the dashboard won't have any data to read.
+3. Open the Cowork project that is already connected to your Obsidian vault (the one you set up in Step 2 of the main guide). If you do not have one yet, set that up first or the dashboard will not have any data to read.
 4. Drag the HTML file into the chat window and type: "Use this HTML to build me a task dashboard as a Cowork artifact."
-5. Claude will create a pinned artifact from the HTML. You'll see a new artifact appear in the right-hand sidebar.
-6. Click the artifact to open the dashboard. It will pull live data from your vault on first load. If you've already created tasks in Steps 3 through 7 of the main guide, they'll show up across the three views.
+5. Claude will create a pinned artifact from the HTML. You will see a new artifact appear in the right-hand sidebar.
+6. Click the artifact to open the dashboard. It will pull live data from your vault on first load.
 
-**What success looks like:** The Today's Focus view shows tasks with focus_date = today, the Kanban board shows your tasks distributed across status columns, and the Priority Matrix shows tasks in their Eisenhower quadrants. If the dashboard loads but shows no tasks, check that Obsidian is open and that you actually have task files in `08-todo/` with the proper extended schema.
+**What success looks like:** The Today's Focus view shows tasks with `focus_date` = today, the Kanban board shows your tasks distributed across status columns, and the Priority Matrix shows tasks in their Eisenhower quadrants. If the dashboard loads but shows no tasks, check that Obsidian is open and that you actually have task files in `08-todo/` with the proper extended schema.
 
 From there, iterate. Tell Claude what you want changed (different colors, different layout, additional features) and it updates the artifact. The starter template is a starting point, not a final product.
 
 ---
 
-# The Iteration Mindset
+# The Meta-Lesson
 
-The v1-to-v3.5 journey taught me something important: the first version of any tool in this system will be rough. That's fine. What matters is that you get it working, use it for a few days, identify what's missing or frustrating, and then improve it.
+The most surprising thing about this whole process: **Claude is not a vending machine where you put in a prompt and get out a finished product.** It is a junior designer with a fast pencil and infinite patience. The quality of what you get out is governed almost entirely by:
 
-But "iterate" doesn't mean "tweak endlessly." The pivot from v1 to v3 wasn't a gradual evolution - it was a restart with a design-first approach. Sometimes the right move is to throw away the prototype and rebuild from a clean spec. Other times, a few targeted tweaks are all you need.
+- How clearly you stated the goal
+- How quickly you spotted regressions
+- How willing you were to say "no, do it again, look at the screenshot"
+- How honest you were about what was actually working
 
-The signal is whether you're opening the tool. If you stop opening the dashboard, something is wrong - either the data isn't useful or the experience is painful. Fix whichever one it is. A tool you don't use is a tool that doesn't exist.
+That last one is the hardest. It is tempting to accept "good enough" because the AI sounds confident and you are three turns deep into a thread. Resist it. The version of the tool you do not actually want to open every day is the version that ate four hours of your life and produced nothing.
+
+The dashboard I am using now took maybe 30 turns of conversation. About 8 of those turns were where the real progress happened. The other 22 were finding bugs, recovering from regressions, and discovering that yes, the AI did secretly add an `!important` somewhere and did not tell me.
+
+That ratio, about 1 in 3 turns making real forward progress, feels about right for serious work with current AI tools. Plan for it. Do not be surprised by it. And keep the version copies.
 
 ---
 
-*This is the final deep dive. Return to the [main guide](../building-a-cyberbrain-guide.md) for the full system overview.*
+*This is the final deep dive in the dashboard series. Return to the [main guide](../building-a-cyberbrain-guide.md) for the full system overview.*
