@@ -198,10 +198,8 @@ When you are 20 turns deep, the AI starts losing the thread on what version of w
 
 # The Output (What Actually Ships)
 
-Three files came out of this build:
+What I got out of this build and that I can share with you:
 
-- [`Brain Dashboard.html`](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard.html): the original modular React/JSX (JavaScript XML) version
-- [`Brain Dashboard - Cowork v3.html`](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard%20-%20Cowork%20v3.html): the single-file vanilla HTML / JS (JavaScript) version, ready to drop into a Cowork artifact
 - [`Brain Dashboard - Shareable.html`](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/cyberbrain-deepdives/Brain%20Dashboard%20-%20Shareable.html): same as v3 but with all personal data scrubbed (generic project, people, and task names) so it can be shared publicly. This is the file linked from Step 8 of the main guide.
 
 Features that ended up in the final cut:
