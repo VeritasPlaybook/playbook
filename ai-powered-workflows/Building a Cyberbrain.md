@@ -449,12 +449,12 @@ Every component feeds the next. Nothing exists in isolation. The system is only 
 
 These companion guides go deeper into the design decisions, tradeoffs, and iteration stories behind each step:
 
-| Guide | What It Covers |
-|-------|---------------|
-| [Vault Structure](./cyberbrain-deepdives/vault-structure.md) | Why each folder exists, how the hierarchy supports retrieval, and how to customize it for your use case |
-| [Taxonomy and Schema Design](./cyberbrain-deepdives/taxonomy-schema.md) | How to build a classification system that scales, the full task schema with scoring formulas, and common taxonomy mistakes |
-| [Writing an Effective CLAUDE.md](./cyberbrain-deepdives/claude-md.md) | The full agent constitution breakdown: operating rules, mode definitions, session protocols, and how to evolve it over time |
-| [MCP Setup and Troubleshooting](./cyberbrain-deepdives/mcp-setup.md) | Complete MCP tool reference, SSL configuration, connection debugging, and what we tried and dropped |
+| Guide                                                                                  | What It Covers                                                                                                                   |
+| -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| [Vault Structure](./cyberbrain-deepdives/vault-structure.md)                           | Why each folder exists, how the hierarchy supports retrieval, and how to customize it for your use case                          |
+| [Taxonomy and Schema Design](./cyberbrain-deepdives/taxonomy-schema.md)                | How to build a classification system that scales, the full task schema with scoring formulas, and common taxonomy mistakes       |
+| [Writing an Effective CLAUDE.md](./cyberbrain-deepdives/claude-md.md)                  | The full agent constitution breakdown: operating rules, mode definitions, session protocols, and how to evolve it over time      |
+| [MCP Setup and Troubleshooting](./cyberbrain-deepdives/mcp-setup.md)                   | Complete MCP tool reference, SSL configuration, connection debugging, and what we tried and dropped                              |
 | [The Dispatch Pipeline and RAG Ingestion](./cyberbrain-deepdives/dispatch-pipeline.md) | How raw captures become structured knowledge entries, the ETL flow in detail, and how ingestion quality drives retrieval quality |
-| [Scheduled Task Design](./cyberbrain-deepdives/scheduled-tasks.md) | Full prompt engineering for each scheduled task, the scoring formulas, and how to tune the automation to your workflow |
-| [Dashboard Iteration Story](./cyberbrain-deepdives/dashboard-iteration.md) | From rough v1 to polished v3.5: the design feedback loop, the technical architecture, drag-drop write-back, and the structuredContent fix |
+| [Scheduled Task Design](./cyberbrain-deepdives/scheduled-tasks.md)                     | Full prompt engineering for each scheduled task, the scoring formulas, and how to tune the automation to your workflow           |
+| [Dashboard Iteration Story](./cyberbrain-deepdives/dashboard-iteration.md)             | The back-and-forth with Claude that produced the dashboard: what worked first-try, what got stuck, and the patterns to repeat    |
