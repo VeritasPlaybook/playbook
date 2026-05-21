@@ -367,7 +367,7 @@ The first application takes a couple of hours because you are also setting up th
 
 # What I Learned
 
-These are the lessons that compounded across many applications. The fuller version of each, with examples from real applications, lives in [Lesson's learned deep dive](./Deep%20Dives/07%20-%20What%20I%20Learned%20Expanded.md).
+These are the lessons that compounded across many applications. The fuller version of each, with examples from real applications, lives in [Lessons learned deep dive](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/07%20-%20What%20I%20Learned%20Expanded.md).
 
 **Pushback is a feature, not friction.** The AI that always agrees with you produces mediocre output. Challenge the first draft. Ask for three alternatives. Reject any phrasing you would not say out loud. The strongest applications I have ever sent were the ones where I argued with Claude the most.
 
