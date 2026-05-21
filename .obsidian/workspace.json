@@ -183,8 +183,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "7929e4574fa7ec16",
+  "active": "956d6224a8a14a76",
   "lastOpenFiles": [
+    "ai-powered-workflows/ai-resume-deepdives/deep dives/03 - The Update Brain Trust Loop.md",
+    "ai-powered-workflows/ai-resume-deepdives/deep dives/02 - The Resume-Builder Skill Workflow.md",
+    "ai-powered-workflows/ai-resume-deepdives/deep dives/01 - The Career Brain Trust Structure.md",
+    "ai-powered-workflows/ai-resume-deepdives/deep dives/06 - Skill Installation Guide for Cowork.md",
+    "ai-powered-workflows/ai-resume-deepdives/deep dives/05 - Cover Letter and CV Format.md",
+    "ai-powered-workflows/ai-resume-deepdives/deep dives/04 - External Research with Perplexity.md",
     "ai-powered-workflows/ai-resume-deepdives/skills/update-brain-trust/evals/README.md",
     "ai-powered-workflows/ai-resume-deepdives/skills/update-brain-trust/INSTALL.md",
     "ai-powered-workflows/ai-resume-deepdives/skills/update-brain-trust/SKILL.md",
@@ -214,12 +220,6 @@
     "ai-powered-workflows/cyberbrain-deepdives/scheduled-tasks.md",
     "ai-powered-workflows/cyberbrain-deepdives/mcp-setup.md",
     "ai-powered-workflows/cyberbrain-deepdives/dispatch-pipeline.md",
-    "ai-powered-workflows/cyberbrain-deepdives/claude-md.md",
-    "frameworks/The-2026-Frontier-Model-Guide.md",
-    "frameworks/README.md",
-    "ai-powered-workflows/A Practical RLM-Inspired Workflow for Deep Research with AI.md",
-    "README.md",
-    "ai-payments-compliance-fraud-PM/README.md",
-    "ai-powered-workflows/README.md"
+    "ai-powered-workflows/cyberbrain-deepdives/claude-md.md"
   ]
 }
