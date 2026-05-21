@@ -108,18 +108,20 @@ The loop never stops. Every time you apply, the system gets sharper.
 
 # What You'll Need
 
-| Item | Cost | Required? |
-|------|------|-----------|
-| Claude Desktop app (with Cowork mode) | Free with Claude subscription | Yes |
-| Claude Pro or Max subscription | Subscription | Yes |
-| Google Docs (or Microsoft Word desktop) | Free for Google Docs | Yes |
-| Perplexity Pro (for Deep Research mode) | $20/month | Recommended |
-| Claude in Chrome extension | Free with Claude subscription | Optional |
-| The `resume-builder` skill (downloadable) | Free | Yes |
-| The `update-brain-trust` skill (downloadable) | Free | Yes |
-| Career Brain Trust template (downloadable) | Free | Yes |
+| Item                                                                                                        | Cost                          | Required?   |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------- | ----------- |
+| Claude Desktop app (with Cowork mode)                                                                       | Free with Claude subscription | Yes         |
+| Claude Pro or Max subscription                                                                              | Subscription                  | Yes         |
+| Google Docs (or Microsoft Word desktop)                                                                     | Free for Google Docs          | Yes         |
+| A Deep Research tool (Perplexity Pro, Claude Deep Research, ChatGPT Deep Research, or Gemini Deep Research) | $0 to 20/month                | Recommended |
+| Claude in Chrome extension                                                                                  | Free with Claude subscription | Optional    |
+| The `resume-builder` skill (downloadable)                                                                   | Free                          | Yes         |
+| The `update-brain-trust` skill (downloadable)                                                               | Free                          | Yes         |
+| Career Brain Trust template (downloadable)                                                                  | Free                          | Yes         |
 
-**Total recurring cost beyond your Claude subscription:** $20/month for Perplexity Pro. You can skip Perplexity entirely and use ChatGPT Deep Research or Gemini Deep Research instead; the prompt patterns transfer cleanly.
+**Total recurring cost beyond your Claude subscription:** $0 to $20/month, depending on which Deep Research tool you use. If you already pay for Claude Pro or Max, Claude Deep Research is included and you can skip Perplexity Pro entirely. ChatGPT Deep Research and Gemini Deep Research also work; the prompt patterns transfer cleanly across all four.
+
+**No paid Deep Research subscription? There is a workaround.** You can simulate Deep Research inside a regular Claude conversation by following a Recursive Language Model (RLM) inspired workflow guide here: [A Practical RLM-Inspired Workflow for Deep Research with AI](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/A%20Practical%20RLM-Inspired%20Workflow%20for%20Deep%20Research%20with%20AI.md). Note: this workflow is RLM-inspired, not true RLM. Download that guide, feed it into Claude, and you can build a skill or project folder that does a respectable job of approximating Perplexity-style Deep Research inside a normal Claude thread. It will not match a dedicated Deep Research tool one-to-one, and it will burn through tokens noticeably faster than a quick chat, but for most job applications it is good enough to do the work.
 
 **Technical comfort level:** You do not need to be a developer. If you can install a desktop app, download a folder, and follow step-by-step instructions, you can build this. The hardest part is sitting with the brain trust setup once at the beginning. After that, every application is a 20-minute conversation.
 
