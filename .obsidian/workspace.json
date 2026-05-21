@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ai-powered-workflows/cyberbrain-deepdives/dashboard-iteration.md",
+                "file": "career-workflow/resume-workflow/An AI-Powered Resume Workflow.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dashboard-iteration"
+              "title": "An AI-Powered Resume Workflow"
             }
           }
         ]
@@ -183,12 +183,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "956d6224a8a14a76",
+  "active": "7929e4574fa7ec16",
   "lastOpenFiles": [
+    "ai-powered-workflows/AI Workflow for Resumes That Actually Land.md",
+    "ai-powered-workflows/02 - Main Guide.md",
+    "ai-powered-workflows/Untitled",
+    "ai-powered-workflows/cyberbrain-deepdives/dashboard-iteration.md",
     "ai-powered-workflows/cyberbrain-deepdives/brain-dashboard-starter.html",
     "ai-powered-workflows/Building a Cyberbrain.md",
     "ai-powered-workflows/building-a-cyberbrain-guide.md",
-    "ai-powered-workflows/cyberbrain-deepdives/dashboard-iteration.md",
     "ai-powered-workflows/cyberbrain-deepdives/dashboard-iteration - Copy.md",
     "ai-powered-workflows/cyberbrain-deepdives/vault-structure.md",
     "ai-powered-workflows/cyberbrain-deepdives/taxonomy-schema.md",
@@ -214,12 +217,9 @@
     "ai-payments-compliance-fraud-PM/Beyond Black Boxes - A PM’s Guide to the Next Generation of Compliance AI.md",
     "ai-payments-compliance-fraud-PM",
     "Untitled.md",
-    "ai-powered-workflows/Untitled",
     "ai-powered-workflows/Quick Reference Guide - 7 Phase Manual Deep Research Workflow.md",
     "().md",
     "XXXX.md",
-    "ai-powered-workflows/Complete Manual Deep Research Guide for Perplexity Pro.md",
-    "career-workflow/resume-workflow/resources/example",
-    "career-workflow/resume-workflow/resources"
+    "career-workflow/resume-workflow/resources/example"
   ]
 }
