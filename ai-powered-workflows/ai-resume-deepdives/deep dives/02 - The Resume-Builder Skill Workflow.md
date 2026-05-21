@@ -7,7 +7,7 @@
 
 This deep dive walks through what actually happens inside the `resume-builder` skill when you trigger it. The main guide treated the skill as a black box that produces a first draft. Here we open the box: the eleven steps the skill walks, how Job Description (JD) tag matching works inside the load step, how the skill honors guard rules, the pitfalls that show up if you skip parts of the workflow, and how to customize the skill for your own situation.
 
-Read Deep Dive 1 first if you have not already. The Career Brain Trust structure is what this skill loads from; the structure and the skill were designed as a pair.
+Read [Deep Dive 1](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/01%20-%20The%20Career%20Brain%20Trust%20Structure.md) first if you have not already. The Career Brain Trust structure is what this skill loads from; the structure and the skill were designed as a pair.
 
 ---
 
@@ -201,5 +201,5 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 If you use or adapt this deep dive, please include:
 
 Based on "The Resume-Builder Skill Workflow," part of "Tailored, Not Templated: An AI Workflow for Resumes That Actually Land in a Brutal Job Market" by VeritasPlaybook
-Original: https://github.com/VeritasPlaybook/playbook
+Original: https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md
 License: CC BY 4.0

@@ -5,9 +5,9 @@
 
 # Cover Letter and CV Format: What I Recommend and Why
 
-This deep dive expands Step 9 of the main guide. The main guide named the format (one combined Word document, cover letter on page 1, resume on page 2 and beyond, target two pages total) and walked the polish step at a high level. This is the longer version: why the combined-single-document format works, the exact template structure I use, the Google Docs polish checklist line by line, Portable Document Format (PDF) export settings, the three archetype variants (banking formal, startup casual, big tech crisp), and what specifically breaks Applicant Tracking Systems (ATS) so you can avoid it.
+This deep dive expands [Step 9](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md#step-9-polish-in-google-docs-and-export-pdf) of the main guide. The main guide named the format (one combined Word document, cover letter on page 1, resume on page 2 and beyond, target two pages total) and walked the polish step at a high level. This is the longer version: why the combined-single-document format works, the exact template structure I use, the Google Docs polish checklist line by line, Portable Document Format (PDF) export settings, the three archetype variants (banking formal, startup casual, big tech crisp), and what specifically breaks Applicant Tracking Systems (ATS) so you can avoid it.
 
-If you have not read Deep Dive 1 (the Career Brain Trust structure) and Deep Dive 2 (the `resume-builder` skill workflow), this deep dive will still make sense, but the format choices reference both.
+If you have not read [Deep Dive 1](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/01%20-%20The%20Career%20Brain%20Trust%20Structure.md) (the Career Brain Trust structure) and [Deep Dive 2](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/02%20-%20The%20Resume-Builder%20Skill%20Workflow.md) (the `resume-builder` skill workflow), this deep dive will still make sense, but the format choices reference both.
 
 ---
 
@@ -182,5 +182,5 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 If you use or adapt this deep dive, please include:
 
 Based on "Cover Letter and CV Format: What I Recommend and Why," part of "Tailored, Not Templated: An AI Workflow for Resumes That Actually Land in a Brutal Job Market" by VeritasPlaybook
-Original: https://github.com/VeritasPlaybook/playbook
+Original: https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md
 License: CC BY 4.0

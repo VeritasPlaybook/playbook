@@ -5,7 +5,7 @@
 
 # Skill Installation Guide for Cowork
 
-This deep dive covers the conceptual layer that applies to any Cowork skill. The main guide referenced two specific skills (`resume-builder` and `update-brain-trust`) and pointed you here for the install details. Each of those skill packages ships with its own per-skill install instructions (`INSTALL.md` and `Install with Claude.md`). This deep dive does not duplicate those files; it covers what is true about every Cowork skill so the per-skill instructions make sense.
+This deep dive covers the conceptual layer that applies to any Cowork skill. The main guide referenced two specific skills (`resume-builder` and `update-brain-trust`) in [Step 5](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md#step-5-install-the-skills) and pointed you here for the install details. Each of those skill packages ships with its own per-skill install instructions (`INSTALL.md` and `Install with Claude.md`). This deep dive does not duplicate those files; it covers what is true about every Cowork skill so the per-skill instructions make sense.
 
 By the end of this deep dive you should understand: how Cowork skills work, what the `SKILL.md` file does and what its frontmatter does, where Cowork looks for skill folders on your filesystem, the generic install pattern that applies to any skill, how trigger phrases work, the most common install errors and how to fix them, and how to customize a skill once it is installed. At the bottom, there is a short list of the two skills shipped with this guide, with direct links to their per-skill install files.
 
@@ -152,7 +152,7 @@ A skill you installed is yours to modify. There is no central registry that upda
 
 **In helper files in the skill folder.** If the skill references a `scripts/` or `references/` folder, the contents of those folders are also yours to modify. Replace a template, swap a script, update a reference. The skill picks up the changes the next time it runs.
 
-A common customization for the two skills shipped with this guide: adding your own guard rules to the `_session rules/` folder in your Career Brain Trust (covered in Deep Dive 1) so the skills honor your specific constraints on every run. You do not need to modify the skill itself to do this; the skill reads `_session rules/` files automatically as long as they live in the right place.
+A common customization for the two skills shipped with this guide: adding your own guard rules to the `_session rules/` folder in your Career Brain Trust (covered in [Deep Dive 1](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/01%20-%20The%20Career%20Brain%20Trust%20Structure.md)) so the skills honor your specific constraints on every run. You do not need to modify the skill itself to do this; the skill reads `_session rules/` files automatically as long as they live in the right place.
 
 A rule of thumb. Before modifying the skill itself, ask whether the change belongs in your Career Brain Trust (content), in a `_session rules/` file (constraint), or in `SKILL.md` (default behavior). Most of the time, the answer is in the Brain Trust or in the session rules. The skill itself rarely needs to change.
 
@@ -162,17 +162,17 @@ A rule of thumb. Before modifying the skill itself, ask whether the change belon
 
 Two skills ship with this guide, each in its own folder with a `SKILL.md`, an `INSTALL.md`, an `Install with Claude.md`, and one supporting file. The per-skill `INSTALL.md` is the canonical install reference. The `Install with Claude.md` is the AI-assisted version that walks you through the install conversationally.
 
-**The `resume-builder` skill.** Tailors a combined cover letter and resume for a specific Job Description, drawing from your Career Brain Trust. Folder: `Skills/resume-builder/`.
+**The `resume-builder` skill.** Tailors a combined cover letter and resume for a specific Job Description, drawing from your Career Brain Trust. Folder: `skills/resume-builder/`.
 
-- [Skill folder](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/Skills/resume-builder/)
-- [INSTALL.md (manual install)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/Skills/resume-builder/INSTALL.md)
-- [Install with Claude.md (AI-assisted install)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/Skills/resume-builder/Install%20with%20Claude.md)
+- [Skill folder](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/skills/resume-builder/)
+- [INSTALL.md (manual install)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/skills/resume-builder/INSTALL.md)
+- [Install with Claude.md (AI-assisted install)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/skills/resume-builder/Install%20with%20Claude.md)
 
-**The `update-brain-trust` skill.** Closes the loop after every application by folding new framings, metrics, and cover letter hooks back into your Career Brain Trust. Folder: `Skills/update-brain-trust/`.
+**The `update-brain-trust` skill.** Closes the loop after every application by folding new framings, metrics, and cover letter hooks back into your Career Brain Trust. Folder: `skills/update-brain-trust/`.
 
-- [Skill folder](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/Skills/update-brain-trust/)
-- [INSTALL.md (manual install)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/Skills/update-brain-trust/INSTALL.md)
-- [Install with Claude.md (AI-assisted install)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/Skills/update-brain-trust/Install%20with%20Claude.md)
+- [Skill folder](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/skills/update-brain-trust/)
+- [INSTALL.md (manual install)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/skills/update-brain-trust/INSTALL.md)
+- [Install with Claude.md (AI-assisted install)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/skills/update-brain-trust/Install%20with%20Claude.md)
 
 The recommended order is to install `resume-builder` first, run it once on a test Job Description, then install `update-brain-trust`. That way you have a tailored application to feed into the `update-brain-trust` skill on its first run, which makes the loop step real instead of abstract.
 
@@ -196,5 +196,5 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 If you use or adapt this deep dive, please include:
 
 Based on "Skill Installation Guide for Cowork," part of "Tailored, Not Templated: An AI Workflow for Resumes That Actually Land in a Brutal Job Market" by VeritasPlaybook
-Original: https://github.com/VeritasPlaybook/playbook
+Original: https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md
 License: CC BY 4.0

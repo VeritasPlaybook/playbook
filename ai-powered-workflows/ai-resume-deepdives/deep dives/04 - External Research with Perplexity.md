@@ -5,7 +5,7 @@
 
 # External Research with Perplexity (and Others)
 
-This deep dive expands Step 8 of the main guide. The main guide explained why external research belongs outside the main Cowork thread and gave you three research angles. This is the longer version: the exact prompt patterns Claude writes for you, how to read the output, the red-flag library that decides whether to apply at all, the alternative tools that work if you do not use Perplexity, and the criteria for walking away from a role before you invest an hour tailoring an application.
+This deep dive expands [Step 8](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md#step-8-external-company-research) of the main guide. The main guide explained why external research belongs outside the main Cowork thread and gave you three research angles. This is the longer version: the exact prompt patterns Claude writes for you, how to read the output, the red-flag library that decides whether to apply at all, the alternative tools that work if you do not use Perplexity, and the criteria for walking away from a role before you invest an hour tailoring an application.
 
 The research step is the highest-leverage step in the workflow. Half the time, the most valuable output of this step is a "do not apply" decision that saves you the hour the rest of the workflow would consume. Tailoring is cheap when you have the system; deciding which jobs deserve the tailoring is the part with real returns.
 
@@ -218,5 +218,5 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 If you use or adapt this deep dive, please include:
 
 Based on "External Research with Perplexity (and Others)," part of "Tailored, Not Templated: An AI Workflow for Resumes That Actually Land in a Brutal Job Market" by VeritasPlaybook
-Original: https://github.com/VeritasPlaybook/playbook
+Original: https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md
 License: CC BY 4.0

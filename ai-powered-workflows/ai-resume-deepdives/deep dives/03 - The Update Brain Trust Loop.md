@@ -5,9 +5,9 @@
 
 # The Update Brain Trust Loop: Why the Loop Matters
 
-This deep dive is about the step most people skip: closing the loop at the end of every application. The main guide called it Step 10. This is the longer version: what the loop actually does, the three-phase workflow inside the `update-brain-trust` skill, how contradictions between new and existing content get resolved, the compounding effect over fifty applications, and the weekly review pattern that catches drift before it becomes damage.
+This deep dive is about the step most people skip: closing the loop at the end of every application. The main guide called it [Step 10](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md#step-10-run-the-update-brain-trust-skill-close-the-loop). This is the longer version: what the loop actually does, the three-phase workflow inside the `update-brain-trust` skill, how contradictions between new and existing content get resolved, the compounding effect over fifty applications, and the weekly review pattern that catches drift before it becomes damage.
 
-If you have not read Deep Dive 1 (the Career Brain Trust structure) and Deep Dive 2 (the resume-builder skill workflow), read those first. The Update Brain Trust loop only makes sense once you understand the source of truth it is updating and the workflow it is closing.
+If you have not read [Deep Dive 1](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/01%20-%20The%20Career%20Brain%20Trust%20Structure.md) (the Career Brain Trust structure) and [Deep Dive 2](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/02%20-%20The%20Resume-Builder%20Skill%20Workflow.md) (the resume-builder skill workflow), read those first. The Update Brain Trust loop only makes sense once you understand the source of truth it is updating and the workflow it is closing.
 
 ---
 
@@ -187,5 +187,5 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 If you use or adapt this deep dive, please include:
 
 Based on "The Update Brain Trust Loop: Why the Loop Matters," part of "Tailored, Not Templated: An AI Workflow for Resumes That Actually Land in a Brutal Job Market" by VeritasPlaybook
-Original: https://github.com/VeritasPlaybook/playbook
+Original: https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md
 License: CC BY 4.0
