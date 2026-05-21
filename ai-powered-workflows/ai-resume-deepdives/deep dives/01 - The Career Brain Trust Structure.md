@@ -151,7 +151,7 @@ The Brain Trust is meant to compound. Every application adds material. Nothing g
 
 There are three legitimate paths to a usable Career Brain Trust. Pick the one that fits how you like to work. Most people end up combining two of them.
 
-**Path A: Download the empty template and fill it in by hand.**
+**Path A: Download [the empty template](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/templates/Career%20Brain%20Trust%20Template) and fill it in by hand.**
 
 The template ships with every file scaffolded. The INDEX has placeholder rows. Each child file has section headers ready, with the tag glossary and acronym definitions waiting in `0 How To Use.md`. You open each file, fill in your actual content, and save. Slowest path, but the path that produces the deepest material because you wrote every word.
 
@@ -159,13 +159,13 @@ Best fit if you are the kind of person who wants to feel every part of the syste
 
 **Path B: Run the setup prompt with Claude.**
 
-The template package includes a setup prompt you paste into a fresh Claude thread. Claude walks you through an interview: a few dozen short questions about your roles, your standout metrics, your cover letter patterns, the company archetypes you target. Claude builds the folder structure for you, fills in the files as you answer, and shows you the result before saving.
+The template package includes [a setup prompt](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/templates/Career%20Brain%20Trust%20Setup%20Prompt.md) you paste into a fresh Claude thread. Claude walks you through an interview: a few dozen short questions about your roles, your standout metrics, your cover letter patterns, the company archetypes you target. Claude builds the folder structure for you, fills in the files as you answer, and shows you the result before saving.
 
 Best fit if you have less than a week of runway to get the system working and you want to start tailoring applications by tomorrow. The interview takes roughly forty-five minutes to an hour. The output is a usable first version, not a polished final version. You will keep refining the files over the next few applications, but you have something working immediately.
 
 **Path C: Read the filled example Brain Trusts first, then build yours.**
 
-The template package ships with three fictional but complete example Brain Trusts at middle depth (a product manager, an engineer, a marketer). Each is a realistic worked example showing what a Brain Trust looks like when the structure is actually filled in. You read whichever example is closest to your own shape, see how a real Identity file reads, how a real Experience child file is structured, what a real cover-letter archetype looks like in this template, and then build yours.
+The template package ships with three fictional but complete example Brain Trusts at middle depth (a [product manager](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/templates/Example%20Career%20Brain%20Trust%20-%20PM%20Jordan), an [engineer](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/templates/Example%20Career%20Brain%20Trust%20-%20Engineer%20Alex), a [marketer](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/templates/Example%20Career%20Brain%20Trust%20-%20Marketing%20Sam)). Each is a realistic worked example showing what a Brain Trust looks like when the structure is actually filled in. You read whichever example is closest to your own shape, see how a real Identity file reads, how a real Experience child file is structured, what a real cover-letter archetype looks like in this template, and then build yours.
 
 Best fit if you are a strong learner-by-example. You want to see the destination before you start the trip. Many people pair Path C with Path A or Path B, using the examples as the reference and the template or setup prompt as the scaffolding.
 
