@@ -220,7 +220,7 @@ Three ways to build yours:
 
 All three are linked in the Deep Dives table at the end of this guide.
 
-> **[Deep Dive: The Career Brain Trust, Structure and Why It Works](./Deep%20Dives/01%20-%20The%20Career%20Brain%20Trust%20Structure.md)**
+> **[Deep Dive: The Career Brain Trust, Structure and Why It Works](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/01%20-%20The%20Career%20Brain%20Trust%20Structure.md)**
 
 ---
 
@@ -236,7 +236,7 @@ All three are linked in the Deep Dives table at the end of this guide.
 
 Full install steps with screenshots are in the deep dive.
 
-> **[Deep Dive: Skill Installation Guide for Cowork](./Deep%20Dives/06%20-%20Skill%20Installation%20Guide%20for%20Cowork.md)**
+> **[Deep Dive: Skill Installation Guide for Cowork](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/06%20-%20Skill%20Installation%20Guide%20for%20Cowork.md)**
 
 ---
 
@@ -282,7 +282,7 @@ The reason this back-and-forth works as well as it does is the multi-choice clar
 
 Every one of those bullets traces back to a canonical bullet in the Brain Trust, lightly rephrased for this specific JD. None of them were invented by Claude. None of them are filler. That is the bar.
 
-> **[Deep Dive: The Resume-Builder Skill Workflow Walkthrough](./Deep%20Dives/02%20-%20The%20Resume-Builder%20Skill%20Workflow.md)**
+> **[Deep Dive: The Resume-Builder Skill Workflow Walkthrough](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/02%20-%20The%20Resume-Builder%20Skill%20Workflow.md)**
 
 ---
 
@@ -304,7 +304,7 @@ Every one of those bullets traces back to a canonical bullet in the Brain Trust,
 
 **Alternative tools:** Perplexity is what I use. ChatGPT Deep Research, Gemini Deep Research, and Claude's own research mode all produce comparable output. The prompt patterns transfer cleanly. Pick the one you already pay for.
 
-> **[Deep Dive: External Research with Perplexity (and Others)](./Deep%20Dives/04%20-%20External%20Research%20with%20Perplexity.md)**
+> **[Deep Dive: External Research with Perplexity (and Others)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/04%20-%20External%20Research%20with%20Perplexity.md)**
 
 ---
 
@@ -322,7 +322,7 @@ Every one of those bullets traces back to a canonical bullet in the Brain Trust,
 6. Export to PDF. Use the company's preferred filename pattern if specified, otherwise a clean `[Your Name] - [Role Title].pdf`.
 7. Send.
 
-> **[Deep Dive: Cover Letter and CV Format, What I Recommend and Why](./Deep%20Dives/05%20-%20Cover%20Letter%20and%20CV%20Format.md)**
+> **[Deep Dive: Cover Letter and CV Format, What I Recommend and Why](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/05%20-%20Cover%20Letter%20and%20CV%20Format.md)**
 
 ---
 
@@ -342,7 +342,7 @@ Every one of those bullets traces back to a canonical bullet in the Brain Trust,
 
 Over fifty applications, the brain trust accumulates: dozens of new variant framings per role, new big-number metrics, new cover-letter archetypes, new reusable hooks. The fiftieth application takes the same twenty minutes as the first, but the draft quality is dramatically higher because the system is pulling from a much richer source of truth.
 
-> **[Deep Dive: The Update Brain Trust Loop, Why the Loop Matters](./Deep%20Dives/03%20-%20The%20Update%20Brain%20Trust%20Loop.md)**
+> **[Deep Dive: The Update Brain Trust Loop, Why the Loop Matters](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/03%20-%20The%20Update%20Brain%20Trust%20Loop.md)**
 
 ---
 
@@ -401,15 +401,15 @@ These are the lessons that compounded across many applications. The fuller versi
 
 These companion guides go deeper into the design, tradeoffs, and iteration stories behind each step:
 
-| Guide | What It Covers |
-|-------|----------------|
-| [The Career Brain Trust, Structure and Why It Works](./Deep%20Dives/01%20-%20The%20Career%20Brain%20Trust%20Structure.md) | The folder structure, why we split from a monolithic file, how the INDEX drives selective reads, the three ways to build yours |
-| [The Resume-Builder Skill Workflow Walkthrough](./Deep%20Dives/02%20-%20The%20Resume-Builder%20Skill%20Workflow.md) | The 11-step workflow inside the skill, how JD tag matching works, guard rules, common pitfalls, customization |
-| [The Update Brain Trust Loop, Why the Loop Matters](./Deep%20Dives/03%20-%20The%20Update%20Brain%20Trust%20Loop.md) | The 3-phase ingestion workflow, contradiction resolution, the compound effect over 50 applications |
-| [External Research with Perplexity (and Others)](./Deep%20Dives/04%20-%20External%20Research%20with%20Perplexity.md) | Why research stays out of the main session, prompt patterns, red-flag detection, alternative tools |
-| [Cover Letter and CV Format, What I Recommend and Why](./Deep%20Dives/05%20-%20Cover%20Letter%20and%20CV%20Format.md) | The one-page-cover plus two-page-CV combined format, template structure, Google Docs polish checklist, PDF export, ATS considerations |
-| [Skill Installation Guide for Cowork](./Deep%20Dives/06%20-%20Skill%20Installation%20Guide%20for%20Cowork.md) | How Cowork skills work, install steps, verification, customization, common errors and fixes |
-| [What I Learned (Expanded)](./Deep%20Dives/07%20-%20What%20I%20Learned%20Expanded.md) | Each of the 13 lessons expanded with examples from real applications, anonymized |
+| Guide                                                                                                                                                                                                                  | What It Covers                                                                                                                        |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| [The Career Brain Trust, Structure and Why It Works](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/01%20-%20The%20Career%20Brain%20Trust%20Structure.md) | The folder structure, why we split from a monolithic file, how the INDEX drives selective reads, the three ways to build yours        |
+| [The Resume-Builder Skill Workflow Walkthrough](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/02%20-%20The%20Resume-Builder%20Skill%20Workflow.md)       | The 11-step workflow inside the skill, how JD tag matching works, guard rules, common pitfalls, customization                         |
+| [The Update Brain Trust Loop, Why the Loop Matters](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/03%20-%20The%20Update%20Brain%20Trust%20Loop.md)       | The 3-phase ingestion workflow, contradiction resolution, the compound effect over 50 applications                                    |
+| [External Research with Perplexity (and Others)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/04%20-%20External%20Research%20with%20Perplexity.md)      | Why research stays out of the main session, prompt patterns, red-flag detection, alternative tools                                    |
+| [Cover Letter and CV Format, What I Recommend and Why](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/05%20-%20Cover%20Letter%20and%20CV%20Format.md)     | The one-page-cover plus two-page-CV combined format, template structure, Google Docs polish checklist, PDF export, ATS considerations |
+| [Skill Installation Guide for Cowork](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/06%20-%20Skill%20Installation%20Guide%20for%20Cowork.md)             | How Cowork skills work, install steps, verification, customization, common errors and fixes                                           |
+| [What I Learned (Expanded)](./Deep%20Dives/07%20-%20What%20I%20Learned%20Expanded.md)                                                                                                                                  | Each of the 13 lessons expanded with examples from real applications, anonymized                                                      |
 
 ---
 

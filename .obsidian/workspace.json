@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300.5
+    "width": 300.5,
+    "collapsed": true
   },
   "right": {
     "id": "7c786c0263cf736b",
@@ -183,8 +184,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "956d6224a8a14a76",
+  "active": "7929e4574fa7ec16",
   "lastOpenFiles": [
+    "Deep Dives",
     "ai-powered-workflows/ai-resume-deepdives/deep dives/03 - The Update Brain Trust Loop.md",
     "ai-powered-workflows/ai-resume-deepdives/deep dives/02 - The Resume-Builder Skill Workflow.md",
     "ai-powered-workflows/ai-resume-deepdives/deep dives/01 - The Career Brain Trust Structure.md",
@@ -219,7 +221,6 @@
     "ai-powered-workflows/cyberbrain-deepdives/taxonomy-schema.md",
     "ai-powered-workflows/cyberbrain-deepdives/scheduled-tasks.md",
     "ai-powered-workflows/cyberbrain-deepdives/mcp-setup.md",
-    "ai-powered-workflows/cyberbrain-deepdives/dispatch-pipeline.md",
-    "ai-powered-workflows/cyberbrain-deepdives/claude-md.md"
+    "ai-powered-workflows/cyberbrain-deepdives/dispatch-pipeline.md"
   ]
 }
