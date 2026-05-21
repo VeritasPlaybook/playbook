@@ -5,9 +5,9 @@
 
 # The Career Brain Trust: Structure and Why It Works
 
-This is a deep dive on the source-of-truth folder that everything else in the workflow pulls from. The main guide sketched the structure in Step 4. This is the longer version: why the structure looks the way it does, how each piece pulls its weight, how to grow it without breaking it, and how to actually get yours built.
+This is a deep dive on the source-of-truth folder that everything else in the workflow pulls from. The main guide sketched the structure in [Step 4](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md#step-4-build-your-career-brain-trust). This is the longer version: why the structure looks the way it does, how each piece pulls its weight, how to grow it without breaking it, and how to actually get yours built.
 
-If you have not read the main guide yet, start there. This deep dive assumes you understand the loop and where the Career Brain Trust sits inside it.
+If you have not read the main guide yet, [start there](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md). This deep dive assumes you understand the loop and where the Career Brain Trust sits inside it.
 
 ---
 
