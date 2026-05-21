@@ -33,7 +33,7 @@ Three things make this work where one-shot AI prompts fail.
 
 **Human in the middle.** This is not "AI writes your resume." This is "AI drafts, you push back, you both iterate, you ship." Claude catches what you miss (a tag, a keyword, a framing you forgot you had). You catch what Claude misses (a phrasing you would never use, a metric that needs context, a tone that does not match the company). The conversation is the magic. Both of you working together produce something neither would alone.
 
-There is also a body of research that backs why this loop works. In-context learning behaves like Bayesian inference: every piece of structured context narrows the model's distribution over what you actually want. Multi-turn AI conversations degrade by roughly 39 percent on average because models make wrong assumptions early and do not recover. Structured clarifying questions before generation can boost output quality by about 20 percentage points on ambiguous tasks. If you want the deeper version of that argument with citations, my companion guide on the [Context Prompt pattern](./References/The%20context%20prompt%20that%20will%20revolutionize%20your%20workflow.md) lays it out. I will name the pattern again when we get to Step 7, because it is the engine behind the back-and-forth that produces the final draft.
+There is also a body of research that backs why this loop works. In-context learning behaves like Bayesian inference: every piece of structured context narrows the model's distribution over what you actually want. Multi-turn AI conversations degrade by roughly 39 percent on average because models make wrong assumptions early and do not recover. Structured clarifying questions before generation can boost output quality by about 20 percentage points on ambiguous tasks. If you want the deeper version of that argument with citations, my companion guide on the [Context Prompt pattern](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/The%20context%20prompt%20that%20will%20revolutionize%20your%20workflow.md) lays it out. I will name the pattern again when we get to Step 7, because it is the engine behind the back-and-forth that produces the final draft.
 
 ---
 
@@ -173,7 +173,7 @@ From here on, every application starts with a new Cowork project pointed at a ne
 2. Turn on Claude's auto-memory feature in the desktop app. This persists facts, preferences, and project context across threads automatically.
 3. Save a few seed memories explicitly. Example: "I target Director and Head of PM roles in Payments, Fraud, and AI/ML. I prefer structured multi-choice clarifying questions with a copy-paste answer sheet."
 
-The minimum above is enough for the resume workflow to operate well. If you want the deeper version (operating modes, session protocols, scheduled-task patterns), my [Cyberbrain guide](https://github.com/VeritasPlaybook/playbook) covers the full setup.
+The minimum above is enough for the resume workflow to operate well. If you want the deeper version (operating modes, session protocols, scheduled-task patterns), my [Cyberbrain guide](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md) covers the full setup.
 
 ---
 
@@ -266,7 +266,7 @@ Full install steps with screenshots are in the deep dive.
 6. **Match the company archetype.** A banking application is formal and credentialed. A startup application is direct and punchy. A big-tech application is crisp and metrics-heavy. Tell Claude the archetype explicitly and ask it to rewrite to match.
 7. Iterate until both of you agree the application is sharp. You will know when it is done. There is a moment where you read the draft and there is nothing left to change.
 
-The reason this back-and-forth works as well as it does is the multi-choice clarifying-question pattern the skill uses to ask you the right things in the right format. That pattern is the engine behind the whole workflow. I wrote a full companion guide on it: ["The Context Prompt That Will Revolutionize Your Workflow"](./References/The%20context%20prompt%20that%20will%20revolutionize%20your%20workflow.md). If you want to understand why structured clarifying questions with copy-paste answer sheets beat free-form prompts every time, read it once. You will use the pattern across every other AI workflow you build, not just job applications.
+The reason this back-and-forth works as well as it does is the multi-choice clarifying-question pattern the skill uses to ask you the right things in the right format. That pattern is the engine behind the whole workflow. I wrote a full companion guide on it: ["The Context Prompt That Will Revolutionize Your Workflow"](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows). If you want to understand why structured clarifying questions with copy-paste answer sheets beat free-form prompts every time, read it once. You will use the pattern across every other AI workflow you build, not just job applications.
 
 **A short example of what good looks like.** A lightly anonymized snippet from a tailored application to a regulated fintech for a Director of Product role:
 
