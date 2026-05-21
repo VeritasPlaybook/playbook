@@ -228,7 +228,7 @@ All three are linked in the Deep Dives table at the end of this guide.
 
 **What to do:**
 
-1. Download the two skill packages from the [GitHub repository](https://github.com/VeritasPlaybook/playbook) (linked in the Deep Dives table).
+1. Download the two skill packages from the [GitHub repository](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/skills) (linked in the Deep Dives table).
 2. Install them in Cowork. Each skill is a folder containing a `SKILL.md` file with the workflow definition and any helper scripts. Cowork picks up the skill automatically once it is placed in the skills directory.
 3. Verify the install by triggering each skill. A trigger phrase for `resume-builder` is something like "build a resume for Acme Fintech." A trigger phrase for `update-brain-trust` is "update the brain trust" or "log this application."
 
@@ -429,7 +429,7 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 If you use or adapt this guide, please include:
 
 Based on "Tailored, Not Templated: An AI Workflow for Resumes That Actually Land in a Brutal Job Market" by VeritasPlaybook
-Original: https://github.com/VeritasPlaybook/playbook
+Original: https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md
 License: CC BY 4.0
 
 ## Questions or Feedback?
