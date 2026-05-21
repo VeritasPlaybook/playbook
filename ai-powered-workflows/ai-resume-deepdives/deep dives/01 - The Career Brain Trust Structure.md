@@ -201,5 +201,5 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 If you use or adapt this deep dive, please include:
 
 Based on "The Career Brain Trust: Structure and Why It Works," part of "Tailored, Not Templated: An AI Workflow for Resumes That Actually Land in a Brutal Job Market" by VeritasPlaybook
-Original: https://github.com/VeritasPlaybook/playbook
+Original: https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md
 License: CC BY 4.0
