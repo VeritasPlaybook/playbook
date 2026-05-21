@@ -5,9 +5,9 @@
 
 # What I Learned (Expanded)
 
-This deep dive expands the "What I Learned" section of the main guide. The main guide listed thirteen lessons as bolded one-liners with two or three sentences of expansion each. This is the longer version: each lesson with a story from a real application I sent, lightly anonymized, plus a short note on what to do differently if you are starting from scratch. After the thirteen lessons, a closing reflection covers three things the outline of this guide flagged: the patterns that almost broke the system and how they got fixed, what I would build into a version two if I were starting from scratch today, and the mistakes other people are most likely to make when adapting this system.
+This deep dive expands the ["What I Learned"](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md#what-i-learned) section of the main guide. The main guide listed thirteen lessons as bolded one-liners with two or three sentences of expansion each. This is the longer version: each lesson with a story from a real application I sent, lightly anonymized, plus a short note on what to do differently if you are starting from scratch. After the thirteen lessons, a closing reflection covers three things the outline of this guide flagged: the patterns that almost broke the system and how they got fixed, what I would build into a version two if I were starting from scratch today, and the mistakes other people are most likely to make when adapting this system.
 
-If you have not read the main guide yet, the lessons will still make sense, but their full meaning is anchored in the workflow the main guide describes. The companies in the stories are disguised. The lessons are not. Each one cost me something real to learn, and they are the deposit I am leaving for the reader who is one step behind me on the same path.
+If you have not read [the main guide](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md) yet, the lessons will still make sense, but their full meaning is anchored in the workflow the main guide describes. The companies in the stories are disguised. The lessons are not. Each one cost me something real to learn, and they are the deposit I am leaving for the reader who is one step behind me on the same path.
 
 ---
 
@@ -43,7 +43,7 @@ A prompt is a one-shot you have to remember to use. A skill is a reusable workfl
 
 A real example. For the first ten or twelve applications, I ran each one with a long custom prompt at the top of every thread. The prompt described who I was, my preferred resume structure, what to exclude, what voice to default to, what the guard rules were. By application ten the prompt was eight hundred words, and I was noticing that I retyped it (with subtle drift) every single time. Slightly different phrasing on Monday than Tuesday. A guard rule I forgot to include on Friday's application. A clarification I had added in one thread that did not propagate to the next.
 
-I wrapped the whole prompt into a single skill called `resume-builder`. The trigger phrase became one short sentence: "let us apply to Acme Fintech for the Director of Product Payments role." The skill anchors the workflow on one canonical version of every rule and triggers itself. Setup time per application dropped from ten minutes of pasting and re-explaining to thirty seconds. The drift stopped. The workflow became reliable in a way the prompt-based version never was.
+I wrapped the whole prompt into a single skill called [`resume-builder`](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/skills/resume-builder/). The trigger phrase became one short sentence: "let us apply to Acme Fintech for the Director of Product Payments role." The skill anchors the workflow on one canonical version of every rule and triggers itself. Setup time per application dropped from ten minutes of pasting and re-explaining to thirty seconds. The drift stopped. The workflow became reliable in a way the prompt-based version never was.
 
 The other benefit is iteration. Once a workflow lives inside a skill file, you can improve the workflow by editing the file in one place. Fix the bug once and every future application benefits. With prompts, you fix the bug at the top of one thread and the next thread starts from the old version.
 
@@ -53,7 +53,7 @@ The other benefit is iteration. Once a workflow lives inside a skill file, you c
 
 ## 4. Close the loop or you start from zero every time.
 
-The `update-brain-trust` skill is what separates this workflow from "I used an AI chatbot to write a resume." A new framing you discovered for last week's application is no good to you if it does not get folded back into the source of truth. The loop is the system.
+The [`update-brain-trust`](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/ai-resume-deepdives/skills/update-brain-trust/) skill is what separates this workflow from "I used an AI chatbot to write a resume." A new framing you discovered for last week's application is no good to you if it does not get folded back into the source of truth. The loop is the system.
 
 A real example. For the first fifteen applications or so I forgot to run the update step at the end of each thread. The thread closed, the new framings stayed in the thread, and the brain trust stayed where it had started. Application twenty-something to a regulated fintech reused a cover letter hook that had landed brilliantly in an earlier application to a similar company. I could not remember the exact phrasing. I had to recreate it from rough memory, and I lost some of the original sharpness in the recreation. I shipped a weaker version of work I had already done once.
 
@@ -143,7 +143,7 @@ A real example. The pattern started inside the job application workflow because 
 
 I added the pattern to my global instructions so every Claude thread defaults to it on any project. The leverage of that one habit, applied across every AI-assisted thing I do, is bigger than any single application I have ever tailored. It pays compound interest in every domain it touches.
 
-The reason it works is that ambiguity is expensive. A free-form clarifying question lets the model and the human both drift toward whatever feels easiest to answer. A multi-choice question forces both sides to land on a specific commitment before drafting starts. Drafts built on locked commitments are sharper than drafts built on vague intent. The pattern is described in detail in the companion guide called "The Context Prompt That Will Revolutionize Your Workflow," linked from the main guide.
+The reason it works is that ambiguity is expensive. A free-form clarifying question lets the model and the human both drift toward whatever feels easiest to answer. A multi-choice question forces both sides to land on a specific commitment before drafting starts. Drafts built on locked commitments are sharper than drafts built on vague intent. The pattern is described in detail in the companion guide called ["The Context Prompt That Will Revolutionize Your Workflow,"](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/The%20context%20prompt%20that%20will%20revolutionize%20your%20workflow.md) linked from the main guide.
 
 **If you are starting from scratch:** put the structured-question pattern in your global instructions on day one. Use it for your job applications, your research, your strategy work, and your random Sunday brainstorming. The habit pays everywhere.
 
@@ -173,7 +173,7 @@ I split the monolith into a folder structure: an INDEX at the top, per-role chil
 
 The deeper lesson sits underneath the truncation story. The folder structure is what makes the rest of the system work. The AI prompt is just the part on top. If the structure is wrong, no prompt fixes it. If the structure is right, even a mediocre prompt can produce strong drafts. Spend the time on structure first.
 
-**If you are starting from scratch:** build the brain trust as a folder from the very first application, not as a single file you split later. Deep Dive 1 walks the exact structure step by step. Save yourself the migration.
+**If you are starting from scratch:** build the brain trust as a folder from the very first application, not as a single file you split later. [Deep Dive 1](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/01%20-%20The%20Career%20Brain%20Trust%20Structure.md) walks the exact structure step by step. Save yourself the migration.
 
 ---
 
@@ -251,5 +251,5 @@ This work is licensed under [Creative Commons Attribution 4.0 International (CC 
 If you use or adapt this deep dive, please include:
 
 Based on "What I Learned (Expanded)," part of "Tailored, Not Templated: An AI Workflow for Resumes That Actually Land in a Brutal Job Market" by VeritasPlaybook
-Original: https://github.com/VeritasPlaybook/playbook
+Original: https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md
 License: CC BY 4.0
