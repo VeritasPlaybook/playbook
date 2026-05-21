@@ -367,7 +367,7 @@ The first application takes a couple of hours because you are also setting up th
 
 # What I Learned
 
-These are the lessons that compounded across many applications. The fuller version of each, with examples from real applications, lives in [Deep Dive 7](./Deep%20Dives/07%20-%20What%20I%20Learned%20Expanded.md).
+These are the lessons that compounded across many applications. The fuller version of each, with examples from real applications, lives in [Lesson's learned deep dive](./Deep%20Dives/07%20-%20What%20I%20Learned%20Expanded.md).
 
 **Pushback is a feature, not friction.** The AI that always agrees with you produces mediocre output. Challenge the first draft. Ask for three alternatives. Reject any phrasing you would not say out loud. The strongest applications I have ever sent were the ones where I argued with Claude the most.
 
@@ -409,7 +409,7 @@ These companion guides go deeper into the design, tradeoffs, and iteration stori
 | [External Research with Perplexity (and Others)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/04%20-%20External%20Research%20with%20Perplexity.md)      | Why research stays out of the main session, prompt patterns, red-flag detection, alternative tools                                    |
 | [Cover Letter and CV Format, What I Recommend and Why](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/05%20-%20Cover%20Letter%20and%20CV%20Format.md)     | The one-page-cover plus two-page-CV combined format, template structure, Google Docs polish checklist, PDF export, ATS considerations |
 | [Skill Installation Guide for Cowork](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/06%20-%20Skill%20Installation%20Guide%20for%20Cowork.md)             | How Cowork skills work, install steps, verification, customization, common errors and fixes                                           |
-| [What I Learned (Expanded)](./Deep%20Dives/07%20-%20What%20I%20Learned%20Expanded.md)                                                                                                                                  | Each of the 13 lessons expanded with examples from real applications, anonymized                                                      |
+| [What I Learned (Expanded)](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/ai-resume-deepdives/deep%20dives/07%20-%20What%20I%20Learned%20Expanded.md)                                     | Each of the 13 lessons expanded with examples from real applications, anonymized                                                      |
 
 ---
 
