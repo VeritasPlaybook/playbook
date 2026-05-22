@@ -6,13 +6,6 @@ This is my playbook: a collection of guides, workflows, examples, and templates 
 
 ## 📚 What's Inside
 
-### AI-Powered Workflows
-- Prompt Engineering Guides
-- [The context prompt that will revolutionize your workflow](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/The%20context%20prompt%20that%20will%20revolutionize%20your%20workflow.md)
-- [Quick Reference Guide - 7 Phase Manual Deep Research Workflow](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Quick%20Reference%20Guide%20-%207%20Phase%20Manual%20Deep%20Research%20Workflow.md)
-- [A Practical RLM-Inspired Workflow for Deep Research with AI](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/A%20Practical%20RLM-Inspired%20Workflow%20for%20Deep%20Research%20with%20AI.md) (Recursive Language Model inspired)
-- [Complete Manual Deep Research Guide for Perplexity Pro](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Complete%20Manual%20Deep%20Research%20Guide%20for%20Perplexity%20Pro.md)
-
 ### AI Resume Workflow
 End-to-end workflow for tailored resumes and cover letters, built around a personal Career Brain Trust and two reusable Cowork skills.
 
@@ -22,6 +15,15 @@ End-to-end workflow for tailored resumes and cover letters, built around a perso
 Workflow for turning Obsidian, Claude, and the Model Context Protocol (MCP) into a personal knowledge system: capture, dispatch, dashboards, and scheduled tasks.
 
 - **Main guide:** [Building a Cyberbrain](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Building%20a%20Cyberbrain.md)
+
+### AI-Powered Workflows
+- Prompt Engineering Guides
+- [The context prompt that will revolutionize your workflow](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/The%20context%20prompt%20that%20will%20revolutionize%20your%20workflow.md)
+- [Quick Reference Guide - 7 Phase Manual Deep Research Workflow](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Quick%20Reference%20Guide%20-%207%20Phase%20Manual%20Deep%20Research%20Workflow.md)
+- [A Practical RLM-Inspired Workflow for Deep Research with AI](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/A%20Practical%20RLM-Inspired%20Workflow%20for%20Deep%20Research%20with%20AI.md) (Recursive Language Model inspired)
+- [Complete Manual Deep Research Guide for Perplexity Pro](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Complete%20Manual%20Deep%20Research%20Guide%20for%20Perplexity%20Pro.md)
+
+
 
 ### Applications of AI for Compliance/Payments/Anti-fraud from a Product Manager (PM) perspective
 - [Beyond Black Boxes - A PM’s Guide to the Next Generation of Compliance AI](https://github.com/VeritasPlaybook/playbook/blob/main/ai-payments-compliance-fraud-PM/Beyond%20Black%20Boxes%20-%20A%20PM%E2%80%99s%20Guide%20to%20the%20Next%20Generation%20of%20Compliance%20AI.md)
