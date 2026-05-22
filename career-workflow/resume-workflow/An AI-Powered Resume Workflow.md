@@ -9,6 +9,14 @@
 For Table of Contents, click outline button on the right ----------------------------------------------------------------------------------------------^
 
 ---
+# THIS GUIDE HAS BEEN SUPERCEEDED BY AI WORKFLOW - [SEE THIS GUIDE INSTEAD](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md)
+
+---
+
+*Kept guide below for posterity sake*
+
+---
+
 # 1. Who This Guide Is For
 
 This guide is for people switching roles or repositioning themselves for stronger opportunities, who are willing to do honest self-reflection about their work.

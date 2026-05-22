@@ -29,9 +29,6 @@ Workflow for turning Obsidian, Claude, and the Model Context Protocol (MCP) into
 ### Frameworks
 - [The 2026 Frontier Model Guide](https://github.com/VeritasPlaybook/playbook/blob/main/frameworks/The-2026-Frontier-Model-Guide.md)
 
-### [Career-workflow](https://github.com/VeritasPlaybook/playbook/tree/main/career-workflow)
-- [An AI-Powered Resume Workflow](https://github.com/VeritasPlaybook/playbook/blob/main/career-workflow/resume-workflow/An%20AI-Powered%20Resume%20Workflow.md)
-
 ### General Research
 *Coming soon. Adding guides as questions come up.*
 
