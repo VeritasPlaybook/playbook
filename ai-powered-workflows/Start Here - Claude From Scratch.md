@@ -41,15 +41,7 @@ Almost everything else in this guide follows from that distinction.
 
 Claude is not one product. It is four places you can work, and most people only ever find the first one.
 
-```mermaid
-flowchart TD
-    A["What do you need?"] --> B["Chat<br/>quick answers"]
-    A --> C["Cowork<br/>runs the task"]
-    A --> D["Claude Code<br/>code repositories"]
-    A --> E["Design<br/>visual output"]
-    B --> F["Project<br/>the folder that remembers"]
-    C --> F
-```
+<img width="2720" height="1240" alt="claude_which_surface_decision_tree" src="https://github.com/user-attachments/assets/d7e98f74-b23f-4c3d-a220-56f509dfad79" />
 
 ## Chat
 

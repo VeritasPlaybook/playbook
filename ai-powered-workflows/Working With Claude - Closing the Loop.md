@@ -17,7 +17,7 @@ For Table of Contents, click **Outline** button on the right -------------------
 
 A friend asked me how to use Claude. I started answering and realised the useful part of my answer had nothing to do with prompts.
 
-Everyone writes about prompts. There are ten thousand guides telling you to be specific, give examples, assign a role. That advice is fine and it is also the least important thing about working with AI well.
+Everyone writes about prompts. There are ten thousand guides telling you to be specific, give examples, assign a role. That advice is fine and it is also the least important thing about working with an Artificial Intelligence (AI) model well.
 
 The thing that actually changed my output was smaller and more boring. It is this: I stopped letting conversations end by accident.
 
@@ -47,29 +47,15 @@ Every other technique in this guide is downstream of that. Instructions, skills,
 
 Claude is four places you can work, plus one container that they sit inside. If you have read the primer, skim this. If not, here is the whole map in six hundred words.
 
-```mermaid
-flowchart TD
-    A["What do you need?"] --> B["Chat<br/>quick answers"]
-    A --> C["Cowork<br/>runs the task"]
-    A --> D["Claude Code<br/>code repositories"]
-    A --> E["Design<br/>visual output"]
-    B --> F["Project<br/>the folder that remembers"]
-    C --> F
-```
+<img width="2720" height="1240" alt="claude_which_surface_decision_tree" src="https://github.com/user-attachments/assets/9b92c39d-4c88-4473-917b-2ec9a5a5cdb7" />
+
 
 **Chat** is the box you know. One question, one answer. It is the right tool more often than people give it credit for, and it uses the least of your usage allowance. Its ceiling is that it produces text in a window and does not touch your files.
 
 **Cowork** is agentic. You describe an outcome instead of asking a question, and Claude plans, acts, checks its own work, and iterates until it is done. It reads and writes real folders on your machine, but only the ones you connect, and it runs on Anthropic's servers, so it keeps working after you shut your laptop. It produces spreadsheets with working formulas, formatted documents, decks, and organised files.
 
-```mermaid
-flowchart LR
-    subgraph Chat
-    A1["You ask"] --> A2["Claude answers"] --> A3["Done, nothing persists"]
-    end
-    subgraph Cowork
-    B1["You describe the outcome"] --> B2["Claude works, repeats until done"] --> B3["You get real files"]
-    end
-```
+<img width="2720" height="800" alt="claude_chat_oneshot_vs_cowork_loop" src="https://github.com/user-attachments/assets/46b4c81b-69c4-4c0c-9633-38c6dca015e5" />
+
 
 **Claude Code** is the same agentic engine pointed at a codebase, in a terminal. If you are not a developer you can skip it, and I mean that literally rather than politely. Cowork already writes scripts, formulas and small automations for you. You need Claude Code when the code is the project rather than a byproduct of it.
 
@@ -83,13 +69,7 @@ flowchart LR
 
 Underneath all of it sit four layers you can adjust. Most people never touch any of them.
 
-```mermaid
-flowchart TD
-    S["Surface: where you work"] --> P["Project: what the work is about"]
-    P --> K["Skills: how you want things done"]
-    K --> C["Connectors: what Claude can reach"]
-    C --> M["Memory: what survives the tab closing"]
-```
+<img width="2720" height="1208" alt="claude_five_layer_stack" src="https://github.com/user-attachments/assets/434fb4f4-f589-4cc9-a8f3-72755aa266ae" />
 
 ---
 
@@ -127,7 +107,7 @@ I want to sit on this for a second because it is genuinely counterintuitive, and
 
 There is a related trap. Uploading a file to a conversation is not the same as adding it to project knowledge. A file you drop into a chat is visible in that chat only. And if you edit that file on your computer afterwards, the copy in project knowledge does not update. You have to upload it again.
 
-![The thread loop. Findings travel back to the project and forward to the next thread. The conversation itself does not.](./img/thread-loop.png)
+<img width="2720" height="1200" alt="claude_thread_loop_with_broken_path" src="https://github.com/user-attachments/assets/e0929ea9-eb57-41c8-93b5-d31dc7426620" />
 
 That crossed line is the whole problem. The solid line through the project is the whole solution.
 
@@ -227,7 +207,7 @@ Anthropic's own framing is the one I would keep, because it is careful and it is
 
 That is the practical point. There is no threshold where things break. There is a slow slide where a model that was catching your errors quietly stops catching them, and nothing on screen tells you it happened.
 
-![One long thread slides from sharp to unreliable. The same work split by a handoff stays sharp throughout.](./img/context-handoff.png)
+<img width="2720" height="800" alt="claude_context_degradation_and_handoff" src="https://github.com/user-attachments/assets/dfc58a73-64a2-4770-a497-739dc6298b76" />
 
 ## What a handoff is
 
