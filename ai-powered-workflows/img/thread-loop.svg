@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="300" viewBox="0 0 680 300" role="img" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>The thread loop</title>
+<desc>A project feeds an opened thread, work happens, the thread is closed and findings written back, and the next thread starts smarter. A second path showing chat history travelling directly between threads is crossed out because it does not happen.</desc>
+<rect width="680" height="300" fill="#FCFBF8"/>
+<rect x="40" y="40" width="600" height="48" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="340" y="60" text-anchor="middle" font-size="14" font-weight="500" fill="#0C447C">project</text>
+<text x="340" y="78" text-anchor="middle" font-size="12" fill="#185FA5">knowledge base and instructions</text>
+<line x1="110" y1="88" x2="110" y2="112" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M110 119 L106 112 L114 112 Z" fill="#5F5E5A"/>
+<rect x="45" y="120" width="130" height="58" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="110" y="147" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">open thread</text>
+<text x="110" y="167" text-anchor="middle" font-size="12" fill="#5F5E5A">one question</text>
+<rect x="195" y="120" width="130" height="58" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="260" y="147" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">do the work</text>
+<text x="260" y="167" text-anchor="middle" font-size="12" fill="#0F6E56">chat or cowork</text>
+<rect x="345" y="120" width="130" height="58" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="410" y="147" text-anchor="middle" font-size="14" font-weight="500" fill="#26215C">close it</text>
+<text x="410" y="167" text-anchor="middle" font-size="12" fill="#534AB7">summarise it</text>
+<rect x="495" y="120" width="130" height="58" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="560" y="147" text-anchor="middle" font-size="14" font-weight="500" fill="#26215C">write back</text>
+<text x="560" y="167" text-anchor="middle" font-size="12" fill="#534AB7">to the project</text>
+<line x1="175" y1="149" x2="188" y2="149" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M195 149 L188 145 L188 153 Z" fill="#5F5E5A"/>
+<line x1="325" y1="149" x2="338" y2="149" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M345 149 L338 145 L338 153 Z" fill="#5F5E5A"/>
+<line x1="475" y1="149" x2="488" y2="149" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M495 149 L488 145 L488 153 Z" fill="#5F5E5A"/>
+<path fill="none" stroke="#5F5E5A" stroke-width="1.5" d="M560 178 V 213 H 475"/>
+<rect x="245" y="195" width="230" height="36" rx="4" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="360" y="217" text-anchor="middle" font-size="12" fill="#444441">next thread starts smarter</text>
+<path fill="none" stroke="#5F5E5A" stroke-width="1.5" d="M245 213 H 110 V 185"/>
+<path d="M110 178 L106 185 L114 185 Z" fill="#5F5E5A"/>
+<path fill="none" stroke="#888780" stroke-width="1.5" stroke-dasharray="5 4" d="M610 178 V 262 H 460"/>
+<rect x="220" y="244" width="240" height="36" rx="4" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="340" y="266" text-anchor="middle" font-size="12" fill="#444441">chat history does not carry</text>
+<path fill="none" stroke="#888780" stroke-width="1.5" stroke-dasharray="5 4" d="M220 262 H 60 V 178"/>
+<line x1="525" y1="252" x2="545" y2="272" stroke="#E24B4A" stroke-width="2" stroke-linecap="round"/>
+<line x1="545" y1="252" x2="525" y2="272" stroke="#E24B4A" stroke-width="2" stroke-linecap="round"/>
+<line x1="130" y1="252" x2="150" y2="272" stroke="#E24B4A" stroke-width="2" stroke-linecap="round"/>
+<line x1="150" y1="252" x2="130" y2="272" stroke="#E24B4A" stroke-width="2" stroke-linecap="round"/>
+</svg>

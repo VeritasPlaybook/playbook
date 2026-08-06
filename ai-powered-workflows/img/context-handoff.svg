@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="200" viewBox="0 0 680 200" role="img" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Context degradation and the handoff</title>
+<desc>One long thread degrades from sharp to slipping to unreliable. With a handoff, the same work runs as two sharp threads.</desc>
+<rect width="680" height="200" fill="#FCFBF8"/>
+<rect x="40" y="50" width="110" height="44" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="95" y="77" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">one thread</text>
+<rect x="170" y="50" width="180" height="44" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="260" y="77" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">sharp</text>
+<rect x="350" y="50" width="150" height="44" rx="4" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+<text x="425" y="77" text-anchor="middle" font-size="14" font-weight="500" fill="#412402">slipping</text>
+<rect x="500" y="50" width="140" height="44" rx="4" fill="#FCEBEB" stroke="#A32D2D" stroke-width="0.5"/>
+<text x="570" y="77" text-anchor="middle" font-size="14" font-weight="500" fill="#501313">unreliable</text>
+<rect x="40" y="130" width="110" height="44" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="95" y="157" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">handoff</text>
+<rect x="170" y="130" width="180" height="44" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="260" y="157" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">sharp</text>
+<line x1="350" y1="152" x2="361" y2="152" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M368 152 L361 148 L361 156 Z" fill="#5F5E5A"/>
+<rect x="370" y="130" width="90" height="44" rx="4" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="415" y="157" text-anchor="middle" font-size="12" fill="#444441">hand off</text>
+<line x1="460" y1="152" x2="471" y2="152" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M478 152 L471 148 L471 156 Z" fill="#5F5E5A"/>
+<rect x="480" y="130" width="160" height="44" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="560" y="157" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">sharp again</text>
+</svg>

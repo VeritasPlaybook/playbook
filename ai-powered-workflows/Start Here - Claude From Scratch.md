@@ -11,7 +11,7 @@
 
 # Who This Is For
 
-You have used Artificial Intelligence (AI) before. Probably ChatGPT. Maybe Perplexity or Gemini. You open a box, you type a question, you get an answer, you close the tab. It works well enough that you have never had a reason to look further.
+You have used AI before. Probably ChatGPT. Maybe Perplexity or Gemini. You open a box, you type a question, you get an answer, you close the tab. It works well enough that you have never had a reason to look further.
 
 This guide is for the moment you start suspecting there is more, and you cannot tell from the interface what any of it is for.
 

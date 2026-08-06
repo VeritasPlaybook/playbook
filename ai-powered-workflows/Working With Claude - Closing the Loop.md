@@ -17,7 +17,7 @@ For Table of Contents, click **Outline** button on the right -------------------
 
 A friend asked me how to use Claude. I started answering and realised the useful part of my answer had nothing to do with prompts.
 
-Everyone writes about prompts. There are ten thousand guides telling you to be specific, give examples, assign a role. That advice is fine and it is also the least important thing about working with an Artificial Intelligence (AI) model well.
+Everyone writes about prompts. There are ten thousand guides telling you to be specific, give examples, assign a role. That advice is fine and it is also the least important thing about working with AI well.
 
 The thing that actually changed my output was smaller and more boring. It is this: I stopped letting conversations end by accident.
 
@@ -127,13 +127,7 @@ I want to sit on this for a second because it is genuinely counterintuitive, and
 
 There is a related trap. Uploading a file to a conversation is not the same as adding it to project knowledge. A file you drop into a chat is visible in that chat only. And if you edit that file on your computer afterwards, the copy in project knowledge does not update. You have to upload it again.
 
-```mermaid
-flowchart LR
-    P["Project<br/>knowledge base and instructions"] --> T1["Thread 1<br/>open, work, close"]
-    T1 -->|write findings back| P
-    P --> T2["Thread 2<br/>starts smarter"]
-    T1 -. "chat history does not carry" .-x T2
-```
+![The thread loop. Findings travel back to the project and forward to the next thread. The conversation itself does not.](./img/thread-loop.png)
 
 That crossed line is the whole problem. The solid line through the project is the whole solution.
 
@@ -233,15 +227,7 @@ Anthropic's own framing is the one I would keep, because it is careful and it is
 
 That is the practical point. There is no threshold where things break. There is a slow slide where a model that was catching your errors quietly stops catching them, and nothing on screen tells you it happened.
 
-```mermaid
-flowchart LR
-    subgraph One long thread
-    A["Sharp"] --> B["Slipping"] --> C["Unreliable"]
-    end
-    subgraph With a handoff
-    D["Sharp"] --> E["Hand off"] --> F["Sharp again"]
-    end
-```
+![One long thread slides from sharp to unreliable. The same work split by a handoff stays sharp throughout.](./img/context-handoff.png)
 
 ## What a handoff is
 
