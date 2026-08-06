@@ -41,7 +41,7 @@ Almost everything else in this guide follows from that distinction.
 
 Claude is not one product. It is four places you can work, and most people only ever find the first one.
 
-<img width="2720" height="1240" alt="claude_which_surface_decision_tree" src="https://github.com/user-attachments/assets/d7e98f74-b23f-4c3d-a220-56f509dfad79" />
+![Which surface to use: chat for quick answers, cowork to run a task, claude code for repositories, design for visual output, with chat and cowork living inside a project.](./img/which-surface.png)
 
 ## Chat
 

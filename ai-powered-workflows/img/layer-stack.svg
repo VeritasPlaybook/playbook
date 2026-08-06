@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="302" viewBox="0 0 680 302" role="img" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>The five layers</title>
+<desc>A stack of five layers: surface, project, skills, connectors and memory, each with a plain description of what it controls.</desc>
+<rect width="680" height="302" fill="#FCFBF8"/>
+<rect x="40" y="40" width="600" height="42" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="60" y="66" font-size="14" font-weight="500" fill="#26215C">surface</text>
+<text x="220" y="66" font-size="12" fill="#534AB7">where you work: chat, cowork, code, design</text>
+<rect x="40" y="92" width="600" height="42" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="60" y="118" font-size="14" font-weight="500" fill="#0C447C">project</text>
+<text x="220" y="118" font-size="12" fill="#185FA5">what the work is about</text>
+<rect x="40" y="144" width="600" height="42" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="60" y="170" font-size="14" font-weight="500" fill="#04342C">skills</text>
+<text x="220" y="170" font-size="12" fill="#0F6E56">how you want things done</text>
+<rect x="40" y="196" width="600" height="42" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="60" y="222" font-size="14" font-weight="500" fill="#04342C">connectors</text>
+<text x="220" y="222" font-size="12" fill="#0F6E56">what claude can reach</text>
+<rect x="40" y="248" width="600" height="42" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="60" y="274" font-size="14" font-weight="500" fill="#2C2C2A">memory</text>
+<text x="220" y="274" font-size="12" fill="#5F5E5A">what survives the tab closing</text>
+</svg>

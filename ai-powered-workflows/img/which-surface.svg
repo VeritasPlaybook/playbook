@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="310" viewBox="0 0 680 310" role="img" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Which Claude surface to use</title>
+<desc>Starting from what you need, branching to chat, cowork, claude code and design, with chat and cowork feeding into a project.</desc>
+<rect width="680" height="310" fill="#FCFBF8"/>
+<rect x="245" y="40" width="190" height="44" rx="4" fill="#FFFFFF" stroke="#B4B2A9" stroke-width="0.5"/>
+<text x="340" y="67" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">what do you need?</text>
+<line x1="340" y1="84" x2="340" y2="108" stroke="#5F5E5A" stroke-width="1.5"/>
+<line x1="115" y1="108" x2="565" y2="108" stroke="#5F5E5A" stroke-width="1.5"/>
+<line x1="115" y1="108" x2="115" y2="133" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M115 140 L111 133 L119 133 Z" fill="#5F5E5A"/>
+<line x1="265" y1="108" x2="265" y2="133" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M265 140 L261 133 L269 133 Z" fill="#5F5E5A"/>
+<line x1="415" y1="108" x2="415" y2="133" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M415 140 L411 133 L419 133 Z" fill="#5F5E5A"/>
+<line x1="565" y1="108" x2="565" y2="133" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M565 140 L561 133 L569 133 Z" fill="#5F5E5A"/>
+<rect x="50" y="140" width="130" height="58" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="115" y="168" text-anchor="middle" font-size="14" font-weight="500" fill="#26215C">chat</text>
+<text x="115" y="188" text-anchor="middle" font-size="12" fill="#534AB7">quick answers</text>
+<rect x="200" y="140" width="130" height="58" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="265" y="168" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">cowork</text>
+<text x="265" y="188" text-anchor="middle" font-size="12" fill="#0F6E56">runs the task</text>
+<rect x="350" y="140" width="130" height="58" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="415" y="168" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">claude code</text>
+<text x="415" y="188" text-anchor="middle" font-size="12" fill="#5F5E5A">code repos</text>
+<rect x="500" y="140" width="130" height="58" rx="4" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+<text x="565" y="168" text-anchor="middle" font-size="14" font-weight="500" fill="#4A1B0C">design</text>
+<text x="565" y="188" text-anchor="middle" font-size="12" fill="#993C1D">visual output</text>
+<line x1="115" y1="198" x2="115" y2="227" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M115 234 L111 227 L119 227 Z" fill="#5F5E5A"/>
+<line x1="265" y1="198" x2="265" y2="227" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M265 234 L261 227 L269 227 Z" fill="#5F5E5A"/>
+<rect x="50" y="234" width="280" height="52" rx="4" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+<text x="190" y="258" text-anchor="middle" font-size="14" font-weight="500" fill="#0C447C">project</text>
+<text x="190" y="276" text-anchor="middle" font-size="12" fill="#185FA5">the folder that remembers</text>
+</svg>

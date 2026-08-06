@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="200" viewBox="0 0 680 200" role="img" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">
+<title>Chat versus cowork</title>
+<desc>Chat runs one question to one reply and nothing persists. Cowork takes a described outcome, repeats until done, and returns real files.</desc>
+<rect width="680" height="200" fill="#FCFBF8"/>
+<rect x="40" y="40" width="90" height="50" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="85" y="70" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">chat</text>
+<rect x="150" y="40" width="140" height="50" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="220" y="63" text-anchor="middle" font-size="14" font-weight="500" fill="#26215C">you ask</text>
+<text x="220" y="81" text-anchor="middle" font-size="12" fill="#534AB7">one question</text>
+<line x1="290" y1="65" x2="303" y2="65" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M310 65 L303 61 L303 69 Z" fill="#5F5E5A"/>
+<rect x="310" y="40" width="160" height="50" rx="4" fill="#EEEDFE" stroke="#534AB7" stroke-width="0.5"/>
+<text x="390" y="63" text-anchor="middle" font-size="14" font-weight="500" fill="#26215C">claude answers</text>
+<text x="390" y="81" text-anchor="middle" font-size="12" fill="#534AB7">one reply</text>
+<line x1="470" y1="65" x2="483" y2="65" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M490 65 L483 61 L483 69 Z" fill="#5F5E5A"/>
+<rect x="490" y="40" width="140" height="50" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="560" y="63" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">done</text>
+<text x="560" y="81" text-anchor="middle" font-size="12" fill="#5F5E5A">nothing persists</text>
+<rect x="40" y="130" width="90" height="50" rx="4" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+<text x="85" y="160" text-anchor="middle" font-size="14" font-weight="500" fill="#2C2C2A">cowork</text>
+<rect x="150" y="130" width="140" height="50" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="220" y="153" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">you describe</text>
+<text x="220" y="171" text-anchor="middle" font-size="12" fill="#0F6E56">the outcome</text>
+<line x1="290" y1="155" x2="303" y2="155" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M310 155 L303 151 L303 159 Z" fill="#5F5E5A"/>
+<rect x="310" y="130" width="160" height="50" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="390" y="153" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">claude works</text>
+<text x="390" y="171" text-anchor="middle" font-size="12" fill="#0F6E56">repeats until done</text>
+<line x1="470" y1="155" x2="483" y2="155" stroke="#5F5E5A" stroke-width="1.5"/>
+<path d="M490 155 L483 151 L483 159 Z" fill="#5F5E5A"/>
+<rect x="490" y="130" width="140" height="50" rx="4" fill="#E1F5EE" stroke="#0F6E56" stroke-width="0.5"/>
+<text x="560" y="153" text-anchor="middle" font-size="14" font-weight="500" fill="#04342C">you get files</text>
+<text x="560" y="171" text-anchor="middle" font-size="12" fill="#0F6E56">real output</text>
+</svg>
