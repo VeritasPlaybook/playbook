@@ -1,0 +1,621 @@
+<!--
+============================================================
+CHEAT SHEET, FILLED WORKED EXAMPLE
+PM Jordan, hiring manager round, Northwind Payments
+Version 2.1, 26 June 2026
+============================================================
+
+EVERYTHING HERE IS FICTIONAL
+Jordan Chen is not a real person. Devin Marchetti is not a
+real interviewer. Northwind Payments, Tessera, Brightline
+Health Systems, and Quantile Insights are invented companies.
+Every number is illustrative.
+
+WHAT THIS IS
+A single self contained web page you keep open next to your
+video call. Everything on it is written to be found in about
+two seconds while somebody is looking at you. It is not a
+study document.
+
+This file is the templates/Cheat Sheet.html structure and CSS
+with the placeholders replaced by real content, so you can
+see what a filled one looks like. The tab machinery, the card
+anatomy, and the styling are unchanged.
+
+VERSION HISTORY, KEPT DELIBERATELY
+v1,   20 Jun 2026. Initial build.
+v2,   23 Jun 2026, after mock run one. Added the Why Northwind
+      card, the payments boundary line, the ownership box on
+      Story 1, and scope numbers on the Numbers tab.
+v2.1, 26 Jun 2026, after mock run two. Added the discriminator
+      to Landmines and a Triggers row for a decision that did
+      not work.
+
+CARD ANATOMY, KEEP IT IDENTICAL EVERYWHERE
+   competency pill
+   SAY box, the headline, then you stop talking
+   five short beats, the spine of the story
+   SAY box, the closing line, then you stop talking
+   METRICS box, the numbers on their own
+   BOUNDARY box, the honest limit line
+
+THE GOLDEN RULE
+This is a glance tool, not a study document. If a card grows
+past what you can take in at a glance, that card is wrong.
+Sharpen it, do not extend it.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cheat Sheet: Northwind Payments, Hiring Manager Round</title>
+<style>
+  :root{
+    --bg:#0e1116;
+    --panel:#161b22;
+    --card:#1b222c;
+    --line:#2c3542;
+    --text:#e8edf4;
+    --dim:#a4b0c0;
+    --green:#3fbf7f;
+    --amber:#e0a44a;
+    --red:#e05a5a;
+    --blue:#5aa9e0;
+    --purple:#a97fe0;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.55;
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px 60px}
+  header.top{padding:26px 0 14px}
+  header.top h1{margin:0 0 6px;font-size:26px;letter-spacing:.2px}
+  header.top .sub{color:var(--dim);font-size:15px}
+
+  /* sticky pill tab bar */
+  .tabbar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(14,17,22,.96);
+    border-bottom:1px solid var(--line);
+    padding:12px 0;
+    margin-bottom:24px;
+    display:flex;flex-wrap:wrap;gap:8px;
+  }
+  .tabbar button{
+    background:var(--panel);
+    color:var(--dim);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:9px 18px;
+    font-size:15px;
+    font-family:inherit;
+    cursor:pointer;
+    transition:background .12s,color .12s,border-color .12s;
+  }
+  .tabbar button:hover{color:var(--text);border-color:#3d4959}
+  .tabbar button.active{
+    background:var(--blue);
+    color:#0e1116;
+    border-color:var(--blue);
+    font-weight:600;
+  }
+
+  /* one panel visible at a time */
+  .panel{display:none}
+  .panel.active{display:block}
+
+  h2.panel-title{font-size:21px;margin:0 0 4px}
+  p.panel-note{color:var(--dim);font-size:15px;margin:0 0 22px}
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:18px 20px;
+    margin-bottom:20px;
+  }
+  .card h3{margin:0 0 12px;font-size:18px}
+
+  /* semantic blocks, each means exactly one thing */
+  .micro{
+    display:block;
+    font-size:11.5px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    font-weight:700;
+    margin-bottom:6px;
+  }
+
+  .say{
+    border-left:4px solid var(--green);
+    background:rgba(63,191,127,.09);
+    border-radius:0 8px 8px 0;
+    padding:12px 16px;
+    margin:14px 0;
+    font-size:17px;
+  }
+  .say .micro{color:var(--green)}
+
+  .boundary{
+    border-left:4px solid var(--amber);
+    background:rgba(224,164,74,.09);
+    border-radius:0 8px 8px 0;
+    padding:12px 16px;
+    margin:14px 0;
+  }
+  .boundary .micro{color:var(--amber)}
+
+  .metrics{
+    border:1px solid #33507a;
+    background:rgba(90,169,224,.08);
+    border-radius:8px;
+    padding:12px 16px;
+    margin:14px 0;
+  }
+  .metrics .micro{color:var(--blue)}
+  .metrics ul{margin:4px 0 0;padding-left:20px}
+
+  .owns{
+    display:inline-block;
+    background:rgba(169,127,224,.14);
+    border:1px solid #5b4a7d;
+    color:#d3bdf5;
+    border-radius:999px;
+    padding:5px 14px;
+    font-size:13px;
+    letter-spacing:.4px;
+    margin-bottom:6px;
+  }
+
+  .stop{
+    border-left:4px solid var(--red);
+    background:rgba(224,90,90,.10);
+    border-radius:0 8px 8px 0;
+    padding:12px 16px;
+    margin:14px 0;
+  }
+  .stop .micro{color:var(--red)}
+
+  .landmine{
+    border:1px solid var(--red);
+    border-left:8px solid var(--red);
+    background:rgba(224,90,90,.07);
+    border-radius:0 10px 10px 0;
+    padding:16px 20px;
+    margin-bottom:16px;
+  }
+  .landmine .micro{color:var(--red)}
+  .landmine h3{margin:4px 0 10px;font-size:17px;color:#ffb3b3}
+
+  .beats{margin:14px 0 0;padding-left:22px}
+  .beats li{margin-bottom:7px}
+
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:15.5px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase}
+  tr:last-child td{border-bottom:none}
+
+  .ph{color:#8fa3bb;font-style:italic}
+
+  footer.lic{
+    margin-top:40px;
+    padding-top:16px;
+    border-top:1px solid var(--line);
+    color:#7f8b9c;
+    font-size:13px;
+  }
+  footer.lic a{color:#7f8b9c}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>Cheat Sheet: Northwind Payments, Hiring Manager Round</h1>
+  <div class="sub">Devin Marchetti, Director of Product, Merchant Risk and Money Movement &middot; Tue 30 June 2026, 11:00 Eastern &middot; v2.1 &middot; Glance tool. If a card gets long, sharpen it, do not extend it.</div>
+</header>
+
+<nav class="tabbar" id="tabbar">
+  <button class="active" data-target="open">Open and Scripts</button>
+  <button data-target="story1">Story 1</button>
+  <button data-target="story2">Story 2</button>
+  <button data-target="story3">Story 3</button>
+  <button data-target="triggers">Triggers</button>
+  <button data-target="numbers">Numbers</button>
+  <button data-target="questions">My Questions</button>
+  <button data-target="landmines">Landmines</button>
+</nav>
+
+<!-- ===================== OPEN AND SCRIPTS ===================== -->
+<section class="panel active" id="open">
+  <h2 class="panel-title">Open and Scripts</h2>
+  <p class="panel-note">The first ninety seconds and the handful of lines you must not improvise.</p>
+
+  <div class="card">
+    <h3>Who I am, in twenty five seconds</h3>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      I am a product manager, six years in. Right now I build developer workflow tooling at Tessera, and the thing I built that I would point at is a workflow automation engine that took manual steps out of an engineering team's day without ever taking the manual path away. Before that I spent two and a half years on clinician workflow in a regulated environment. I am here because money movement is the same problem with the stakes turned up.
+    </div>
+    <div class="stop">
+      <span class="micro">Stop</span>
+      Do not keep going into the full history. Say the opener, then stop and let Devin steer. Quantile Insights does not need to be mentioned unless asked.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Why Northwind</h3>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      Your post about moving reconciliation off the overnight batch window spends more space on how you verified the new pipeline agreed with the old one than it does on the pipeline. That is a choice, and it is the choice I would have wanted to make. And I went through Activate in the sandbox twice, about seventy minutes, and step four asked me for business details I had already given in step two.
+    </div>
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      I have not worked in payments, so I am going to be wrong about things for a while. I am not going to tell you that will not happen. What I have done twice is come into a domain where the rules were not negotiable and the users had good reasons not to trust the software. At Brightline, month one I was useless, month three I was writing specifications that did not come back.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Is this a step up, sideways, or down</h3>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      Sideways on title, and I am not going to dress that up. What I am trading is a much bigger surface and a domain I have never worked in. I would rather take a bigger surface at the same title than a bigger title on a surface I already understand.
+    </div>
+    <div class="stop">
+      <span class="micro">Stop</span>
+      Say sideways. Do not relabel it. Devin made a lateral move in 2023 and will hear a relabel immediately.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Close of the round</h3>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      Thank you, this was useful. Based on what you described, the part I would want first is the exception queue, because that is where the manual work and the instant payout pressure meet. What are the next steps?
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STORY 1 ===================== -->
+<section class="panel" id="story1">
+  <h2 class="panel-title">Story 1: Automation engine</h2>
+  <p class="panel-note">Same anatomy on every story card. Do not add sections to it.</p>
+
+  <div class="card">
+    <span class="owns">Owns: taking manual work out of a workflow &middot; adoption under distrust &middot; trade-off ownership</span>
+
+    <div class="say">
+      <span class="micro">Headline, say this first, then stop</span>
+      I built a workflow automation engine that about 70 percent of our paying customers were using inside 90 days, and the reason it got adopted is that it never took the manual path away.
+    </div>
+
+    <ol class="beats">
+      <li>Teams hand-ran the same sequences daily and had built fragile private scripts.</li>
+      <li>First design took the step over completely. Two design partner teams rejected it in a week.</li>
+      <li>The problem was not accuracy. A wrong automation was invisible and irreversible, so they turned it all off.</li>
+      <li>My call: keep the manual path permanently, every action visible in the same queue, reversible for 24 hours. Cost: the clean product plus three weeks.</li>
+      <li>70 percent running one automation at day 90, 40 percent running three or more. I did not instrument reversals for two months.</li>
+    </ol>
+
+    <div class="say">
+      <span class="micro">The line that ends it, say this and stop</span>
+      The lesson I took is that in workflow tooling the adoption blocker is almost never accuracy, it is what happens on the day the tool is wrong.
+    </div>
+
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>About 70 percent of paid accounts with one automation at day 90. Product analytics, account level, paid only.</li>
+        <li>About 40 percent with three or more. Lead with this one. It is the defensible number.</li>
+        <li>Two design partner teams, six weeks, before general availability.</li>
+      </ul>
+    </div>
+
+    <div class="metrics">
+      <span class="micro">Who did what, added v2</span>
+      <ul>
+        <li><strong>Me:</strong> problem framing, design partner programme, the manual path call, the reversibility call, the metric choice.</li>
+        <li><strong>Two engineers:</strong> the trigger and condition model. That is the hard part and it was not my design.</li>
+        <li><strong>Objection:</strong> the engineering lead was against reversibility because it meant holding state we would have thrown away. Name him, do not smooth it over.</li>
+      </ul>
+    </div>
+
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      I owned the product decisions and the adoption argument. If you ask me how the evaluation order works inside the trigger model, I would be reconstructing rather than remembering.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STORY 2 ===================== -->
+<section class="panel" id="story2">
+  <h2 class="panel-title">Story 2: Messaging clearance</h2>
+  <p class="panel-note">Clone of the Story 1 structure. Keep the anatomy identical.</p>
+
+  <div class="card">
+    <span class="owns">Owns: shipping inside a non-negotiable constraint &middot; cross-functional sequencing &middot; regulated credibility</span>
+
+    <div class="say">
+      <span class="micro">Headline, say this first, then stop</span>
+      I got a patient messaging feature through compliance design review in six weeks against a twelve week internal benchmark, by running design review alongside technical review instead of after it.
+    </div>
+
+    <ol class="beats">
+      <li>Patient messaging touches protected health information, so it needs compliance clearance. Historically twelve weeks.</li>
+      <li>The twelve weeks was sequencing and round trips, not scrutiny.</li>
+      <li>I asked the compliance lead what she always sends back. Three items, named in ten minutes.</li>
+      <li>Moved her into design from week one as a participant, and put her three questions into the specification template as required fields.</li>
+      <li>Cleared in six weeks, zero return rounds. The compression was sequencing, not cleverness about the rules.</li>
+    </ol>
+
+    <div class="say">
+      <span class="micro">The line that ends it, say this and stop</span>
+      In a regulated product, compliance and usability are the same workstream wearing two hats, and treating them as sequential is what costs you the quarter.
+    </div>
+
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>Six weeks to clearance against a twelve week internal benchmark.</li>
+        <li>Zero compliance return rounds where the norm was two, each three to four weeks. Defend this, not the ratio.</li>
+        <li>Three recurring issues, now permanent required fields in the specification template.</li>
+      </ul>
+    </div>
+
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      The twelve week figure was an internal average across features of different sizes, so it is not a like-for-like comparison. I am not a compliance expert and I would not want to be presented as one.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STORY 3 ===================== -->
+<section class="panel" id="story3">
+  <h2 class="panel-title">Story 3: Connector roadmap</h2>
+  <p class="panel-note">Clone of the Story 1 structure. Keep the anatomy identical.</p>
+
+  <div class="card">
+    <span class="owns">Owns: prioritising against teams you do not control &middot; saying no &middot; expansion mechanics</span>
+
+    <div class="say">
+      <span class="micro">Headline, say this first, then stop</span>
+      I owned the integrations roadmap and shipped six connectors in a year, and the decision I am most sure about is the seventh one I refused to build.
+    </div>
+
+    <ol class="beats">
+      <li>Twenty requests, capacity for six, and the default would have followed the loudest voice.</li>
+      <li>I scored on accounts unlocked inside existing customers, plus whether the vendor interface was stable enough not to become permanent maintenance.</li>
+      <li>Six shipped, about 19 percent growth in average accounts per paying customer over the year.</li>
+      <li>I refused the largest account's request in the customer council, in front of the other seven, not privately.</li>
+      <li>Then I left the no sitting for four months before offering the webhook that covered most of it. That gap was mine.</li>
+    </ol>
+
+    <div class="say">
+      <span class="micro">The line that ends it, say this and stop</span>
+      The connector I did not build is what taught the rest of the council what our roadmap actually responded to, which was worth more than the connector would have been.
+    </div>
+
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>Six connectors shipped in a year, from twenty requests.</li>
+        <li>About 19 percent growth in average accounts per paying customer. Say the attribution limit before being asked.</li>
+        <li>Eight accounts in the weekly customer council.</li>
+      </ul>
+    </div>
+
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      I owned prioritisation and the customer relationship. Six was only possible because two engineers built a shared error handling pattern first, and that was their decision, not mine.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRIGGERS ===================== -->
+<section class="panel" id="triggers">
+  <h2 class="panel-title">Triggers</h2>
+  <p class="panel-note">You will not have time to choose a story mid sentence. Decide now. Hear the phrase on the left, lead with the story on the right.</p>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr><th>If you hear something like this</th><th>Lead with</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>"Tell me about the work you are proudest of"</td><td>Story 1, automation engine</td></tr>
+        <tr><td>"How much of that was you and how much was the team"</td><td>Story 1, go straight to the Who did what box</td></tr>
+        <tr><td>"Something you owned end to end, where did ownership stop"</td><td>Story 1, then the boundary line without being asked</td></tr>
+        <tr><td>"A constraint you could not negotiate away"</td><td>Story 2, messaging clearance</td></tr>
+        <tr><td>"Working with a function that is usually a blocker"</td><td>Story 2, lead on moving her from approver to participant</td></tr>
+        <tr><td>"What was the scope of your last role"</td><td>Story 3, scope numbers, then decision rights</td></tr>
+        <tr><td>"A hard conversation, or telling a customer no"</td><td>Story 3, the customer council refusal</td></tr>
+        <tr><td>"A decision that did not work" or "a miss" <em>(added v2.1)</em></td><td>Story 3, the four month delay on the webhook. NOT the assistant retention number.</td></tr>
+        <tr><td>"A number you would defend under scrutiny"</td><td>Story 1, the 40 percent three-or-more figure, then the method</td></tr>
+      </tbody>
+    </table>
+    <div class="stop">
+      <span class="micro">Stop</span>
+      If two stories fit, take the one you have said out loud more recently. A well rehearsed near fit beats a perfect fit you have never spoken.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NUMBERS ===================== -->
+<section class="panel" id="numbers">
+  <h2 class="panel-title">Numbers</h2>
+  <p class="panel-note">Every number you might need, isolated from the stories so you can find one without reading a paragraph. Only numbers you can defend if asked how you got them.</p>
+
+  <div class="card">
+    <h3>My numbers</h3>
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>Automation engine: about 40 percent of paid accounts running three or more automations at day 90. Product analytics, account level, paid only. Lead with this over the 70 percent.</li>
+        <li>Messaging clearance: six weeks, zero return rounds, against a twelve week internal benchmark.</li>
+        <li>Connectors: six shipped, about 19 percent growth in accounts per paying customer over the year.</li>
+        <li>Scope <em>(added v2)</em>: three engineers plus a shared designer, inside a team of nine. No budget authority. I could decline a connector request without escalation. I could not change headcount or the release calendar.</li>
+        <li>Time: two and a half years at Tessera, two years eight months at Brightline, six years as a product manager.</li>
+      </ul>
+    </div>
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      The 19 percent cannot be fully attributed to connectors. Six things shipped that year. What I can attribute is the timing pattern: account growth clustered in the weeks after a connector for that customer's stack landed.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Their numbers</h3>
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>About 900 platform partners, per their careers page, retrieved June 2026.</li>
+        <li>United Kingdom and Ireland launch, February 2025. This is why there are two ledgers with different cutoffs.</li>
+      </ul>
+    </div>
+    <div class="stop">
+      <span class="micro">Stop</span>
+      Do not quote a number about their company unless you have the source and the date. Being wrong about their own metric in front of them is unrecoverable. Do not quote a processed volume figure at all.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MY QUESTIONS ===================== -->
+<section class="panel" id="questions">
+  <h2 class="panel-title">My Questions</h2>
+  <p class="panel-note">Pick two, maybe three. In a forty five minute round you get about seven minutes.</p>
+
+  <div class="card">
+    <h3>Ask these</h3>
+    <ol class="beats">
+      <li>Is this a new seat out of the January reorganisation, or is somebody handing something over? The first ninety days look different depending on the answer.</li>
+      <li>The reconciliation post reads to me like it was in progress rather than finished, and I would guess the United Kingdom launch complicated it. Where is that sitting now?</li>
+      <li>Is the exception queue measured on volume worked or on time to resolution? Those two produce completely different products.</li>
+      <li>Backup, only if one of the above gets answered unprompted: does Ledger sit with you directly, or would this role be working across into a peer's area?</li>
+    </ol>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      What is the thing about this group that you would want somebody to know before they said yes, that is not on the job description?
+    </div>
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>Time available for questions: about 7 minutes</li>
+        <li>Questions to actually ask: 2, maybe 3</li>
+      </ul>
+    </div>
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      If they already answered one of these, say so and move to the backup. Asking something they covered says you were not listening.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Write down while they answer</h3>
+    <ul class="beats">
+      <li>How they describe the team</li>
+      <li>The hardest problem they name</li>
+      <li>Any word they repeat</li>
+      <li>What they seem tired of</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== LANDMINES ===================== -->
+<section class="panel" id="landmines">
+  <h2 class="panel-title">Landmines</h2>
+  <p class="panel-note">Things that end rounds. Read this tab last before the call starts.</p>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Saying the reconciliation move off the batch window is finished</h3>
+    <p>The post describes a direction and one service. It predates the United Kingdom launch, which almost certainly added batch behaviour back in. Devin may have spent a year on the half that is not done.</p>
+    <div class="say">
+      <span class="micro">Say this instead</span>
+      I read that as in progress rather than finished, and I would guess the United Kingdom launch complicated it. Where is that actually sitting now?
+    </div>
+  </div>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Assuming this is a backfill, or that Devin owns Ledger directly</h3>
+    <p>Both are inferences stacked on thin signals. Saying "since you own Ledger" and being wrong makes the research sound confident and unreliable at the same time.</p>
+    <div class="say">
+      <span class="micro">Say this instead</span>
+      I may have the shape of the group wrong. Does Ledger sit with you directly, or would this role be working across into a peer's area?
+    </div>
+  </div>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Overclaiming any payments knowledge, at any size</h3>
+    <p>The follow up is one question deep and Devin spent six years inside settlement. The honest partial model scored well in run one. The confident one would have ended the round.</p>
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      That is at the edge of what I know. My rough model is an authorization hold, then a capture, then settlement on a delay. Where I get thin is what happens between capture and settlement and who holds the money during it.
+    </div>
+  </div>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Leading with the Northwind hook on a question about my own work <em>(discriminator, added v2.1)</em></h3>
+    <p>This fired twice in run two. It is the version two why-Northwind material escaping its context, and to a different interviewer it reads as a candidate who cannot stop selling.</p>
+    <div class="say">
+      <span class="micro">Say this instead</span>
+      Company hook when they ask why us. Story first when they ask about my work. If the first eleven seconds of an answer about my own project mention Northwind, I am pitching.
+    </div>
+  </div>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Saying merchant when I mean sub-merchant, and crossing the two 40 percents</h3>
+    <p>Platform partner is the paying customer. Sub-merchant is the end business taking the payment. Two different parties. Separately: the 40 percent charting reduction is Brightline, the 40 percent three-or-more automations is Tessera. Never cross them.</p>
+  </div>
+
+  <div class="card">
+    <div class="stop">
+      <span class="micro">Stop</span>
+      Universal ones: do not fill silence after a good answer, do not answer the question you wish they had asked, do not narrate your own process out loud, do not raise the duplicate Activate step unless asked what you noticed.
+    </div>
+  </div>
+</section>
+
+<footer class="lic">
+  Licensed CC BY 4.0. Based on "Cheat Sheet," part of "Build Your Own Interview Simulator" by VeritasPlaybook.
+  Fictional worked example: Jordan Chen, Devin Marchetti, and Northwind Payments do not exist.
+  <a href="https://github.com/VeritasPlaybook/playbook">github.com/VeritasPlaybook/playbook</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var bar = document.getElementById('tabbar');
+  var buttons = bar.querySelectorAll('button');
+  var panels = document.querySelectorAll('.panel');
+
+  bar.addEventListener('click', function(e){
+    var btn = e.target.closest('button');
+    if(!btn) return;
+    var target = btn.getAttribute('data-target');
+    if(!target) return;
+
+    for(var i=0;i<buttons.length;i++){ buttons[i].classList.remove('active'); }
+    for(var j=0;j<panels.length;j++){ panels[j].classList.remove('active'); }
+
+    btn.classList.add('active');
+    var panel = document.getElementById(target);
+    if(panel){ panel.classList.add('active'); }
+
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+</html>

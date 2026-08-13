@@ -11,6 +11,12 @@ End-to-end workflow for tailored resumes and cover letters, built around a perso
 
 - **Main guide:** [AI Workflow for Resumes That Actually Land](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/AI%20Workflow%20for%20Resumes%20That%20Actually%20Land.md)
 
+### Interview Simulator Kit
+Build a practice interviewer for the specific round you have booked: research the company, the format, and the named people, turn that into a graded mock you can run out loud, and carry what it finds into the next round. The companion to the resume workflow.
+
+- **Main guide:** [Build Your Own Interview Simulator](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Build%20Your%20Own%20Interview%20Simulator.md)
+- **Ninety minute version:** [QUICKSTART](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/interview-simulator-deepdives/QUICKSTART.md)
+
 ### Building a Cyberbrain
 Workflow for turning Obsidian, Claude, and the Model Context Protocol (MCP) into a personal knowledge system: capture, dispatch, dashboards, and scheduled tasks.
 

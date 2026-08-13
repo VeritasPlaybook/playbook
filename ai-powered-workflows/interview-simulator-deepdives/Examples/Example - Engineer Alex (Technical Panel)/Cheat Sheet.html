@@ -1,0 +1,668 @@
+<!--
+============================================================
+CHEAT SHEET, FILLED WORKED EXAMPLE
+Engineer Alex, technical panel, Northwind Payments
+Version 2.1, 28 June 2026
+============================================================
+
+EVERYTHING HERE IS FICTIONAL
+Alex Rivera is not a real person. Ines Kowalczyk and Marcus
+Dube are not real interviewers. Northwind Payments, Beacon
+Pay, Lumen Streams, and Hearthstone Labs are invented
+companies. Every number is illustrative.
+
+WHAT THIS IS
+A single self contained web page you keep open next to your
+video call. Everything on it is written to be found in about
+two seconds while somebody is looking at you. It is not a
+study document.
+
+This file is the templates/Cheat Sheet.html structure and CSS
+with the placeholders replaced by real content. The tab
+machinery, the card anatomy, and the styling are unchanged.
+
+VERSION HISTORY, KEPT DELIBERATELY
+v1,   21 Jun 2026. Initial build.
+v2,   24 Jun 2026, after mock run one. Story 2 rewritten to
+      lead with verification rather than throughput. Shard key
+      block added. Comparison figures added to Numbers. New
+      boundary line on what I did not operate.
+v2.1, 28 Jun 2026, after mock run two. One discriminator added
+      to Landmines, one Triggers row, and a customer visible
+      symptom line on all three story cards.
+
+CARD ANATOMY, KEEP IT IDENTICAL EVERYWHERE
+   competency pill
+   SAY box, the headline, then you stop talking
+   five short beats, the spine of the story
+   SAY box, the closing line, then you stop talking
+   METRICS box, the numbers on their own
+   BOUNDARY box, the honest limit line
+
+THE GOLDEN RULE
+This is a glance tool, not a study document. If a card grows
+past what you can take in at a glance, that card is wrong.
+Sharpen it, do not extend it.
+============================================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cheat Sheet: Northwind Payments, Technical Panel</title>
+<style>
+  :root{
+    --bg:#0e1116;
+    --panel:#161b22;
+    --card:#1b222c;
+    --line:#2c3542;
+    --text:#e8edf4;
+    --dim:#a4b0c0;
+    --green:#3fbf7f;
+    --amber:#e0a44a;
+    --red:#e05a5a;
+    --blue:#5aa9e0;
+    --purple:#a97fe0;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.55;
+  }
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px 60px}
+  header.top{padding:26px 0 14px}
+  header.top h1{margin:0 0 6px;font-size:26px;letter-spacing:.2px}
+  header.top .sub{color:var(--dim);font-size:15px}
+
+  /* sticky pill tab bar */
+  .tabbar{
+    position:sticky;top:0;z-index:50;
+    background:rgba(14,17,22,.96);
+    border-bottom:1px solid var(--line);
+    padding:12px 0;
+    margin-bottom:24px;
+    display:flex;flex-wrap:wrap;gap:8px;
+  }
+  .tabbar button{
+    background:var(--panel);
+    color:var(--dim);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:9px 18px;
+    font-size:15px;
+    font-family:inherit;
+    cursor:pointer;
+    transition:background .12s,color .12s,border-color .12s;
+  }
+  .tabbar button:hover{color:var(--text);border-color:#3d4959}
+  .tabbar button.active{
+    background:var(--blue);
+    color:#0e1116;
+    border-color:var(--blue);
+    font-weight:600;
+  }
+
+  /* one panel visible at a time */
+  .panel{display:none}
+  .panel.active{display:block}
+
+  h2.panel-title{font-size:21px;margin:0 0 4px}
+  p.panel-note{color:var(--dim);font-size:15px;margin:0 0 22px}
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:18px 20px;
+    margin-bottom:20px;
+  }
+  .card h3{margin:0 0 12px;font-size:18px}
+
+  /* semantic blocks, each means exactly one thing */
+  .micro{
+    display:block;
+    font-size:11.5px;
+    letter-spacing:1.4px;
+    text-transform:uppercase;
+    font-weight:700;
+    margin-bottom:6px;
+  }
+
+  .say{
+    border-left:4px solid var(--green);
+    background:rgba(63,191,127,.09);
+    border-radius:0 8px 8px 0;
+    padding:12px 16px;
+    margin:14px 0;
+    font-size:17px;
+  }
+  .say .micro{color:var(--green)}
+
+  .boundary{
+    border-left:4px solid var(--amber);
+    background:rgba(224,164,74,.09);
+    border-radius:0 8px 8px 0;
+    padding:12px 16px;
+    margin:14px 0;
+  }
+  .boundary .micro{color:var(--amber)}
+
+  .metrics{
+    border:1px solid #33507a;
+    background:rgba(90,169,224,.08);
+    border-radius:8px;
+    padding:12px 16px;
+    margin:14px 0;
+  }
+  .metrics .micro{color:var(--blue)}
+  .metrics ul{margin:4px 0 0;padding-left:20px}
+
+  .owns{
+    display:inline-block;
+    background:rgba(169,127,224,.14);
+    border:1px solid #5b4a7d;
+    color:#d3bdf5;
+    border-radius:999px;
+    padding:5px 14px;
+    font-size:13px;
+    letter-spacing:.4px;
+    margin-bottom:6px;
+  }
+
+  .stop{
+    border-left:4px solid var(--red);
+    background:rgba(224,90,90,.10);
+    border-radius:0 8px 8px 0;
+    padding:12px 16px;
+    margin:14px 0;
+  }
+  .stop .micro{color:var(--red)}
+
+  .landmine{
+    border:1px solid var(--red);
+    border-left:8px solid var(--red);
+    background:rgba(224,90,90,.07);
+    border-radius:0 10px 10px 0;
+    padding:16px 20px;
+    margin-bottom:16px;
+  }
+  .landmine .micro{color:var(--red)}
+  .landmine h3{margin:4px 0 10px;font-size:17px;color:#ffb3b3}
+
+  .beats{margin:14px 0 0;padding-left:22px}
+  .beats li{margin-bottom:7px}
+
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:15.5px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase}
+  tr:last-child td{border-bottom:none}
+
+  .ph{color:#8fa3bb;font-style:italic}
+
+  footer.lic{
+    margin-top:40px;
+    padding-top:16px;
+    border-top:1px solid var(--line);
+    color:#7f8b9c;
+    font-size:13px;
+  }
+  footer.lic a{color:#7f8b9c}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>Cheat Sheet: Northwind Payments, Technical Panel</h1>
+  <div class="sub">Ines Kowalczyk, Staff Engineer &middot; Marcus Dube, Engineering Manager &middot; Thu 2 July 2026, 1:00pm Pacific &middot; v2.1 &middot; Glance tool. If a card gets long, sharpen it, do not extend it.</div>
+</header>
+
+<nav class="tabbar" id="tabbar">
+  <button class="active" data-target="open">Open and Scripts</button>
+  <button data-target="story1">Story 1</button>
+  <button data-target="story2">Story 2</button>
+  <button data-target="story3">Story 3</button>
+  <button data-target="triggers">Triggers</button>
+  <button data-target="numbers">Numbers</button>
+  <button data-target="questions">My Questions</button>
+  <button data-target="landmines">Landmines</button>
+</nav>
+
+<!-- ===================== OPEN AND SCRIPTS ===================== -->
+<section class="panel active" id="open">
+  <h2 class="panel-title">Open and Scripts</h2>
+  <p class="panel-note">The first ninety seconds and the handful of lines you must not improvise.</p>
+
+  <div class="card">
+    <h3>Who I am, in twenty five seconds</h3>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      I am a backend engineer, about six years in, Go primarily. Right now I own the transaction processing service at Beacon Pay, roughly four million transactions a day. The two things I would point at are the idempotency primitives for our payment interface and moving the transaction store from a single instance to a sharded cluster while it was live.
+    </div>
+    <div class="stop">
+      <span class="micro">Stop</span>
+      Two projects, not five. They skimmed the resume this morning. Let them pick which one to open.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>The structure every answer runs through</h3>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      Let me answer that directly and then go one level down, because the interesting part is a level below the answer.
+    </div>
+    <div class="metrics">
+      <span class="micro">The five beats</span>
+      <ul>
+        <li>1. The claim, in one sentence. Not the setup.</li>
+        <li>2. The mechanism, one level down. Ines lives here.</li>
+        <li>3. The verification. How I knew it was right.</li>
+        <li>4. The consequence, in words a non-specialist would use. Marcus lives here.</li>
+        <li>5. The cost. Never end on a clean win.</li>
+      </ul>
+    </div>
+    <div class="stop">
+      <span class="micro">Stop</span>
+      Length: 90 seconds for a design question, 60 for a mechanism question, 45 for an incident question. Marcus wants shorter answers than Ines does.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Senior posting, Staff positioning</h3>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      Yes, my profile says that, and it is accurate. I am running this loop at Senior because the work is money movement at a company where money movement is the product, and that is worth more to me than a title at a company where payments is a feature. The thing that would make the question moot is scope.
+    </div>
+    <div class="stop">
+      <span class="micro">Stop</span>
+      Flat, two sentences, then move on. No sulking, no hedging, do not ask them to reassure you. Neither of these people decides your level.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Close of the round</h3>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      Thank you. The part I would want first is the matching engine and whatever is still sitting in the exception path, because that seems like where the interesting correctness problems are. What are the next steps?
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STORY 1 ===================== -->
+<section class="panel" id="story1">
+  <h2 class="panel-title">Story 1: Idempotency primitives</h2>
+  <p class="panel-note">Same anatomy on every story card. Do not add sections to it.</p>
+
+  <div class="card">
+    <span class="owns">Owns: correctness under distributed failure &middot; interface design &middot; blast radius</span>
+
+    <div class="say">
+      <span class="micro">Headline, say this first, then stop</span>
+      I designed the idempotency primitives for our payment interface, and duplicate charge incidents dropped about 95 percent in the twelve months after, compared with the twelve months before.
+    </div>
+
+    <ol class="beats">
+      <li>Clients retried after a lost response and we charged twice. Correct behaviour on both sides, no bug anywhere.</li>
+      <li>The design question was not "add a key," it was what a key means when the payloads differ under it.</li>
+      <li>My call: mismatched payload under an existing key returns a conflict. Not the stored result, not a new charge. Loud beats silent.</li>
+      <li>Twenty four hour retention, not forever, documented rather than hidden. Unbounded growth at four million a day is its own incident.</li>
+      <li>Verified with a shadow counter: six weeks of logging what it would have rejected, without rejecting it, read by hand.</li>
+    </ol>
+
+    <div class="say">
+      <span class="micro">The line that ends it, say this and stop</span>
+      In a payments system a loud wrong answer is cheap and a quiet wrong answer is not, and the interface should be designed around that asymmetry.
+    </div>
+
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>About 1 duplicate incident a week down to about 1 every 5 weeks. Incident tracker, same classification both sides.</li>
+        <li>About 4 million transactions a day, four regions.</li>
+        <li>2 client integrations broken at rollout. Say this before being asked.</li>
+      </ul>
+    </div>
+
+    <div class="metrics">
+      <span class="micro">What a person saw, added v2.1</span>
+      <ul>
+        <li>The buyer saw two charges from the same business on their card in the same minute.</li>
+        <li>The sub-merchant saw a support message from an angry customer before they saw anything in their dashboard.</li>
+      </ul>
+    </div>
+
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      I owned the semantics and the interface. I did not own the storage layer implementation, so on locking behaviour under contention I would be reconstructing rather than remembering.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STORY 2 ===================== -->
+<section class="panel" id="story2">
+  <h2 class="panel-title">Story 2: Sharded migration</h2>
+  <p class="panel-note">Clone of the Story 1 structure. Keep the anatomy identical. Rewritten in v2 to lead with verification.</p>
+
+  <div class="card">
+    <span class="owns">Owns: migrating a live financial store &middot; verification &middot; staged rollout</span>
+
+    <div class="say">
+      <span class="micro">Headline, say this first, then stop</span>
+      I led the migration of our transaction store from a single instance to a sharded cluster, and the part that took the longest was proving the new path agreed with the old one on four months of history before we let it serve anything.
+    </div>
+
+    <div class="metrics">
+      <span class="micro">Shard key, added v2. This is the follow up you will get.</span>
+      <ul>
+        <li><strong>Chose merchant identifier.</strong> About 80 percent of a week of production query logs filtered by merchant, so merchant-scoped reads stay on one node.</li>
+        <li><strong>Rejected transaction identifier.</strong> Perfect distribution, scatter-gather on our dominant read pattern.</li>
+        <li><strong>Rejected date range.</strong> Clean archival, permanently hot last shard, which is the problem we were solving.</li>
+        <li><strong>The cost:</strong> two high-volume merchants make hot shards. Isolated onto dedicated shards by hand. Still ugly, still there.</li>
+      </ul>
+    </div>
+
+    <ol class="beats">
+      <li>Single instance at about four million a day. The write path was the constraint.</li>
+      <li>Shard key was the decision, and it determines everything downstream.</li>
+      <li>Four phases over four months: dual write, comparison, staged read shift, retire the old instance.</li>
+      <li>Comparison on about 140 million rows. Disagreement started at 0.4 percent and was almost all a timestamp precision difference.</li>
+      <li>Real disagreements: 31 rows, from one two-minute dual-write bug in week one. Fixed by hand. I have the list.</li>
+    </ol>
+
+    <div class="say">
+      <span class="micro">The line that ends it, say this and stop</span>
+      The seven times is the headline and the 31 rows is the actual result, because a migration you cannot prove is a migration you have not finished.
+    </div>
+
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>About 140 million rows compared over 4 months of history.</li>
+        <li>0.4 percent disagreement at start, then 31 real rows. <strong>Defend the 31, not the seven times.</strong></li>
+        <li>About 7 times write throughput. Load test on production-shaped data plus observed peak. Scattered queries got worse.</li>
+        <li>4 phases, 4 months, no customer-facing downtime.</li>
+      </ul>
+    </div>
+
+    <div class="metrics">
+      <span class="micro">What a person saw, added v2.1</span>
+      <ul>
+        <li>Nothing. That is the point. No status page entry, no support tickets attributable to the migration, no scheduled window.</li>
+      </ul>
+    </div>
+
+    <div class="boundary">
+      <span class="micro">Honest limit line, added v2</span>
+      I did not operate the cluster. Our data platform group did. On rebalancing behaviour under node failure I can tell you what we planned for, not what happens, because it did not happen to us.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== STORY 3 ===================== -->
+<section class="panel" id="story3">
+  <h2 class="panel-title">Story 3: Service mesh cutover</h2>
+  <p class="panel-note">Clone of the Story 1 structure. Keep the anatomy identical.</p>
+
+  <div class="card">
+    <span class="owns">Owns: operability &middot; choosing the measure &middot; cross-team change</span>
+
+    <div class="say">
+      <span class="micro">Headline, say this first, then stop</span>
+      I moved our services off bare metal onto a containerised service mesh, and the argument I had to win first was that we should optimise the tail latency rather than the average.
+    </div>
+
+    <ol class="beats">
+      <li>Every team had its own retry, timeout, and certificate conventions. Every investigation started with archaeology.</li>
+      <li>Average latency had been fine for a year. On that number there was no case for the work at all.</li>
+      <li>I committed to the 99th percentile in writing, and stated in advance that the median would get slightly worse.</li>
+      <li>Fourteen services over about five months, one team at a time, old path live for two weeks after each cutover.</li>
+      <li>Tail down about 38 percent, median about 4 percent worse exactly as predicted. Six engineering weeks a quarter of toil removed, estimated.</li>
+    </ol>
+
+    <div class="say">
+      <span class="micro">The line that ends it, say this and stop</span>
+      Picking the metric was the whole decision, because once we were measuring the tail the migration argued for itself, and while we were measuring the average it never would have.
+    </div>
+
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>99th percentile down about 38 percent. Same measurement window both sides.</li>
+        <li>Median about 4 percent worse. Predicted in writing beforehand.</li>
+        <li>14 services, about 5 months.</li>
+        <li>About 6 engineering weeks a quarter of toil. <strong>Estimate.</strong> Say the word before being asked.</li>
+      </ul>
+    </div>
+
+    <div class="metrics">
+      <span class="micro">What a person saw, added v2.1</span>
+      <ul>
+        <li>Customers had been reporting occasional slow requests with no pattern anyone could find. Those reports mostly stopped.</li>
+        <li>Engineers stopped starting every investigation by asking which retry convention that service used.</li>
+      </ul>
+    </div>
+
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      I did not build or operate the mesh. I made the case for it, chose the metric, and migrated the four services my team owned.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TRIGGERS ===================== -->
+<section class="panel" id="triggers">
+  <h2 class="panel-title">Triggers</h2>
+  <p class="panel-note">You will not have time to choose mid sentence. Decide now. Hear the phrase on the left, lead with the card on the right.</p>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr><th>If you hear something like this</th><th>Lead with</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>"Backfill history without downtime" or "migrate a live system"</td><td>Story 2, verification first, then the shard key block</td></tr>
+        <tr><td>"How did you know that was the right key" or any data modelling push</td><td>Story 2, the shard key block, all three candidates</td></tr>
+        <tr><td>"A decision where both options were defensible"</td><td>Story 1, conflict versus stored response</td></tr>
+        <tr><td>"Correctness or availability" for a payments flow</td><td>Story 1, then split it by operation: reads, writes, authorization, reporting</td></tr>
+        <tr><td>"A metric you chose" or "why that measure"</td><td>Story 3, the tail versus the average argument</td></tr>
+        <tr><td>"A time you were confidently wrong"</td><td>Story 2, the timestamp precision assumption</td></tr>
+        <tr><td>"Worst production incident" or "last time you were paged"</td><td>Card 4. <strong>HALF BUILT.</strong> Detection facts only. Say the boundary, do not invent.</td></tr>
+        <tr><td>"What did the customer see" or "what did a user experience" <em>(added v2.1)</em></td><td>The What a person saw box on whichever story you are already in. Not the metrics box.</td></tr>
+        <tr><td>Anything about their event log, ordering, or delivery guarantees</td><td>The substitution line on Landmines. Ask before answering.</td></tr>
+      </tbody>
+    </table>
+    <div class="stop">
+      <span class="micro">Stop</span>
+      If two cards fit, take the one you have said out loud more recently. A well rehearsed near fit beats a perfect fit you have never spoken.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== NUMBERS ===================== -->
+<section class="panel" id="numbers">
+  <h2 class="panel-title">Numbers</h2>
+  <p class="panel-note">Every number you might need, isolated from the stories so you can find one without reading a paragraph. Only numbers you can defend if asked how you got them.</p>
+
+  <div class="card">
+    <h3>My numbers</h3>
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>Idempotency: about 1 duplicate incident a week down to about 1 every 5 weeks, over 12 months either side. 2 integrations broken at rollout.</li>
+        <li>Migration verification <em>(added v2)</em>: about 140 million rows compared, 0.4 percent initial disagreement, 31 real disagreements. <strong>This is the number to lead with.</strong></li>
+        <li>Migration throughput: about 7 times on writes. Load test on production-shaped data plus observed peak. Not a claim about reads.</li>
+        <li>Service mesh: 99th percentile down about 38 percent, median about 4 percent worse, 14 services, about 5 months.</li>
+        <li>Scale: about 4 million transactions a day, 4 regions. 5 design documents written, 3 became platform patterns. 2 engineers mentored.</li>
+      </ul>
+    </div>
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      The six engineering weeks a quarter of toil is an estimate built from incident time logs, not a tracked metric. Say the word estimate before anyone asks. What I defend precisely is the tail number and the median regression, from the same dashboards on both sides.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Their numbers</h3>
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>About 900 platform partners, per their careers page, retrieved June 2026.</li>
+        <li>February 2026 authorization degradation, about four hours, post-mortem published March 2026.</li>
+        <li>United Kingdom and Ireland launch, February 2025. This is why there are two ledgers with different cutoffs.</li>
+      </ul>
+    </div>
+    <div class="stop">
+      <span class="micro">Stop</span>
+      Do not quote a number about their company unless you have the source and the date. Do not state the cause of their February incident. Ask.
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MY QUESTIONS ===================== -->
+<section class="panel" id="questions">
+  <h2 class="panel-title">My Questions</h2>
+  <p class="panel-note">Pick two, maybe three. In a sixty minute panel you get about eight minutes.</p>
+
+  <div class="card">
+    <h3>Ask these</h3>
+    <ol class="beats">
+      <li>For Ines: is the move off the batch window done or still in flight, and what did the United Kingdom ledger do to the matching engine?</li>
+      <li>For Marcus: your webhook documentation says what happens when my endpoint is down. What happens when it is slow?</li>
+      <li>For either: what are the ordering and delivery guarantees on the event log between services? I want to know before I assume.</li>
+      <li>Backup: when the automated match gives up, what does the person working the exception actually get handed?</li>
+    </ol>
+    <div class="say">
+      <span class="micro">Say this out loud, word for word</span>
+      What is the thing about this codebase that you would want somebody to know before they said yes, that is not in the job description?
+    </div>
+    <div class="metrics">
+      <span class="micro">Numbers</span>
+      <ul>
+        <li>Time available for questions: about 8 minutes</li>
+        <li>Questions to actually ask: 2, maybe 3</li>
+      </ul>
+    </div>
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      If they already answered one, say so and move to the backup. Asking something they covered says you were not listening.
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Write down while they answer</h3>
+    <ul class="beats">
+      <li>How they describe the team</li>
+      <li>The hardest problem they name</li>
+      <li>Any word they repeat</li>
+      <li>What they seem tired of</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== LANDMINES ===================== -->
+<section class="panel" id="landmines">
+  <h2 class="panel-title">Landmines</h2>
+  <p class="panel-note">Things that end rounds. Read this tab last before the call starts.</p>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Assuming their event log behaves like the broker you know</h3>
+    <p>The job description names no broker. You are pattern matching from Lumen Streams and the pattern match is doing all the work. If their ordering guarantees differ, everything downstream of the assumption is wrong in front of a Staff Engineer.</p>
+    <div class="say">
+      <span class="micro">Say this instead</span>
+      I would want to know what your ordering and delivery guarantees actually are before I answer that. What I have worked with is a partition-aware consumer model with offset checkpointing, so let me describe how I would think about it there and you can tell me where yours differs.
+    </div>
+  </div>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Stating the cause of their February 2026 degradation</h3>
+    <p>Pool exhaustion is your inference, not their statement. Asserting the mechanism of somebody else's incident to the people who lived through it is a bad trade even when the inference is right.</p>
+    <div class="say">
+      <span class="micro">Say this instead</span>
+      I read your February post-mortem. The shape of it, a dependency that got slow and never errored, is the failure mode I find most dangerous, and I would guess pool exhaustion was in there somewhere. Is that roughly what happened?
+    </div>
+  </div>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Answering a human question with an internal metric <em>(discriminator, added v2.1)</em></h3>
+    <p>This fired in run two. Marcus asked what the merchant saw and you gave him the disagreement rate on a comparison job. It is the run one fix escaping its context, not a knowledge gap.</p>
+    <div class="say">
+      <span class="micro">Say this instead</span>
+      Mechanism when they ask how it works. Symptom when they ask what someone saw. If the answer to "what did the customer see" contains a percentage, you have answered the wrong question.
+    </div>
+  </div>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Letting "I led the migration" drift into "I ran the cluster"</h3>
+    <p>The data platform group operated it. You made the shard key call, the phase plan, and the verification design. Same for the mesh: you advocated for it and migrated four services, you did not build it.</p>
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      I owned the shard key decision, the phasing, and the verification. I did not operate the cluster.
+    </div>
+  </div>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Card 4 is half built. Do not fill the gap out loud.</h3>
+    <p>You know the detection time, you know a platform customer found it before we did, and you know what the sub-merchant saw. You do not know what the cardholder saw on a statement. Do not guess that in front of a payments panel.</p>
+    <div class="boundary">
+      <span class="micro">Honest limit line</span>
+      I know what our sub-merchant saw in their dashboard. What the cardholder saw on their statement I would be guessing at, and I would rather check than guess.
+    </div>
+  </div>
+
+  <div class="landmine">
+    <span class="micro">Landmine</span>
+    <h3>Crossing the two migrations, and saying merchant when you mean sub-merchant</h3>
+    <p>The 95 percent duplicate reduction is Beacon Pay. The 38 percent tail reduction is Lumen Streams. You crossed them once in run one. Separately: platform partner is the paying customer, sub-merchant is the end business. Two different parties. And say "agreement," which is their word, not "reconciliation match."</p>
+  </div>
+
+  <div class="card">
+    <div class="stop">
+      <span class="micro">Stop</span>
+      Universal ones: do not fill silence after a good answer, do not answer the question you wish they had asked, do not narrate your own process out loud, do not name their vendors or their people unless they do first.
+    </div>
+  </div>
+</section>
+
+<footer class="lic">
+  Licensed CC BY 4.0. Based on "Cheat Sheet," part of "Build Your Own Interview Simulator" by VeritasPlaybook.
+  Fictional worked example: Alex Rivera, Ines Kowalczyk, Marcus Dube, and Northwind Payments do not exist.
+  <a href="https://github.com/VeritasPlaybook/playbook">github.com/VeritasPlaybook/playbook</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var bar = document.getElementById('tabbar');
+  var buttons = bar.querySelectorAll('button');
+  var panels = document.querySelectorAll('.panel');
+
+  bar.addEventListener('click', function(e){
+    var btn = e.target.closest('button');
+    if(!btn) return;
+    var target = btn.getAttribute('data-target');
+    if(!target) return;
+
+    for(var i=0;i<buttons.length;i++){ buttons[i].classList.remove('active'); }
+    for(var j=0;j<panels.length;j++){ panels[j].classList.remove('active'); }
+
+    btn.classList.add('active');
+    var panel = document.getElementById(target);
+    if(panel){ panel.classList.add('active'); }
+
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+</html>

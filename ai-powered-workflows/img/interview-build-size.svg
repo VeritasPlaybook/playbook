@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img">
+<rect width="900" height="600" fill="#ffffff"/>
+<text x="450.0" y="42.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="20" fill="#1f2328" text-anchor="middle" font-weight="600">Which build: Mock Kit or Super Simulator</text>
+<rect x="230.0" y="74.0" width="440.0" height="58.0" rx="10" fill="#ffffff" stroke="#1f2328" stroke-width="1.8"/>
+<text x="450.0" y="110.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="16" fill="#1f2328" text-anchor="middle" font-weight="600">What failure are you actually afraid of?</text>
+<path d="M 450.0 136.0 L 450.0 166.0 L 232.0 166.0 L 232.0 193.0" stroke="#57606a" stroke-width="1.8" fill="none" stroke-linejoin="round"/><path d="M 232.0 201.0 L 226.6 186.6 L 237.4 186.6 z" fill="#57606a"/>
+<path d="M 450.0 136.0 L 450.0 166.0 L 668.0 166.0 L 668.0 193.0" stroke="#57606a" stroke-width="1.8" fill="none" stroke-linejoin="round"/><path d="M 668.0 201.0 L 662.6 186.6 L 673.4 186.6 z" fill="#57606a"/>
+<rect x="52.0" y="196.0" width="360.0" height="86.0" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="72.0" y="224.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="14.5" fill="#1f2328" text-anchor="start" font-weight="600">Bad delivery.</text>
+<text x="72.0" y="246.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#57606a" text-anchor="start">I know roughly what they will ask.</text>
+<text x="72.0" y="266.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#57606a" text-anchor="start">I am worried about how I say it.</text>
+<path d="M 232.0 286.0 L 232.0 311.0" stroke="#57606a" stroke-width="1.8" fill="none" stroke-linejoin="round"/><path d="M 232.0 319.0 L 226.6 304.6 L 237.4 304.6 z" fill="#57606a"/>
+<rect x="52.0" y="314.0" width="360.0" height="214.0" rx="8" fill="#dafbe1" stroke="#1a7f37" stroke-width="1.8"/>
+<text x="72.0" y="348.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="18" fill="#1f2328" text-anchor="start" font-weight="600">Mock Kit</text>
+<circle cx="75.0" cy="374.0" r="3" fill="#1a7f37"/>
+<text x="88.0" y="378.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1f2328" text-anchor="start">One interviewer, or a short round</text>
+<circle cx="75.0" cy="400.0" r="3" fill="#1a7f37"/>
+<text x="88.0" y="404.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1f2328" text-anchor="start">The question set is knowable in advance</text>
+<circle cx="75.0" cy="426.0" r="3" fill="#1a7f37"/>
+<text x="88.0" y="430.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1f2328" text-anchor="start">One persona, one rubric, one bank</text>
+<circle cx="75.0" cy="452.0" r="3" fill="#1a7f37"/>
+<text x="88.0" y="456.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1f2328" text-anchor="start">Light enough to build the night before</text>
+<text x="72.0" y="496.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1a7f37" text-anchor="start" font-weight="600">45 to 60 minutes to build</text>
+<rect x="488.0" y="196.0" width="360.0" height="86.0" rx="8" fill="#ffffff" stroke="#d0d7de" stroke-width="1.5"/>
+<text x="508.0" y="224.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="14.5" fill="#1f2328" text-anchor="start" font-weight="600">A topic I never touched.</text>
+<text x="508.0" y="246.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#57606a" text-anchor="start">The round could go anywhere.</text>
+<text x="508.0" y="266.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#57606a" text-anchor="start">Coverage is the risk, not polish.</text>
+<path d="M 668.0 286.0 L 668.0 311.0" stroke="#57606a" stroke-width="1.8" fill="none" stroke-linejoin="round"/><path d="M 668.0 319.0 L 662.6 304.6 L 673.4 304.6 z" fill="#57606a"/>
+<rect x="488.0" y="314.0" width="360.0" height="214.0" rx="8" fill="#fff1e5" stroke="#bc4c00" stroke-width="1.8"/>
+<text x="508.0" y="348.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="18" fill="#1f2328" text-anchor="start" font-weight="600">Super Simulator</text>
+<circle cx="511.0" cy="374.0" r="3" fill="#bc4c00"/>
+<text x="524.0" y="378.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1f2328" text-anchor="start">A panel, or a long open ended round</text>
+<circle cx="511.0" cy="400.0" r="3" fill="#bc4c00"/>
+<text x="524.0" y="404.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1f2328" text-anchor="start">You cannot predict where it goes</text>
+<circle cx="511.0" cy="426.0" r="3" fill="#bc4c00"/>
+<text x="524.0" y="430.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1f2328" text-anchor="start">Multiple personas, tagged bank, mode menu</text>
+<circle cx="511.0" cy="452.0" r="3" fill="#bc4c00"/>
+<text x="524.0" y="456.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#1f2328" text-anchor="start">Heavy, and it earns the weight</text>
+<text x="508.0" y="496.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#bc4c00" text-anchor="start" font-weight="600">2 to 4 hours to build</text>
+<text x="450.0" y="566.0" font-family="DejaVu Sans, Helvetica, Arial, sans-serif" font-size="13" fill="#57606a" text-anchor="middle" font-style="italic">Deep Dive 4 has the full decision table. The short version is above.</text>
+</svg>
