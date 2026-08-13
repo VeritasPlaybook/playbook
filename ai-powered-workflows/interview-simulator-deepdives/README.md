@@ -38,6 +38,18 @@ Read the main guide first. This folder makes little sense on its own.
 
 ---
 
+# Downloads
+
+GitHub has no button for downloading a single folder, which makes the instructions above more annoying than they should be. So the pieces you copy are also packaged on the [latest release](https://github.com/VeritasPlaybook/playbook/releases/latest).
+
+**The four skills**, as `.skill` files. Download one and open it to install into Claude, instead of copying a folder by hand: `interview-research.skill`, `interview-simulator.skill`, `cheat-sheet-builder.skill`, `round-debrief.skill`.
+
+**Three starter packs**, as zip files. `starter-blank-templates.zip` is the empty `templates/` folder, pre-wired, and is where most people should start. `starter-pm-jordan.zip` and `starter-engineer-alex.zip` are the two worked examples, ready to unzip and run.
+
+The folders in this repository are the source of truth. The packaged files are built from them, so read the folders if you want to see exactly what a skill does before you install it.
+
+---
+
 # The deep dives
 
 | Guide | What It Covers |

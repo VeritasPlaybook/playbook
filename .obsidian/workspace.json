@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "ai-powered-workflows/interview-simulator-deepdives/QUICKSTART.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "QUICKSTART"
             }
           }
         ]
@@ -185,8 +185,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "956d6224a8a14a76",
+  "active": "7929e4574fa7ec16",
   "lastOpenFiles": [
+    "ai-powered-workflows/interview-simulator-deepdives/README.md.tmp.38032.1ff7555847f9",
+    "README.md",
     "ai-powered-workflows/README.md.tmp.45292.68478a3d4443",
     "README.md.tmp.45292.5caaa8b6a62f",
     "ai-powered-workflows/img/interview-loop.png",
@@ -227,10 +229,8 @@
     "ai-powered-workflows/interview-simulator-deepdives/README.md",
     "ai-powered-workflows/interview-simulator-deepdives/QUICKSTART.md",
     "ai-powered-workflows/interview-simulator-deepdives/Examples/Example - Engineer Alex (Technical Panel)/Interviewer Dossier.md",
-    "ai-powered-workflows/interview-simulator-deepdives/Examples/Example - Engineer Alex (Technical Panel)/Round Debrief.md",
     "ai-powered-workflows/interview-simulator-deepdives/Examples/Example - Engineer Alex (Technical Panel)/Cheat Sheet.html",
     "ai-powered-workflows/interview-simulator-deepdives/Examples/Example - Engineer Alex (Technical Panel)/Story Bank",
-    "ai-powered-workflows/interview-simulator-deepdives/Examples/Example - Engineer Alex (Technical Panel)",
     "ai-powered-workflows/img/layer-stack.png",
     "ai-powered-workflows/img/chat-vs-cowork.png"
   ]
