@@ -3,6 +3,7 @@
 Practical ways to work with AI tools.
 
 ## New Guides
+- [Deep Research skill (v2): install it in Claude](https://github.com/VeritasPlaybook/playbook/tree/main/ai-powered-workflows/Skills/deep-research)
 - [The context prompt that will revolutionize your workflow](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/The%20context%20prompt%20that%20will%20revolutionize%20your%20workflow.md)
 - [Quick Reference Guide - 7 Phase Manual Deep Research Workflow](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Quick%20Reference%20Guide%20-%207%20Phase%20Manual%20Deep%20Research%20Workflow.md)
 - [Complete Manual Deep Research Guide for Perplexity Pro.](https://github.com/VeritasPlaybook/playbook/blob/main/ai-powered-workflows/Complete%20Manual%20Deep%20Research%20Guide%20for%20Perplexity%20Pro.md)
